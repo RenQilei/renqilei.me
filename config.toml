@@ -1,0 +1,4 @@
+baseURL = "http://renqilei.me/"
+languageCode = "zh-cn"
+title = "Randy's Blog"
+publishDir = "docs"
