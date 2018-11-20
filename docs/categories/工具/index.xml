@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工具 on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 25 Jul 2017 13:56:57 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>在 Mac 上优雅地使用 rz 和 sz</title>
+      <link>http://renqilei.me/post/use-rz-sz-on-mac/</link>
+      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/use-rz-sz-on-mac/</guid>
+      <description>敲黑板：本文终端默认使用 iTerm2。 windows 上，通过 Xshell 和 SecureCRT 使用 rz/sz 时，都会弹出一个路径上传/下载选择窗口。 可 Mac 在手，不容掉粉啊。 本文就来介绍一下如</description>
+    </item>
+    
+  </channel>
+</rss>
