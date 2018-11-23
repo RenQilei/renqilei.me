@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>产品</title>
+      <link>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>医疗</title>
+      <link>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>工具</title>
       <link>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</link>
       <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
@@ -22,7 +40,7 @@
     <item>
       <title>开发运维</title>
       <link>http://renqilei.me/categories/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</link>
-      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
+      <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
       
       <guid>http://renqilei.me/categories/%E5%BC%80%E5%8F%91%E8%BF%90%E7%BB%B4/</guid>
       <description></description>
@@ -34,6 +52,15 @@
       <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
       <guid>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阅读</title>
+      <link>http://renqilei.me/categories/%E9%98%85%E8%AF%BB/</link>
+      <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E9%98%85%E8%AF%BB/</guid>
       <description></description>
     </item>
     

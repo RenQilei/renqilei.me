@@ -1,6 +1,6 @@
 ---
 title: "使用logrotate进行Nginx日志切割"
-slug: "use-logrotate-on-nginx-logs"
+slug: "Use Logrotate on Nginx Logs"
 categories: ["开发运维"]
 tags: ["Nginx", "logrotate"]
 date: 2018-11-11T12:11:44+08:00

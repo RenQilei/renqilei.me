@@ -1,8 +1,8 @@
 ---
 title: "社交需求相关文档综述"
-slug: "literature-review-on-social-requirements"
-categories: ["社交"]
-tags: ["阅读", "产品", "人人都是产品经理"]
+slug: "Literature Review on Social Requirements"
+categories: ["产品","社交","阅读"]
+tags: ["社交", "产品", "人人都是产品经理"]
 date: 2018-11-18T19:03:18+08:00
 draft: false
 ---

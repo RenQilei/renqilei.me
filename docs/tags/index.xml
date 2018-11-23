@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>DRG</title>
+      <link>http://renqilei.me/tags/drg/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/drg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>http://renqilei.me/tags/linux/</link>
       <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
@@ -71,6 +80,15 @@
       <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/epel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>httpdns</title>
+      <link>http://renqilei.me/tags/httpdns/</link>
+      <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/httpdns/</guid>
       <description></description>
     </item>
     
@@ -192,11 +210,29 @@
     </item>
     
     <item>
-      <title>阅读</title>
-      <link>http://renqilei.me/tags/%E9%98%85%E8%AF%BB/</link>
+      <title>医疗</title>
+      <link>http://renqilei.me/tags/%E5%8C%BB%E7%96%97/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E5%8C%BB%E7%96%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>政府</title>
+      <link>http://renqilei.me/tags/%E6%94%BF%E5%BA%9C/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E6%94%BF%E5%BA%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>社交</title>
+      <link>http://renqilei.me/tags/%E7%A4%BE%E4%BA%A4/</link>
       <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/%E9%98%85%E8%AF%BB/</guid>
+      <guid>http://renqilei.me/tags/%E7%A4%BE%E4%BA%A4/</guid>
       <description></description>
     </item>
     
