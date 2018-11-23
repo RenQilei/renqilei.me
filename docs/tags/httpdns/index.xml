@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>httpdns on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/tags/httpdns/</link>
+    <description>Recent content in httpdns on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 21 Nov 2018 19:29:48 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/tags/httpdns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HttpDNS 原理</title>
+      <link>http://renqilei.me/post/httpdns-overview/</link>
+      <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/httpdns-overview/</guid>
+      <description>DNS DNS（Domain Name System，域名系统），提供将网站域名转为 IP 地址的服务。 通常，需要通过 UDP 协议访问就近的 DNS 服务器，来查询域名的真实 I</description>
+    </item>
+    
+  </channel>
+</rss>
