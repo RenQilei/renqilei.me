@@ -1,6 +1,7 @@
 baseURL = "http://renqilei.me/"
-languageCode = "zh-cn"
-defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
+# languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"  # en / zh-cn / ... (This field determines which i18n file to use)
+defaultContentLanguageInSubdir = true                    
 title = "Randy's Blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
@@ -49,6 +50,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "categories"
   url = "/categories/"
+
+[languages]
+  [languages.zh-cn]
+    languageCode = "zh-cn"
+
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
