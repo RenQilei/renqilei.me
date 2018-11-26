@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/zh-cn/categories/%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 开发 on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 26 Nov 2018 11:33:34 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/zh-cn/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo 为不同的静态页面创建不同的页面模板</title>
+      <link>http://renqilei.me/zh-cn/post/multi-templates-for-multi-static-pages-in-hugo/</link>
+      <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
+      
+      <guid>http://renqilei.me/zh-cn/post/multi-templates-for-multi-static-pages-in-hugo/</guid>
+      <description>背景 使用 Hugo 进行静态页面开发过程中，除了日常的博客文章记录外，准备新建一些“关于我（about me）”之类的特殊介绍性静态页面。 这类页面与普通</description>
+    </item>
+    
+  </channel>
+</rss>

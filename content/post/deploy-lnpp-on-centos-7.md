@@ -1,7 +1,7 @@
 ---
 title: "CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）"
 slug: "Deploy Lnpp on Centos 7"
-categories: ["开发运维"]
+categories: ["运维"]
 tags: ["lnpp", "Linux", "Nginx", "PHP", "PostgreSQL", "CentOS7"]
 date: 2017-07-26T14:25:31+08:00
 draft: false

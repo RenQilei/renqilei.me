@@ -1,7 +1,7 @@
 ---
 title: "HttpDNS 原理"
 slug: "HttpDNS Overview"
-categories: ["开发运维"]
+categories: ["运维"]
 tags: ["httpdns"]
 date: 2018-11-21T19:29:48+08:00
 draft: false

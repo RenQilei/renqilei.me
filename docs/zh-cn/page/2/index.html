@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Randy&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Randy" /><meta name="description" content="Welcome to Randy&#39;s blog, which contains posts of techs, ideas and inspirations." /><meta name="keywords" content="Tech, Idea, Inspiration" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.51 with even 4.0.0" />
+
+
+<link rel="canonical" href="http://renqilei.me/zh-cn/" />
+  <link href="http://renqilei.me/zh-cn/index.xml" rel="alternate" type="application/rss+xml" title="Randy&#39;s Blog" />
+  <link href="http://renqilei.me/zh-cn/index.xml" rel="feed" type="application/rss+xml" title="Randy&#39;s Blog" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/dist/even.93844dae.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Randy&#39;s Blog" />
+<meta property="og:description" content="Welcome to Randy&#39;s blog, which contains posts of techs, ideas and inspirations." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://renqilei.me/zh-cn/" />
+<meta property="og:updated_time" content="2017-07-26T14:25:31&#43;08:00"/>
+
+<meta itemprop="name" content="Randy&#39;s Blog">
+<meta itemprop="description" content="Welcome to Randy&#39;s blog, which contains posts of techs, ideas and inspirations.">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Randy&#39;s Blog"/>
+<meta name="twitter:description" content="Welcome to Randy&#39;s blog, which contains posts of techs, ideas and inspirations."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/zh-cn/" class="logo">Randy&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/zh-cn/" class="logo">Randy&#39;s Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <section id="posts" class="posts">
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/zh-cn/post/deploy-lnpp-on-centos-7/">CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-07-26 </span>
+      <div class="post-category">
+          <a href="/zh-cn/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 1 2 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/deploy-lnpp-on-centos-7/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/zh-cn/post/use-rz-sz-on-mac/">在 Mac 上优雅地使用 rz 和 sz</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-07-25 </span>
+      <div class="post-category">
+          <a href="/zh-cn/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      敲黑板：本文终端默认使用 iTerm2。 windows 上，通过 Xshell 和 SecureCRT 使用 rz/sz 时，都会弹出一个路径上传/下载选择窗口。 可 Mac 在手，不容掉粉啊。 本文就来介绍一下如
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/use-rz-sz-on-mac/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/zh-cn/post/install-php-7-on-centos-7/">CentOS 7 安装 PHP 7</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2017-07-25 </span>
+      <div class="post-category">
+          <a href="/zh-cn/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+          </div>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      CentOS 7 的官方 yum 源中提供的 PHP 版本为 5.4.16。这一版本已经无法满足 PHP 较新框架（如 Laravel 5）的使用需求。下面就提供一种“优雅”方法，实现在 CentOS 7 上安装
+    </div>
+    <div class="read-more">
+      <a href="/zh-cn/post/install-php-7-on-centos-7/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    </section>
+  
+  <nav class="pagination">
+    <a class="prev" href="/zh-cn/">
+        <i class="iconfont icon-left"></i>
+        <span class="prev-text">上一页</span>
+      </a>
+    
+  </nav>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://renqilei.me/zh-cn/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2016 - 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Randy</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/dist/even.ece58db6.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

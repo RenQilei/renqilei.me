@@ -6,10 +6,28 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Nov 2018 15:02:26 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Nov 2018 11:33:34 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hugo 为不同的静态页面创建不同的页面模板</title>
+      <link>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</link>
+      <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</guid>
+      <description>背景 使用 Hugo 进行静态页面开发过程中，除了日常的博客文章记录外，准备新建一些“关于我（about me）”之类的特殊介绍性静态页面。 这类页面与普通</description>
+    </item>
+    
+    <item>
+      <title>Resume</title>
+      <link>http://renqilei.me/resume/_index.en/</link>
+      <pubDate>Mon, 26 Nov 2018 00:58:40 +0800</pubDate>
+      
+      <guid>http://renqilei.me/resume/_index.en/</guid>
+      <description> My Resume </description>
+    </item>
     
     <item>
       <title>中国官方 DRG 相关文件列表</title>

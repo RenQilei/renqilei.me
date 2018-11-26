@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Nginx on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/zh-cn/tags/nginx/</link>
+    <description>Recent content in Nginx on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 11 Nov 2018 12:11:44 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/zh-cn/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用logrotate进行Nginx日志切割</title>
+      <link>http://renqilei.me/zh-cn/post/use-logrotate-on-nginx-logs/</link>
+      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
+      
+      <guid>http://renqilei.me/zh-cn/post/use-logrotate-on-nginx-logs/</guid>
+      <description>使用 Nginx 过程中，我们一定会通过记录访问日志和错误日志来记录和分析用户行为和运行情况。但随着时间的推移，日志文件就会变得愈来愈大，乃至占满有限的</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</title>
+      <link>http://renqilei.me/zh-cn/post/deploy-lnpp-on-centos-7/</link>
+      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
+      
+      <guid>http://renqilei.me/zh-cn/post/deploy-lnpp-on-centos-7/</guid>
+      <description>安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 1 2 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就</description>
+    </item>
+    
+  </channel>
+</rss>

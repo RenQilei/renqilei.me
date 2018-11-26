@@ -6,7 +6,7 @@ title = "Randy's Blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
-theme = "even"
+theme = "babi"
 
 publishDir = "docs"
 
@@ -54,6 +54,10 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 [languages]
   [languages.zh-cn]
     languageCode = "zh-cn"
+    weight = 1
+  [languages.en]
+    languageCode = "en"
+    weight = 2
 
 
 [params]

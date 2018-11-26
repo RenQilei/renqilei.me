@@ -1,7 +1,7 @@
 ---
 title: "CentOS 7 安装 PHP 7"
 slug: "Install Php 7 on Centos 7"
-categories: ["开发运维"]
+categories: ["运维"]
 tags: ["PHP7", "CentOS7", "yum", "epel", "webtatic", "php-fpm", "php-opcache"]
 date: 2017-07-25T13:52:04+08:00
 draft: false
