@@ -1,15 +1,461 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="zh-cn">
+
 <head>
-<meta charset="utf-8">
-<title>任琦磊的个人简历</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>任琦磊的个人简历</title>
+
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-align: justify;
+            font-size: 100%;
+            letter-spacing: 1px;
+            word-break: break-all;
+            color: #24292D;
+        }
+
+        a {
+            color: #f47645;
+        }
+
+        a:hover {
+            color: #f84c11;
+        }
+
+        h1 {
+            line-height: 2em;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        @media(max-width: 991.98px) {
+
+            body {
+                letter-spacing: 0 !important;
+            }
+
+            h1 {
+                font-size: 2.5em !important;
+                line-height: 1.5em !important;
+            }
+
+            h2 {
+                font-size: 1.15em !important;
+                font-weight: 600;
+                line-height: 1.3em;
+            }
+
+            ul {
+                padding-left: 10%;
+            }
+
+            #resume-wrapper {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            #main-wrapper {}
+
+            #main {
+                margin: 0;
+            }
+
+            #header {
+                padding-top: 3vh;
+            }
+
+            #back a {
+                color: #999999;
+            }
+
+            #back a:hover {
+                color: #24292D;
+                text-decoration: none;
+            }
+
+            #content {
+                padding: 5vh 0;
+            }
+
+            #top-wrapper {
+                width: 100%;
+                padding: 5vh 0;
+                background-color: #24292D;
+            }
+
+            #top {
+                margin: 0;
+                color: #fff;
+            }
+
+            #foot-wrapper {
+                width: 100%;
+                padding: 5vh 0;
+                background-color: #24292D;
+            }
+
+            #foot {
+                margin: 0;
+                color: #fff;
+                text-align: center;
+            }
+
+            #photo {
+                margin-top: 1vh;
+            }
+
+            #photo img {
+                width: 100%;
+            }
+
+            #name {
+                font-size: 2em;
+                font-weight: 600;
+            }
+
+            #title {
+                margin-top: 1vh;
+            }
+
+            #email {
+            }
+
+            #social {
+                margin-top: 10px;
+            }
+
+            #social a {
+                color: #ffffff;
+            }
+
+            #social a:hover {
+                color: #f47645;
+            }
+
+            #download-cv {}
+
+            #copyright {
+                margin-top: 10px;
+                font-size: 0.8em;
+                color: #999;
+            }
+        }
+
+        @media (min-width: 992px) {
+
+            #resume-wrapper {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            #main-wrapper {}
+
+            #main {
+                margin: 0 10%;
+            }
+
+            #header {
+                height: 10vh;
+                padding-top: 3vh;
+            }
+
+            #back a {
+                color: #999999;
+            }
+
+            #back a:hover {
+                color: #24292D;
+                text-decoration: none;
+            }
+
+            #content {
+                padding-bottom: 10vh;
+            }
+
+            #sidebar-wrapper {
+                height: 100vh;
+                background-color: #24292D;
+                position: fixed;
+                right: 0;
+            }
+
+            #sidebar {
+                margin: 0 4%;
+                padding-top: 15vh;
+                text-align: center;
+                color: #fff;
+            }
+
+            #photo {}
+
+            #photo img {
+                width: 50%;
+            }
+
+            #name {
+                margin-top: 30px;
+                font-size: 2em;
+                font-weight: 600;
+            }
+
+            #title {
+                margin-top: 30px;
+            }
+
+            #email {
+                margin-top: 60px;
+            }
+
+            #social {
+                margin-top: 10px;
+            }
+
+            #social a {
+                color: #ffffff;
+            }
+
+            #social a:hover {
+                color: #f47645;
+            }
+
+            #download-cv {}
+
+            #copyright {
+                margin-top: 10px;
+                font-size: 0.8em;
+                color: #999;
+            }
+        }
+    </style>
 </head>
- 
+
 <body>
 
+    <div id="resume-wrapper">
+        <div class="row">
 
-<h1 id="我的简历">我的简历</h1>
+            
+            <div class="col-12 d-lg-none" id="top-wrapper">
+                <div id="top">
+                    <div class="row">
+                        <div class="col-4">
+                            <div id="photo">
+                                <img class="rounded-circle" src="https://github.com/identicons/renqilei.png">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div id="name">
+                                任琦磊
+                            </div>
+                            <div id="title">
+                                软件工程师，系统架构师，项目经理
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="col-lg-9" id="main-wrapper">
+                <div id="main">
+                    <div id="header">
+                        <div id="back">
+                            <a href="http://renqilei.me/">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                                返回博客
+                            </a>
+                        </div>
+                    </div>
+                    <div id="content">
+                        
+
+<h1 id="个人简介">个人简介</h1>
+
+<p>毕业于软件工程和计算机科学等专业，在软件开发、数据结构和算法等方面均有较为扎实的理论基础和开发实践能力。学习工作方面，有较强的学习能力和创新意识，乐于尝试和钻研各类新的技术。性格外向，能够积极与人沟通，有较好的团队协作能力，并能够适应高压的学习工作环境。目前，主要从事物联网、区块链、分布式系统和数据仓库等方向的科研和实践工作。</p>
+
+<h1 id="专业技能">专业技能</h1>
+
+<ul>
+<li>数据仓库相关技术栈（Hadoop，Elastic Search，Hive，Spark）</li>
+<li>系统的相关运维（Linux，Python，Shell）</li>
+<li>服务器的相关运维（Apache，Nginx）</li>
+<li>网站开发相关技术栈（PHP/MySQL，HTML5/CSS3/Javascript）</li>
+<li>常见数据库的使用（MySQL，Postgresql，MongoDB，Sqlite，Redis）</li>
+<li>其他开发语言（Python，Java）</li>
+<li>相关框架使用，PHP（Laravel），Python（Flask），Javascript（Vue.js）</li>
+</ul>
+
+<h1 id="工作经历">工作经历</h1>
+
+<h2 id="2018-03-至今-devops-工程师-堆糖信息科技-上海-有限公司">2018.03—至今，DevOps 工程师，堆糖信息科技（上海）有限公司</h2>
+
+<p>工作期间，主要从事基础架构设计（IDC 和混合云方向的服务支持）、Kubernetes、云服务和数据仓库等相关系统的开发和维护等工作。</p>
+
+<h2 id="2016-04-2018-02-中间件系统工程师-中国民航信息网络股份有限公司上海分公司">2016.04—2018.02，中间件系统工程师，中国民航信息网络股份有限公司上海分公司</h2>
+
+<p>工作期间，主要从事系统中间件运维、内部监控等相关系统的开发维护等工作。
+ 参与了Java中间件平台从WAS向JBoss迁移的工作。期间主要负责Apache上JBoss集群的搭建和维护，完成了JBoss负载均衡模块Mod_Cluster的文档翻译工作（<a href="https://www.gitbook.com/book/renqilei/mod_cluster_documentation_130_simplified_chinese" target="_blank">查阅</a>）。
+ 参与了内部监控平台的设计与开发工作，用于公司内部应用的服务器和应用性能的监控展示。本人主要使用Laravel框架，通过调用监控系统的API，二次开发并提供内部的数据呈现（使用D3.js）和数据报表功能。
+ 参与了PHP，Python和Node.js相关PaaS系统的搭建。主要负责支撑PHP，Python和Node.js的标准化环境设计和安装，以及相关进程管理器（Supervisord，Gunicorn，PM2等）的安装和运维。</p>
+
+<h2 id="2015-06-2015-09-软件工程师-blupoint-ltd-英国">2015.06—2015.09，软件工程师，Blupoint Ltd.（英国）</h2>
+
+<p>工作期间，主要参与了基于AWS的在线教育内容管理系统的开发工作。工作内容简述见其他项目第二项内容。</p>
+
+<h1 id="学术经历">学术经历</h1>
+
+<h2 id="2016-至今-科研助理-西交利物浦大学">2016—至今，科研助理，西交利物浦大学</h2>
+
+<p>主要方向：基于复杂环境的机器人无线通信等</p>
+
+<h2 id="2014-2015-硕士-软件工程-南安普敦大学-英国">2014—2015，硕士，软件工程，南安普敦大学（英国）</h2>
+
+<p>核心课程：关键系统软件建模工具与技术、代码自动生成、代理人软件技术、开放数据创新等
+毕业设计：基于云服务的在线教育内容管理系统</p>
+
+<h2 id="2010-2014-学士-计算机科学与技术-江西师范大学">2010—2014，学士，计算机科学与技术，江西师范大学</h2>
+
+<h1 id="其他项目">其他项目</h1>
+
+<h2 id="2015-近悦居-周边环境宜居度评估服务系统">2015，近悦居——周边环境宜居度评估服务系统</h2>
+
+<p>近悦居是一款基于政府开放数据以解决日常问题服务于民为项目初衷的应用，通过数据采集和清洗、数据分析和可视化，实现了对被检索地址周边环境宜居程度的评估和直观的呈现。项目中，本人主要负责数据库设计、数据校本化采集、系统架构设计与系统开发等工作。项目地址：<a href="http://www.jinyueju.com">http://www.jinyueju.com</a>（暂停访问）。</p>
+
+<h2 id="2015-基于云服务的在线教育内容管理系统">2015，基于云服务的在线教育内容管理系统</h2>
+
+<p>作为硕士毕业设计，完全独立自主完成该项目，包括项目提案，项目研究和系统实现。项目采用了PHP框架Laravel进行了B/S系统的设计与开发，结合AWS的EC2的云平台和Arduino本地存储硬件环境，实现了教育内容的在线管理、离线存储和云端同步等功能。</p>
+
+<h2 id="2015-集成社交媒体的综合内容管理系统">2015，集成社交媒体的综合内容管理系统</h2>
+
+<p>基于MVC架构，根据项目实际的需求，自主设计并开发的内容管理系统，实现了该系统的大数据分析功能和数据可视化功能。</p>
+
+<h1 id="论文著作">论文著作</h1>
+
+<ul>
+<li>2017.04——至今，正在翻译《监控的艺术》（图灵出版社）</li>
+<li>2017.03，FPGA Implementation of VLC Communication Technology (DOI: 10.1109/WAINA.2017.54)</li>
+</ul>
+
+<h1 id="社会经验">社会经验</h1>
+
+<h2 id="2012-2014-大学期间-成立并运营江西师大计算机科学协会-jxnu-acs">2012——2014，大学期间，成立并运营江西师大计算机科学协会（JXNU-ACS）</h2>
+
+<p>与团队一起创建并运营该社团，很好的锻炼了个人的团队协作能力和综合决策能力。</p>
+
+<h2 id="2010-2012-大学期间-加入学院青年志愿者协会并担任会长">2010——2012，大学期间，加入学院青年志愿者协会并担任会长</h2>
+
+<p>组织并参加了“三下乡”活动，与团队一起到江西新余进行支教活动。</p>
+
+<h1 id="获奖荣誉">获奖荣誉</h1>
+
+<ul>
+<li>2013，江西省“三好学生”称号</li>
+<li>2013，江西师范大学“十佳大学生”称号</li>
+<li>2012，第十二届“未来伙伴杯”机器人大赛2V2足球比赛大学组一等奖</li>
+<li>2012，“蓝桥杯”全国软件专业人才设计与创业大赛总决赛C/C++程序设计本科组三等奖</li>
+<li>2012，江西省首届手机软件设计竞赛一等奖</li>
+</ul>
+
+<h1 id="资格证书">资格证书</h1>
+
+<ul>
+<li>2013，国家软件工程师（中级），工业和信息化部教育与考试中心</li>
+</ul>
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
+                <div id="sidebar">
+                    <div id="photo">
+                        <img class="rounded-circle" src="https://github.com/identicons/renqilei.png">
+                    </div>
+                    <div id="name">
+                        任琦磊
+                    </div>
+                    <div id="title">
+                        软件工程师，系统架构师，项目经理
+                    </div>
+                    <div id="email">
+                        renqilei@foxmail.com
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="download-cv">
+
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 d-lg-none" id="foot-wrapper">
+                <div id="foot">
+                        <div id="email">
+                                renqilei@foxmail.com
+                            </div>
+                            <div id="social">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a href="https://github.com/RenQilei">
+                                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a href="https://www.linkedin.com/in/renqilei">
+                                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="download-cv">
+        
+                            </div>
+                            <div id="copyright">
+                                &copy; 2018 renqilei.me
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </body>
- 
+
 </html>

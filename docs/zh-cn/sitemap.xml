@@ -3,342 +3,342 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/multi-templates-for-multi-static-pages-in-hugo/</loc>
+    <loc>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/resume/</loc>
+    <loc>http://renqilei.me/resume/</loc>
     <lastmod>2018-11-26T00:58:40+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/chinese-government-docs-for-drg/</loc>
+    <loc>http://renqilei.me/post/chinese-government-docs-for-drg/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/httpdns-overview/</loc>
+    <loc>http://renqilei.me/post/httpdns-overview/</loc>
     <lastmod>2018-11-21T19:29:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/literature-review-on-social-requirements/</loc>
+    <loc>http://renqilei.me/post/literature-review-on-social-requirements/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/use-logrotate-on-nginx-logs/</loc>
+    <loc>http://renqilei.me/post/use-logrotate-on-nginx-logs/</loc>
     <lastmod>2018-11-11T12:11:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/deploy-lnpp-on-centos-7/</loc>
+    <loc>http://renqilei.me/post/deploy-lnpp-on-centos-7/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/use-rz-sz-on-mac/</loc>
+    <loc>http://renqilei.me/post/use-rz-sz-on-mac/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/install-php-7-on-centos-7/</loc>
+    <loc>http://renqilei.me/post/install-php-7-on-centos-7/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/</loc>
+    <loc>http://renqilei.me/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/centos7/</loc>
+    <loc>http://renqilei.me/tags/centos7/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/drg/</loc>
+    <loc>http://renqilei.me/tags/drg/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/hugo/</loc>
+    <loc>http://renqilei.me/tags/hugo/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/hugo/</loc>
+    <loc>http://renqilei.me/categories/hugo/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/linux/</loc>
+    <loc>http://renqilei.me/tags/linux/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/nginx/</loc>
+    <loc>http://renqilei.me/tags/nginx/</loc>
     <lastmod>2018-11-11T12:11:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/php/</loc>
+    <loc>http://renqilei.me/tags/php/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/php7/</loc>
+    <loc>http://renqilei.me/tags/php7/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/postgresql/</loc>
+    <loc>http://renqilei.me/tags/postgresql/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/post/</loc>
+    <loc>http://renqilei.me/post/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/</loc>
+    <loc>http://renqilei.me/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/</loc>
+    <loc>http://renqilei.me/tags/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/epel/</loc>
+    <loc>http://renqilei.me/tags/epel/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/httpdns/</loc>
+    <loc>http://renqilei.me/tags/httpdns/</loc>
     <lastmod>2018-11-21T19:29:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/iterm2/</loc>
+    <loc>http://renqilei.me/tags/iterm2/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/iterm2-zmodem/</loc>
+    <loc>http://renqilei.me/tags/iterm2-zmodem/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/lnpp/</loc>
+    <loc>http://renqilei.me/tags/lnpp/</loc>
     <lastmod>2017-07-26T14:25:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/logrotate/</loc>
+    <loc>http://renqilei.me/tags/logrotate/</loc>
     <lastmod>2018-11-11T12:11:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/lrzsz/</loc>
+    <loc>http://renqilei.me/tags/lrzsz/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/mac/</loc>
+    <loc>http://renqilei.me/tags/mac/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/php-fpm/</loc>
+    <loc>http://renqilei.me/tags/php-fpm/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/php-opcache/</loc>
+    <loc>http://renqilei.me/tags/php-opcache/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/rz-sz/</loc>
+    <loc>http://renqilei.me/tags/rz-sz/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/webtatic/</loc>
+    <loc>http://renqilei.me/tags/webtatic/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/yum/</loc>
+    <loc>http://renqilei.me/tags/yum/</loc>
     <lastmod>2017-07-25T13:52:04+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E4%BA%A7%E5%93%81/</loc>
+    <loc>http://renqilei.me/tags/%E4%BA%A7%E5%93%81/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E4%BA%A7%E5%93%81/</loc>
+    <loc>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</loc>
+    <loc>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E5%8C%BB%E7%96%97/</loc>
+    <loc>http://renqilei.me/tags/%E5%8C%BB%E7%96%97/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E5%8C%BB%E7%96%97/</loc>
+    <loc>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2017-07-25T13:56:57+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E5%BC%80%E5%8F%91/</loc>
+    <loc>http://renqilei.me/categories/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E6%94%BF%E5%BA%9C/</loc>
+    <loc>http://renqilei.me/tags/%E6%94%BF%E5%BA%9C/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</loc>
+    <loc>http://renqilei.me/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E7%A4%BE%E4%BA%A4/</loc>
+    <loc>http://renqilei.me/tags/%E7%A4%BE%E4%BA%A4/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E7%A4%BE%E4%BA%A4/</loc>
+    <loc>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E8%BF%90%E7%BB%B4/</loc>
+    <loc>http://renqilei.me/categories/%E8%BF%90%E7%BB%B4/</loc>
     <lastmod>2018-11-21T19:29:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/categories/%E9%98%85%E8%AF%BB/</loc>
+    <loc>http://renqilei.me/categories/%E9%98%85%E8%AF%BB/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/zh-cn/tags/%E9%A1%B5%E9%9D%A2/</loc>
+    <loc>http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
