@@ -176,8 +176,12 @@
             }
 
             #header {
-                height: 10vh;
+                height: 13vh;
                 padding-top: 3vh;
+            }
+
+            #back {
+                padding-top: 2vh;
             }
 
             #back a {
@@ -187,6 +191,10 @@
             #back a:hover {
                 color: #24292D;
                 text-decoration: none;
+            }
+
+            #qrcode img {
+                height: 10vh;
             }
 
             #content {
@@ -279,11 +287,14 @@
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
                     <div id="header">
-                        <div id="back">
+                        <div class="float-left" id="back">
                             <a href="http://renqilei.me/">
                                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
                                 返回博客
                             </a>
+                        </div>
+                        <div class="float-right d-none d-lg-block" id="qrcode">
+                            <img src="../img/resume-qrcode.jpg">
                         </div>
                     </div>
                     <div id="content">
