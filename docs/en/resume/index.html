@@ -47,21 +47,22 @@
             margin: 0;
         }
 
-        @media(max-width: 991.98px) {
+        @media(max-width: 767.98px) {
 
             body {
                 letter-spacing: 0 !important;
+                line-height: 1.75em;
             }
 
             h1 {
                 font-size: 2.5em !important;
-                line-height: 1.5em !important;
+                line-height: 1.75em !important;
             }
 
             h2 {
                 font-size: 1.15em !important;
                 font-weight: 600;
-                line-height: 1.3em;
+                line-height: 1.5em;
             }
 
             ul {
@@ -78,6 +79,7 @@
 
             #main {
                 margin: 0;
+                padding: 0 5vw;
             }
 
             #header {
@@ -105,6 +107,7 @@
 
             #top {
                 margin: 0;
+                padding: 0 5vw;
                 color: #fff;
             }
 
@@ -116,6 +119,7 @@
 
             #foot {
                 margin: 0;
+                padding: 0 5vw;
                 color: #fff;
                 text-align: center;
             }
@@ -137,8 +141,104 @@
                 margin-top: 1vh;
             }
 
-            #email {
+            #email {}
+
+            #social {
+                margin-top: 10px;
             }
+
+            #social a {
+                color: #ffffff;
+            }
+
+            #social a:hover {
+                color: #f47645;
+            }
+
+            #download-cv {}
+
+            #copyright {
+                margin-top: 10px;
+                font-size: 0.8em;
+                color: #999;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            #resume-wrapper {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            #main-wrapper {}
+
+            #main {
+                margin: 0;
+                padding: 0 10vw;
+            }
+
+            #header {
+                padding-top: 3vh;
+            }
+
+            #back a {
+                color: #999999;
+            }
+
+            #back a:hover {
+                color: #24292D;
+                text-decoration: none;
+            }
+
+            #content {
+                padding: 5vh 0;
+            }
+
+            #top-wrapper {
+                width: 100%;
+                padding: 5vh 0;
+                background-color: #24292D;
+            }
+
+            #top {
+                margin: 0;
+                padding: 0 10vw;
+                color: #fff;
+            }
+
+            #foot-wrapper {
+                width: 100%;
+                padding: 5vh 0;
+                background-color: #24292D;
+            }
+
+            #foot {
+                margin: 0;
+                padding: 0 10vw;
+                color: #fff;
+                text-align: center;
+            }
+
+            #photo {
+                margin-top: 1vh;
+            }
+
+            #photo img {
+                width: 100%;
+            }
+
+            #name {
+                font-size: 2em;
+                font-weight: 600;
+            }
+
+            #title {
+                margin-top: 1vh;
+            }
+
+            #email {}
 
             #social {
                 margin-top: 10px;
@@ -347,29 +447,29 @@
             
             <div class="col-12 d-lg-none" id="foot-wrapper">
                 <div id="foot">
-                        <div id="email">
-                                renqilei@foxmail.com
-                            </div>
-                            <div id="social">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">
-                                        <a href="https://github.com/RenQilei">
-                                            <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="https://www.linkedin.com/in/renqilei">
-                                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div id="download-cv">
-        
-                            </div>
-                            <div id="copyright">
-                                &copy; 2018 renqilei.me
-                            </div>
+                    <div id="email">
+                        renqilei@foxmail.com
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="download-cv">
+
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me
+                    </div>
                 </div>
             </div>
         </div>
