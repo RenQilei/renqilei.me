@@ -1,8 +1,8 @@
 ---
 title: "网络诊断工具 mtr"
 slug: "Use Mtr"
-categories: ["工具"]
-tags: ["lrzsz", "rz/sz", "mac", "iterm2", "iterm2-zmodem"]
+categories: ["运维", "工具"]
+tags: ["linux", "mtr"]
 date: 2018-12-03T10:37:32+08:00
 draft: false
 ---
