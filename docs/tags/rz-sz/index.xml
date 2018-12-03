@@ -6,10 +6,19 @@
     <description>Recent content in rz/sz on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 25 Jul 2017 13:56:57 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 10:37:32 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/rz-sz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>网络诊断工具 mtr</title>
+      <link>http://renqilei.me/post/use-mtr/</link>
+      <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/use-mtr/</guid>
+      <description>mtr 结合了 traceroute 和 ping 的功能，完成对网络的诊断。 不同于 traceroute 默认使用 UDP 数据包进行探测的是，mtr 默认使用 ICMP 报文进行探测，在某些路由器上 ICMP 的优先级低于其他</description>
+    </item>
     
     <item>
       <title>在 Mac 上优雅地使用 rz 和 sz</title>

@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://renqilei.me/post/use-mtr/</loc>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</loc>
     <lastmod>2018-11-26T11:33:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -136,14 +143,14 @@
   
   <url>
     <loc>http://renqilei.me/post/</loc>
-    <lastmod>2018-11-26T11:33:34+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://renqilei.me/</loc>
-    <lastmod>2018-11-26T11:33:34+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -171,14 +178,14 @@
   
   <url>
     <loc>http://renqilei.me/tags/iterm2/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://renqilei.me/tags/iterm2-zmodem/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -199,14 +206,14 @@
   
   <url>
     <loc>http://renqilei.me/tags/lrzsz/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://renqilei.me/tags/mac/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -227,7 +234,7 @@
   
   <url>
     <loc>http://renqilei.me/tags/rz-sz/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -283,7 +290,7 @@
   
   <url>
     <loc>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2017-07-25T13:56:57+08:00</lastmod>
+    <lastmod>2018-12-03T10:37:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
