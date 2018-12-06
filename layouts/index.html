@@ -1,24 +1,25 @@
 {{- define "content" -}}
-  <section id="posts" class="posts">
-    {{/* (index .Site.Paginate) */}}
+
+<section id="posts" class="posts">
     {{- $paginator := .Paginate (where (where .Data.Pages "Type" "post") ".Params.hiddenfromhomepage" "!=" true) }}
     {{- range $paginator.Pages -}}
-      {{ .Render "summary" }}
-    {{ end -}}
-  </section>
-  <!-- pagination -->
-  <nav class="pagination">
+    {{ .Render "summary" }}
+    {{- end -}}
+</section>
+<!-- pagination -->
+<nav class="pagination">
     {{ with $paginator.Prev -}}
-      <a class="prev" href="{{ .URL }}">
+    <a class="prev" href="{{ .URL }}">
         <i class="iconfont icon-left"></i>
         <span class="prev-text">{{ T "prevPage" }}</span>
-      </a>
+    </a>
     {{- end }}
     {{ with $paginator.Next -}}
-      <a class="next" href="{{ .URL }}">
+    <a class="next" href="{{ .URL }}">
         <span class="next-text">{{ T "nextPage" }}</span>
         <i class="iconfont icon-right"></i>
-      </a>
+    </a>
     {{- end }}
-  </nav>
+</nav>
+
 {{- end -}}
