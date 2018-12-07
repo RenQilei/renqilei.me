@@ -8,7 +8,6 @@ body {
   -webkit-font-smoothing: antialiased;
   text-align: justify;
   font-size: 100%;
-  letter-spacing: 1px;
   word-break: break-all;
   color: #24292D; }
 
@@ -16,12 +15,14 @@ a {
   color: #f47645; }
 
 a:hover {
-  color: #ffffff;
-  background-color: #f84c11;
-  text-decoration: none; }
+  color: #f84c11; }
 
 h1 {
   line-height: 2em; }
+  h1 a:hover {
+    color: #ffffff;
+    background-color: #f47645;
+    text-decoration: none; }
 
 h2 {
   font-size: 1.2em;
@@ -35,7 +36,8 @@ h2 {
   padding: 0;
   height: 100vh; }
   #baseof-wrapper #main-wrapper #main {
-    margin: 0 10%; }
+    margin: 0 10%;
+    padding-top: 15vh; }
   #baseof-wrapper #sidebar-wrapper {
     height: 100vh;
     background-color: #24292D;
@@ -50,3 +52,33 @@ h2 {
         margin-top: 10px;
         font-size: 0.8em;
         color: #999; }
+
+#index #posts .post {
+  margin-bottom: 40px; }
+  #index #posts .post .post-header .post-title {
+    margin: 0;
+    font-size: 1.6em;
+    line-height: 1.6em; }
+  #index #posts .post .post-header .post-meta {
+    font-size: 0.9em;
+    color: #8a8a8a; }
+    #index #posts .post .post-header .post-meta .post-category a {
+      color: #8a8a8a; }
+    #index #posts .post .post-header .post-meta .post-category a:hover {
+      color: #f47645;
+      text-decoration: none; }
+  #index #posts .post .post-content {
+    font-size: 1em; }
+    #index #posts .post .post-content .post-summary {
+      margin: 15px 0 8px 0; }
+    #index #posts .post .post-content .read-more a:hover {
+      color: #ffffff;
+      background-color: #f47645;
+      text-decoration: none; }
+
+#index #pagination {
+  text-align: center; }
+  #index #pagination a:hover {
+    color: #ffffff;
+    background-color: #f47645;
+    text-decoration: none; }

@@ -50,7 +50,15 @@
             <!-- display on screen bigger than size lg (include) on bootstrap -->
             <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
                 <div id="sidebar">
-                    
+                    <div id="navigation">
+                        <ul class="list-unstyled">
+                            {{ range .Site.Menus.main -}}
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="{{ .URL | safeURL }}">{{ .Name }}</a>
+                            </li>
+                            {{- end }}
+                        </ul>
+                    </div>
                     <div id="copyright">
                         &copy; 2018 renqilei.me
                     </div>
