@@ -1,0 +1,29 @@
+{
+  "name": "babi",
+  "version": "1.0.0",
+  "description": "hugo theme babi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenQilei/hugo-theme-babi.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme",
+    "babi"
+  ],
+  "author": "Qilei Ren",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/RenQilei/hugo-theme-babi/issues"
+  },
+  "homepage": "https://github.com/RenQilei/hugo-theme-babi#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  }
+}
