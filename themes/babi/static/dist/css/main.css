@@ -10,55 +10,43 @@ body {
   font-size: 100%;
   letter-spacing: 1px;
   word-break: break-all;
-  color: #24292D;
-}
+  color: #24292D; }
 
 a {
-  color: #f47645;
-}
+  color: #f47645; }
 
 a:hover {
   color: #ffffff;
   background-color: #f84c11;
-}
+  text-decoration: none; }
 
 h1 {
-  line-height: 2em;
-}
+  line-height: 2em; }
 
 h2 {
   font-size: 1.2em;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
 .row {
-  margin: 0;
-}
+  margin: 0; }
 
 #baseof-wrapper {
   margin: 0;
   padding: 0;
-  height: 100vh;
-}
-#baseof-wrapper #main-wrapper #main {
-  margin: 0 10%;
-}
-#baseof-wrapper #sidebar-wrapper {
-  height: 100vh;
-  background-color: #24292D;
-  position: fixed;
-  right: 0;
-}
-#baseof-wrapper #sidebar-wrapper #sidebar {
-  margin: 0 4%;
-  padding-top: 15vh;
-  text-align: center;
-  color: #fff;
-}
-#baseof-wrapper #sidebar-wrapper #sidebar #copyright {
-  margin-top: 10px;
-  font-size: 0.8em;
-  color: #999;
-}
-
-/*# sourceMappingURL=babi.css.map */
+  height: 100vh; }
+  #baseof-wrapper #main-wrapper #main {
+    margin: 0 10%; }
+  #baseof-wrapper #sidebar-wrapper {
+    height: 100vh;
+    background-color: #24292D;
+    position: fixed;
+    right: 0; }
+    #baseof-wrapper #sidebar-wrapper #sidebar {
+      margin: 0 4%;
+      padding-top: 15vh;
+      text-align: center;
+      color: #fff; }
+      #baseof-wrapper #sidebar-wrapper #sidebar #copyright {
+        margin-top: 10px;
+        font-size: 0.8em;
+        color: #999; }
