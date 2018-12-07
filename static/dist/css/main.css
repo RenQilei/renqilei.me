@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+  font-family: "Noto Serif SC", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-align: justify;
   font-size: 100%;
@@ -42,16 +42,29 @@ h2 {
     height: 100vh;
     background-color: #24292D;
     position: fixed;
-    right: 0; }
+    right: 0;
+    font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif; }
     #baseof-wrapper #sidebar-wrapper #sidebar {
       margin: 0 4%;
       padding-top: 15vh;
-      text-align: center;
       color: #fff; }
+      #baseof-wrapper #sidebar-wrapper #sidebar #navigation li a {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 2em; }
+      #baseof-wrapper #sidebar-wrapper #sidebar #navigation li a:hover {
+        color: #f47645;
+        text-decoration: none; }
+      #baseof-wrapper #sidebar-wrapper #sidebar #social {
+        margin-top: 60px; }
+        #baseof-wrapper #sidebar-wrapper #sidebar #social a {
+          color: #ffffff; }
+        #baseof-wrapper #sidebar-wrapper #sidebar #social a:hover {
+          color: #f47645; }
       #baseof-wrapper #sidebar-wrapper #sidebar #copyright {
         margin-top: 10px;
         font-size: 0.8em;
-        color: #999; }
+        color: #AAADAF; }
 
 #index #posts .post {
   margin-bottom: 40px; }
@@ -61,7 +74,7 @@ h2 {
     line-height: 1.6em; }
   #index #posts .post .post-header .post-meta {
     font-size: 0.9em;
-    color: #8a8a8a; }
+    color: #AAADAF; }
     #index #posts .post .post-header .post-meta .post-category a {
       color: #8a8a8a; }
     #index #posts .post .post-header .post-meta .post-category a:hover {

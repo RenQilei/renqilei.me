@@ -3,7 +3,7 @@ body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    font-family: Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+    font-family: "Noto Serif SC", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
     -webkit-font-smoothing: antialiased;
     text-align: justify;
     font-size: 100%;
@@ -56,17 +56,44 @@ h2 {
         background-color: #24292D;
         position: fixed;
         right: 0;
+        font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
     
         #sidebar {
             margin: 0 4%;
             padding-top: 15vh;
-            text-align: center;
             color: #fff;
+
+            #navigation {
+                li {
+                    a {
+                        color: #ffffff;
+                        font-weight: 600;
+                        font-size: 2em;
+                    }
+
+                    a:hover {
+                        color: #f47645;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            #social {
+                margin-top: 60px;
+
+                a {
+                    color: #ffffff;
+                }
+    
+                a:hover {
+                    color: #f47645;
+                }
+            }
     
             #copyright {
                 margin-top: 10px;
                 font-size: 0.8em;
-                color: #999;
+                color: #AAADAF;
             }
         }
     }
