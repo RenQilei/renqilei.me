@@ -19,4 +19,4 @@ I will keep appending this list under my emotional control since there are too m
 
 Released under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) License by Qilei Ren with 💝.
 
-Seriously I am not expert on license issues, I just found out that you should keep codes open-sourced with the same license, that is what I mean, just do it for fun. 
+Seriously I am not an expert on license issues, I just found out that you should keep codes open-sourced with the same license, that is what I mean, just do it for fun. 
