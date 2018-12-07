@@ -23,7 +23,9 @@
   "homepage": "https://github.com/RenQilei/hugo-theme-babi#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.2"
+    "gulp-rev": "^9.0.0",
+    "gulp-sass": "4.0.1"
   }
 }
