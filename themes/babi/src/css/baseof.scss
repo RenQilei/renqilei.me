@@ -7,7 +7,6 @@ body {
     -webkit-font-smoothing: antialiased;
     text-align: justify;
     font-size: 100%;
-    letter-spacing: 1px;
     word-break: break-all;
     color: #24292D;
 }
@@ -17,13 +16,17 @@ a {
 }
 
 a:hover {
-    color: #ffffff;
-    background-color: #f84c11;
-    text-decoration: none;
+    color: #f84c11;
 }
 
 h1 {
     line-height: 2em;
+
+    a:hover {
+        color: #ffffff;
+        background-color: #f47645;
+        text-decoration: none;
+    }
 }
 
 h2 {
@@ -44,6 +47,7 @@ h2 {
 
         #main {
             margin: 0 10%;
+            padding-top: 15vh;
         }
     }
     
