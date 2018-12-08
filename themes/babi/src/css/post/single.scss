@@ -2,56 +2,95 @@
 
     .post {
 
+        margin-bottom: 15vh;
+
         .post-header {
 
             .post-title {
-
+                font-size: 2.5em;
+                line-height: 1.2em;
+                font-weight: 600;
+                font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
             }
 
             .post-meta {
 
-                .post-time {
+                font-size: 0.9em;
+                color: #AAADAF;
 
+                a {
+                    color: #AAADAF;
                 }
 
-                .post-category {
+                a:hover {
+                    color: #f47645;
+                    text-decoration: none;
+                }
 
+                .post-time {}
+
+                .post-category {
+                    
+                }
+
+                .post-tags {
+                
                 }
             }
         }
 
         .post-content {
-            h1 {
 
+            margin: 40px 0;
+
+            h1 {
+                font-size: 2.4rem;
             }
 
             h2 {
-
+                font-size: 1.8rem;
+                font-weight: 400;
             }
 
-            h3 {
+            h3 {}
 
-            }
+            p {}
 
-            p {
+            blockquote {}
 
-            }
-
-            blockquote {
-                
-            }
-            
         }
 
         .post-footer {
 
-            .post-tags {
+            .post-nav {
 
-            }
-        }
-
-        .post-nav {
-
+                margin-top: 60px;
+                display: flex;
+                flex-direction: row;
+                font-size: 1.25em;
+    
+                a:hover {
+                    color: #ffffff;
+                    background-color: #f47645;
+                    text-decoration: none;
+                }
+                
+                .fa-lg {
+                    vertical-align: 0;
+                }
+    
+                .prev {
+                    display: block;
+                    width: 50%;
+                    text-align: left;
+                }
+    
+                .next {
+                    display: block;
+                    width: 50%;
+                    text-align: right;
+                }
+            }            
         }
     }
 }

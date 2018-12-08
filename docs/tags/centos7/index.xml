@@ -17,7 +17,7 @@
       <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
       
       <guid>http://renqilei.me/post/deploy-lnpp-on-centos-7/</guid>
-      <description>安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 1 2 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就</description>
+      <description>安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就可以</description>
     </item>
     
     <item>

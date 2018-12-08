@@ -12,7 +12,13 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto" rel="stylesheet">
 
-    <link href="/dist/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -44,7 +50,8 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <div id="single">
+                    
+  <div id="single">
     <article class="post">
       
       <header class="post-header">
@@ -56,7 +63,16 @@
               <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
               </span>
           
-        </div>
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/php7/">PHP7</a>
+            <a href="/tags/centos7/">CentOS7</a>
+            <a href="/tags/yum/">yum</a>
+            <a href="/tags/epel/">epel</a>
+            <a href="/tags/webtatic/">webtatic</a>
+            <a href="/tags/php-fpm/">php-fpm</a>
+            <a href="/tags/php-opcache/">php-opcache</a>
+            </span></div>
       </header>
   
       
@@ -70,40 +86,24 @@
         <p>CentOS 7 的官方 yum 源中提供的 PHP 版本为 5.4.16。这一版本已经无法满足 PHP 较新框架（如 Laravel 5）的使用需求。下面就提供一种“优雅”方法，实现在 CentOS 7 上安装 PHP 7，即通过开源维护的 <a href="https://webtatic.com/">Webtatic Yum</a> 源来获取最新的 PHP 版本 7.1.x。</p>
 
 <p>首先，我们先检查并删除可能已经通过 yum 安装的老版本 PHP，源码安装的则需要自己删除。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma"># 列表已安装的 PHP 相关包
+
+<pre><code># 列表已安装的 PHP 相关包
 yum list installed | grep php
 # 确认移除上面列出的全部 PHP 相关包
-yum remove php*</pre></td></tr></table>
-</div>
-</div>
+yum remove php*
+</code></pre>
+
 <p>然后，安装 Webtatic Yum 源。这里，我们还需要使用到另一个开源支持的高质量附加包源 EPEL。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</pre></td></tr></table>
-</div>
-</div>
+
+<pre><code>rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+</code></pre>
+
 <p>软件源安装完成后，我们就可以通过 yum 命令，实现“优雅”地安装 PHP 7 了。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">yum install php71w-fpm php71w-opcache</pre></td></tr></table>
-</div>
-</div>
+
+<pre><code>yum install php71w-fpm php71w-opcache
+</code></pre>
+
 <p>这里仅安装了 <a href="https://secure.php.net/manual/zh/install.fpm.php">php71w-fpm</a> 和 <a href="http://www.php.net/manual/zh/book.opcache.php">php71w-opcache</a>。还可以通过命令 yum info php71w* 获得更多 php 7 相关的包。</p>
 
 <p><strong>参考资料</strong></p>
@@ -119,21 +119,16 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</pre></td></tr
       
   
       <footer class="post-footer">
-        <div class="post-tags">
-            <a href="/tags/php7/">PHP7</a>
-            <a href="/tags/centos7/">CentOS7</a>
-            <a href="/tags/yum/">yum</a>
-            <a href="/tags/epel/">epel</a>
-            <a href="/tags/webtatic/">webtatic</a>
-            <a href="/tags/php-fpm/">php-fpm</a>
-            <a href="/tags/php-opcache/">php-opcache</a>
-            </div>
+  
+        
         <nav class="post-nav">
-          <a class="prev" href="/post/use-rz-sz-on-mac/">
-              <i class="iconfont icon-left"></i>
-              <span class="prev-text nav-default">在 Mac 上优雅地使用 rz 和 sz</span>
-              <span class="prev-text nav-mobile">上一篇</span>
-            </a>
+          <div class="prev">
+              <a href="/post/use-rz-sz-on-mac/">
+                <i class="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+                <span class="prev-text nav-mobile">上一篇</span>
+                <span class="prev-text nav-default">在 Mac 上优雅地使用 rz 和 sz</span>
+              </a>
+            </div>
           
         </nav>
       </footer>
@@ -155,6 +150,8 @@ rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</pre></td></tr
                                 <a class="menu-item-link" href="/tags/">Tags</a>
                             </li><li class="menu-item">
                                 <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
                             </li>
                         </ul>
                     </div>

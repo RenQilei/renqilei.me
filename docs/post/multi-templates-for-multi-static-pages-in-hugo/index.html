@@ -12,7 +12,13 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto" rel="stylesheet">
 
-    <link href="/dist/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -44,7 +50,8 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <div id="single">
+                    
+  <div id="single">
     <article class="post">
       
       <header class="post-header">
@@ -57,7 +64,12 @@
               <a href="/categories/hugo/"> Hugo </a>
               </span>
           
-        </div>
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/hugo/">Hugo</a>
+            <a href="/tags/%E9%A1%B5%E9%9D%A2/">页面</a>
+            <a href="/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/">模板定制</a>
+            </span></div>
       </header>
   
       
@@ -88,14 +100,10 @@
 <h2 id="创建静态页面">创建静态页面</h2>
 
 <p>首先，我们需要将独立的页面视为一个独立的 section，即 <code>content/about/</code>，并在该 section 下创建一个默认文本 <code>_index.md</code>。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">hugo new about/_index.md</pre></td></tr></table>
-</div>
-</div>
+
+<pre><code>hugo new about/_index.md
+</code></pre>
+
 <p>这样，就会创建出路径为 <code>content/about/_index.md</code> 的文件。</p>
 
 <h2 id="定制页面模板">定制页面模板</h2>
@@ -128,22 +136,23 @@
       
   
       <footer class="post-footer">
-        <div class="post-tags">
-            <a href="/tags/hugo/">Hugo</a>
-            <a href="/tags/%E9%A1%B5%E9%9D%A2/">页面</a>
-            <a href="/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/">模板定制</a>
-            </div>
+  
+        
         <nav class="post-nav">
-          <a class="prev" href="/post/use-mtr/">
-              <i class="iconfont icon-left"></i>
-              <span class="prev-text nav-default">网络诊断工具 mtr</span>
-              <span class="prev-text nav-mobile">上一篇</span>
-            </a>
-          <a class="next" href="/post/chinese-government-docs-for-drg/">
-              <span class="next-text nav-default">中国官方 DRG 相关文件列表</span>
-              <span class="next-text nav-mobile">下一篇</span>
-              <i class="iconfont icon-right"></i>
-            </a>
+          <div class="prev">
+              <a href="/post/use-mtr/">
+                <i class="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+                <span class="prev-text nav-mobile">上一篇</span>
+                <span class="prev-text nav-default">网络诊断工具 mtr</span>
+              </a>
+            </div>
+          <div class="next">
+              <a href="/post/chinese-government-docs-for-drg/">
+                <span class="next-text nav-default">中国官方 DRG 相关文件列表</span>
+                <span class="next-text nav-mobile">下一篇</span>
+                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
         </nav>
       </footer>
     </article>
@@ -164,6 +173,8 @@
                                 <a class="menu-item-link" href="/tags/">Tags</a>
                             </li><li class="menu-item">
                                 <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
                             </li>
                         </ul>
                     </div>

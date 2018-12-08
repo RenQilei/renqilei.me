@@ -12,7 +12,13 @@
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto" rel="stylesheet">
 
-    <link href="/dist/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+
+    
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -44,7 +50,8 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <div id="single">
+                    
+  <div id="single">
     <article class="post">
       
       <header class="post-header">
@@ -56,7 +63,14 @@
               <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
               </span>
           
-        </div>
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/lrzsz/">lrzsz</a>
+            <a href="/tags/rz/sz/">rz/sz</a>
+            <a href="/tags/mac/">mac</a>
+            <a href="/tags/iterm2/">iterm2</a>
+            <a href="/tags/iterm2-zmodem/">iterm2-zmodem</a>
+            </span></div>
       </header>
   
       
@@ -78,29 +92,19 @@
 <p>本文就来介绍一下如何通过 iTerm2，“优雅”地使用 rz 和 sz 了。</p>
 
 <p>首先，安装 lrzsz。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">brew install lrzsz</pre></td></tr></table>
-</div>
-</div>
+
+<pre><code>brew install lrzsz
+</code></pre>
+
 <p>brew 命令也是“优雅”的一个必要条件。装好 <a href="https://brew.sh/index_zh-cn.html">homebrew</a>，走上人生巅峰。</p>
 
 <p>接下来，安装 <a href="https://github.com/mmastrac/iterm2-zmodem">iterm2-zmodem</a>。下载大神写好的脚本到本地 /usr/local/bin 目录下，并赋予 777 的读写权限。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">sudo wget -P /usr/local/bin https://raw.github.com/mmastrac/iterm2-zmodem/master/iterm2-send-zmodem.sh
+
+<pre><code>sudo wget -P /usr/local/bin https://raw.github.com/mmastrac/iterm2-zmodem/master/iterm2-send-zmodem.sh
 sudo wget -P /usr/local/bin https://raw.github.com/mmastrac/iterm2-zmodem/master/iterm2-recv-zmodem.sh
-sudo chmod 777 /usr/local/bin/iterm2-*</pre></td></tr></table>
-</div>
-</div>
+sudo chmod 777 /usr/local/bin/iterm2-*
+</code></pre>
+
 <p>如果你还没有 <code>wget</code> 命令，可 <code>brew install wget</code> 安装。</p>
 
 <p>装完了 iterm2-zmodem，让我们来为 iTerm2 做一些“优雅”的操作。</p>
@@ -157,24 +161,23 @@ sudo chmod 777 /usr/local/bin/iterm2-*</pre></td></tr></table>
       
   
       <footer class="post-footer">
-        <div class="post-tags">
-            <a href="/tags/lrzsz/">lrzsz</a>
-            <a href="/tags/rz/sz/">rz/sz</a>
-            <a href="/tags/mac/">mac</a>
-            <a href="/tags/iterm2/">iterm2</a>
-            <a href="/tags/iterm2-zmodem/">iterm2-zmodem</a>
-            </div>
+  
+        
         <nav class="post-nav">
-          <a class="prev" href="/post/deploy-lnpp-on-centos-7/">
-              <i class="iconfont icon-left"></i>
-              <span class="prev-text nav-default">CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</span>
-              <span class="prev-text nav-mobile">上一篇</span>
-            </a>
-          <a class="next" href="/post/install-php-7-on-centos-7/">
-              <span class="next-text nav-default">CentOS 7 安装 PHP 7</span>
-              <span class="next-text nav-mobile">下一篇</span>
-              <i class="iconfont icon-right"></i>
-            </a>
+          <div class="prev">
+              <a href="/post/deploy-lnpp-on-centos-7/">
+                <i class="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+                <span class="prev-text nav-mobile">上一篇</span>
+                <span class="prev-text nav-default">CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</span>
+              </a>
+            </div>
+          <div class="next">
+              <a href="/post/install-php-7-on-centos-7/">
+                <span class="next-text nav-default">CentOS 7 安装 PHP 7</span>
+                <span class="next-text nav-mobile">下一篇</span>
+                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+              </a>
+            </div>
         </nav>
       </footer>
     </article>
@@ -195,6 +198,8 @@ sudo chmod 777 /usr/local/bin/iterm2-*</pre></td></tr></table>
                                 <a class="menu-item-link" href="/tags/">Tags</a>
                             </li><li class="menu-item">
                                 <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
                             </li>
                         </ul>
                     </div>
