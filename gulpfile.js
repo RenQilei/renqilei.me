@@ -4,7 +4,7 @@ var concat = require('gulp-concat');
 var cleanCss = require('gulp-clean-css');
 
 gulp.task('styles', function() {
-    gulp.src('src/css/*.scss')
+    gulp.src('src/css/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('main.css'))
         // .pipe(cleanCss())
@@ -12,5 +12,5 @@ gulp.task('styles', function() {
 });
 
 gulp.task('default',function() {
-    gulp.watch('src/css/*.scss',['styles']);
+    gulp.watch('src/css/**/*.scss',['styles']);
 });

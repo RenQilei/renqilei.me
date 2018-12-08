@@ -76,7 +76,7 @@ h2 {
     font-size: 0.9em;
     color: #AAADAF; }
     #index #posts .post .post-header .post-meta .post-category a {
-      color: #8a8a8a; }
+      color: #AAADAF; }
     #index #posts .post .post-header .post-meta .post-category a:hover {
       color: #f47645;
       text-decoration: none; }
@@ -95,3 +95,46 @@ h2 {
     color: #ffffff;
     background-color: #f47645;
     text-decoration: none; }
+
+@charset "UTF-8";
+#single .post {
+  margin-bottom: 15vh; }
+  #single .post .post-header .post-title {
+    font-size: 2.5em;
+    line-height: 1.2em;
+    font-weight: 600;
+    font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif; }
+  #single .post .post-header .post-meta {
+    font-size: 0.9em;
+    color: #AAADAF; }
+    #single .post .post-header .post-meta a {
+      color: #AAADAF; }
+    #single .post .post-header .post-meta a:hover {
+      color: #f47645;
+      text-decoration: none; }
+  #single .post .post-content {
+    margin: 40px 0; }
+    #single .post .post-content h1 {
+      font-size: 2.4rem; }
+    #single .post .post-content h2 {
+      font-size: 1.8rem;
+      font-weight: 400; }
+  #single .post .post-footer .post-nav {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.25em; }
+    #single .post .post-footer .post-nav a:hover {
+      color: #ffffff;
+      background-color: #f47645;
+      text-decoration: none; }
+    #single .post .post-footer .post-nav .fa-lg {
+      vertical-align: 0; }
+    #single .post .post-footer .post-nav .prev {
+      display: block;
+      width: 50%;
+      text-align: left; }
+    #single .post .post-footer .post-nav .next {
+      display: block;
+      width: 50%;
+      text-align: right; }
