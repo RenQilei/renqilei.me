@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Test"
+license = "GPLv3"
+licenselink = "https://github.com/RenQilei/hugo-theme-babi/blob/master/LICENSE"
+description = "🎨Just a theme for hugo called Babi"
+homepage = ""
+tags = ["personal", "blog"]
+features = ["resume page"]
+min_version = "0.41"
+
+[author]
+  name = "Qilei Ren"
+  homepage = "https://renqilei.me"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

@@ -8,7 +8,7 @@ gulp.task('styles', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('main.css'))
         // .pipe(cleanCss())
-        .pipe(gulp.dest('static/dist/css'));
+        .pipe(gulp.dest('static/css'));
 });
 
 gulp.task('default',function() {
