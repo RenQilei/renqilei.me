@@ -120,9 +120,7 @@ h2 {
       font-size: 1.8rem;
       font-weight: 400; }
   #single .post .post-footer .post-nav {
-    margin-top: 60px;
-    display: flex;
-    flex-direction: row;
+    margin-top: 80px;
     font-size: 1.25em; }
     #single .post .post-footer .post-nav a:hover {
       color: #ffffff;
@@ -130,11 +128,5 @@ h2 {
       text-decoration: none; }
     #single .post .post-footer .post-nav .fa-lg {
       vertical-align: 0; }
-    #single .post .post-footer .post-nav .prev {
-      display: block;
-      width: 50%;
-      text-align: left; }
     #single .post .post-footer .post-nav .next {
-      display: block;
-      width: 50%;
-      text-align: right; }
+      margin-top: 10px; }
