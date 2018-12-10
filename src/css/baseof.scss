@@ -124,10 +124,31 @@ h2 {
                     color: #f47645;
                 }
 
+                #cc-license {
+                    margin-top: 15px;
+
+                    a {
+                        color: #ffffff;
+
+                        i {
+                            font-size: 1.8em;
+                        }
+                    }
+                    
+                    a:hover {
+                        color: #f47645;
+                        text-decoration: none;
+                    }
+                }
+
                 #copyright {
                     margin-top: 10px;
                     font-size: 0.8em;
                     color: #999;
+
+                    a {
+                        color: #AAADAF;
+                    }
                 }
             }
         }
@@ -219,10 +240,31 @@ h2 {
                         color: #f47645;
                     }
 
+                    #cc-license {
+                        margin-top: 15px;
+
+                        a {
+                            color: #ffffff;
+
+                            i {
+                                font-size: 2em;
+                            }
+                        }
+                        
+                        a:hover {
+                            color: #f47645;
+                            text-decoration: none;
+                        }
+                    }
+
                     #copyright {
                         margin-top: 10px;
                         font-size: 0.8em;
                         color: #999;
+
+                        a {
+                            color: #AAADAF;
+                        }
                     }
                 }
             }
@@ -282,10 +324,31 @@ h2 {
                         }
                     }
 
+                    #cc-license {
+                        margin-top: 15px;
+
+                        a {
+                            color: #ffffff;
+
+                            i {
+                                font-size: 2em;
+                            }
+                        }
+                        
+                        a:hover {
+                            color: #f47645;
+                            text-decoration: none;
+                        }
+                    }
+
                     #copyright {
                         margin-top: 10px;
                         font-size: 0.8em;
                         color: #AAADAF;
+
+                        a {
+                            color: #AAADAF;
+                        }
                     }
                 }
             }
