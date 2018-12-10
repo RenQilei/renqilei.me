@@ -38,63 +38,256 @@ h2 {
     margin: 0;
 }
 
-#baseof-wrapper {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+@media(max-width: 767.98px) {
 
-    #main-wrapper {
-
-        #main {
-            margin: 0 10%;
-            padding-top: 15vh;
-        }
-    }
-    
-    #sidebar-wrapper {
+    #baseof-wrapper {
+        margin: 0;
+        padding: 0;
         height: 100vh;
-        background-color: #24292D;
-        position: fixed;
-        right: 0;
-        font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
-    
-        #sidebar {
-            margin: 0 4%;
-            padding-top: 15vh;
-            color: #fff;
 
-            #navigation {
-                li {
-                    a {
-                        color: #ffffff;
-                        font-weight: 600;
-                        font-size: 2em;
-                    }
+        #main-wrapper {
 
-                    a:hover {
-                        color: #f47645;
-                        text-decoration: none;
+            #main {
+                margin: 0 10%;
+                padding: 10vh 0;
+            }
+        }
+
+        #top-wrapper {
+
+            padding: 0;
+
+            nav {
+                background-color: #24292D;
+
+                a {
+                    color: #ffffff;
+                    font-size: 1.6em;
+                }
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                button {
+                    height: 10vh;
+                    color: #ffffff;
+                }
+
+                .navbar-brand {
+                    padding-left: .75rem;
+                }
+
+                #navbar-toggler {
+                    padding-bottom: 10px;
+                    font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+                    text-align: right;
+                    font-size: 1.6em;
+
+                    li {
+                        padding-bottom: 10px;
                     }
                 }
             }
+        }
 
-            #social {
-                margin-top: 60px;
+        #foot-wrapper {
+
+            padding: 0;
+
+            #foot {
+
+                padding: 5vh 0;
+                background-color: #24292D;
+                color: #ffffff;
+                text-align: center;
 
                 a {
                     color: #ffffff;
                 }
-    
+
                 a:hover {
+                    text-decoration: none;
+                }
+
+                #email {}
+
+                #social {
+                    margin-top: 10px;
+                }
+
+                #social a {
+                    color: #ffffff;
+                }
+
+                #social a:hover {
                     color: #f47645;
                 }
-            }
-    
-            #copyright {
-                margin-top: 10px;
-                font-size: 0.8em;
-                color: #AAADAF;
+
+                #copyright {
+                    margin-top: 10px;
+                    font-size: 0.8em;
+                    color: #999;
+                }
             }
         }
     }
 }
+
+    @media (min-width: 768px) {
+        #baseof-wrapper {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+            #main-wrapper {
+
+                #main {
+                    margin: 0 10%;
+                    padding: 10vh 0;
+                }
+            }
+
+            #top-wrapper {
+
+                padding: 0;
+
+                nav {
+                    background-color: #24292D;
+
+                    a {
+                        color: #ffffff;
+                        font-size: 1.6em;
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                    button {
+                        height: 10vh;
+                        color: #ffffff;
+                    }
+
+                    .navbar-brand {
+                        padding-left: .75rem;
+                    }
+
+                    #navbar-toggler {
+                        padding-bottom: 10px;
+                        font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+                        text-align: right;
+                        font-size: 1.6em;
+
+                        li {
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            #foot-wrapper {
+
+                padding: 0;
+
+                #foot {
+
+                    padding: 5vh 0;
+                    background-color: #24292D;
+                    color: #ffffff;
+                    text-align: center;
+
+                    a {
+                        color: #ffffff;
+                    }
+
+                    a:hover {
+                        text-decoration: none;
+                    }
+
+                    #email {}
+
+                    #social {
+                        margin-top: 10px;
+                    }
+
+                    #social a {
+                        color: #ffffff;
+                    }
+
+                    #social a:hover {
+                        color: #f47645;
+                    }
+
+                    #copyright {
+                        margin-top: 10px;
+                        font-size: 0.8em;
+                        color: #999;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        #baseof-wrapper {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+            #main-wrapper {
+
+                #main {
+                    margin: 0 10%;
+                    padding-top: 15vh;
+                }
+            }
+
+            #sidebar-wrapper {
+                height: 100vh;
+                background-color: #24292D;
+                position: fixed;
+                right: 0;
+                font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+
+                #sidebar {
+                    margin: 0 4%;
+                    padding-top: 15vh;
+                    color: #fff;
+
+                    #navigation {
+                        li {
+                            a {
+                                color: #ffffff;
+                                font-weight: 600;
+                                font-size: 2em;
+                            }
+
+                            a:hover {
+                                color: #f47645;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+
+                    #social {
+                        margin-top: 60px;
+
+                        a {
+                            color: #ffffff;
+                        }
+
+                        a:hover {
+                            color: #f47645;
+                        }
+                    }
+
+                    #copyright {
+                        margin-top: 10px;
+                        font-size: 0.8em;
+                        color: #AAADAF;
+                    }
+                }
+            }
+        }
+    }

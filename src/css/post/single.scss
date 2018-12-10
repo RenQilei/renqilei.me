@@ -1,3 +1,188 @@
+@media(max-width: 767.98px) {
+    #single {
+
+        .post {
+    
+            margin-bottom: 5vh;
+    
+            .post-header {
+    
+                .post-title {
+                    font-size: 2em;
+                    line-height: 1.2em;
+                    font-weight: 600;
+                    font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+                }
+    
+                .post-meta {
+    
+                    font-size: 0.9em;
+                    color: #AAADAF;
+    
+                    a {
+                        color: #AAADAF;
+                    }
+    
+                    a:hover {
+                        color: #f47645;
+                        text-decoration: none;
+                    }
+    
+                    .post-time {}
+    
+                    .post-category {
+                        
+                    }
+    
+                    .post-tags {
+                    
+                    }
+                }
+            }
+    
+            .post-content {
+    
+                margin: 40px 0;
+    
+                h1 {
+                    font-size: 1.8rem;
+                }
+    
+                h2 {
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                }
+    
+                h3 {}
+    
+                p {}
+    
+                blockquote {}
+    
+            }
+    
+            .post-footer {
+    
+                .post-nav {
+    
+                    margin-top: 80px;
+                    font-size: 1.2em;
+        
+                    a:hover {
+                        color: #ffffff;
+                        background-color: #f47645;
+                        text-decoration: none;
+                    }
+                    
+                    .fa-lg {
+                        vertical-align: 0;
+                    }
+        
+                    .prev {
+                    }
+        
+                    .next {
+                        margin-top: 10px;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #single {
+
+        .post {
+    
+            margin-bottom: 5vh;
+    
+            .post-header {
+    
+                .post-title {
+                    font-size: 2.5em;
+                    line-height: 1.2em;
+                    font-weight: 600;
+                    font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, SimSun, “宋体”, Heiti, “黑体”, sans-serif;
+                }
+    
+                .post-meta {
+    
+                    font-size: 0.9em;
+                    color: #AAADAF;
+    
+                    a {
+                        color: #AAADAF;
+                    }
+    
+                    a:hover {
+                        color: #f47645;
+                        text-decoration: none;
+                    }
+    
+                    .post-time {}
+    
+                    .post-category {
+                        
+                    }
+    
+                    .post-tags {
+                    
+                    }
+                }
+            }
+    
+            .post-content {
+    
+                margin: 40px 0;
+    
+                h1 {
+                    font-size: 2.4rem;
+                }
+    
+                h2 {
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                }
+    
+                h3 {}
+    
+                p {}
+    
+                blockquote {}
+    
+            }
+    
+            .post-footer {
+    
+                .post-nav {
+    
+                    margin-top: 80px;
+                    font-size: 1.25em;
+        
+                    a:hover {
+                        color: #ffffff;
+                        background-color: #f47645;
+                        text-decoration: none;
+                    }
+                    
+                    .fa-lg {
+                        vertical-align: 0;
+                    }
+        
+                    .prev {
+                    }
+        
+                    .next {
+                        margin-top: 10px;
+                    }
+                }            
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
 #single {
 
     .post {
@@ -86,4 +271,5 @@
             }            
         }
     }
+}
 }
