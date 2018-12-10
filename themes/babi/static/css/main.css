@@ -77,10 +77,21 @@ h2 {
           color: #ffffff; }
         #baseof-wrapper #foot-wrapper #foot #social a:hover {
           color: #f47645; }
+        #baseof-wrapper #foot-wrapper #foot #cc-license {
+          margin-top: 15px; }
+          #baseof-wrapper #foot-wrapper #foot #cc-license a {
+            color: #ffffff; }
+            #baseof-wrapper #foot-wrapper #foot #cc-license a i {
+              font-size: 1.8em; }
+          #baseof-wrapper #foot-wrapper #foot #cc-license a:hover {
+            color: #f47645;
+            text-decoration: none; }
         #baseof-wrapper #foot-wrapper #foot #copyright {
           margin-top: 10px;
           font-size: 0.8em;
-          color: #999; } }
+          color: #999; }
+          #baseof-wrapper #foot-wrapper #foot #copyright a {
+            color: #AAADAF; } }
 
 @media (min-width: 768px) {
   #baseof-wrapper {
@@ -128,10 +139,21 @@ h2 {
           color: #ffffff; }
         #baseof-wrapper #foot-wrapper #foot #social a:hover {
           color: #f47645; }
+        #baseof-wrapper #foot-wrapper #foot #cc-license {
+          margin-top: 15px; }
+          #baseof-wrapper #foot-wrapper #foot #cc-license a {
+            color: #ffffff; }
+            #baseof-wrapper #foot-wrapper #foot #cc-license a i {
+              font-size: 2em; }
+          #baseof-wrapper #foot-wrapper #foot #cc-license a:hover {
+            color: #f47645;
+            text-decoration: none; }
         #baseof-wrapper #foot-wrapper #foot #copyright {
           margin-top: 10px;
           font-size: 0.8em;
-          color: #999; } }
+          color: #999; }
+          #baseof-wrapper #foot-wrapper #foot #copyright a {
+            color: #AAADAF; } }
 
 @media (min-width: 992px) {
   #baseof-wrapper {
@@ -164,10 +186,21 @@ h2 {
             color: #ffffff; }
           #baseof-wrapper #sidebar-wrapper #sidebar #social a:hover {
             color: #f47645; }
+        #baseof-wrapper #sidebar-wrapper #sidebar #cc-license {
+          margin-top: 15px; }
+          #baseof-wrapper #sidebar-wrapper #sidebar #cc-license a {
+            color: #ffffff; }
+            #baseof-wrapper #sidebar-wrapper #sidebar #cc-license a i {
+              font-size: 2em; }
+          #baseof-wrapper #sidebar-wrapper #sidebar #cc-license a:hover {
+            color: #f47645;
+            text-decoration: none; }
         #baseof-wrapper #sidebar-wrapper #sidebar #copyright {
           margin-top: 10px;
           font-size: 0.8em;
-          color: #AAADAF; } }
+          color: #AAADAF; }
+          #baseof-wrapper #sidebar-wrapper #sidebar #copyright a {
+            color: #AAADAF; } }
 
 @media (max-width: 767.98px) {
   #index #posts .post {
