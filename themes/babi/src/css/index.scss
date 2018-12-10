@@ -1,3 +1,138 @@
+@media(max-width: 767.98px) {
+    #index {
+
+    #posts {
+        .post {
+
+            margin-bottom: 40px;
+
+            .post-header {
+                .post-title {
+                    margin: 0;
+                    font-size: 1.6em;
+                    line-height: 1.6em;
+                }
+
+                .post-meta {
+
+                    font-size: 0.9em;
+                    color: #AAADAF;
+
+                    .post-time {}
+
+                    .post-category {
+                        a {
+                            color: #AAADAF;
+                        }
+
+                        a:hover {
+                            color: #f47645;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+
+            .post-content {
+
+                font-size: 1em;
+
+                .post-summary {
+                    margin: 15px 0 8px 0;
+                }
+
+                .read-more {
+
+                    a:hover {
+                        color: #ffffff;
+                        background-color: #f47645;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #pagination {
+        text-align: center;
+
+        a:hover {
+            color: #ffffff;
+            background-color: #f47645;
+            text-decoration: none;
+        }
+    }
+}
+}
+
+@media (min-width: 768px) {
+    #index {
+
+        #posts {
+            .post {
+    
+                margin-bottom: 40px;
+    
+                .post-header {
+                    .post-title {
+                        margin: 0;
+                        font-size: 1.6em;
+                        line-height: 1.6em;
+                    }
+    
+                    .post-meta {
+    
+                        font-size: 0.9em;
+                        color: #AAADAF;
+    
+                        .post-time {}
+    
+                        .post-category {
+                            a {
+                                color: #AAADAF;
+                            }
+    
+                            a:hover {
+                                color: #f47645;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+    
+                .post-content {
+    
+                    font-size: 1em;
+    
+                    .post-summary {
+                        margin: 15px 0 8px 0;
+                    }
+    
+                    .read-more {
+    
+                        a:hover {
+                            color: #ffffff;
+                            background-color: #f47645;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    
+        #pagination {
+            text-align: center;
+    
+            a:hover {
+                color: #ffffff;
+                background-color: #f47645;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
 #index {
 
     #posts {
@@ -61,4 +196,5 @@
             text-decoration: none;
         }
     }
+}
 }
