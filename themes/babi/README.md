@@ -1,5 +1,7 @@
 # hugo-theme-babi
 
+![license-mit](https://img.shields.io/github/license/mashape/apistatus.svg)
+
 **Developing in progress without schedule.**
 
 ## Why babi?
@@ -17,6 +19,6 @@ I will keep appending this list under my emotional control since there are too m
 
 ## License
 
-Released under the MIT License by Qilei Ren with 💝.
+Released under the [MIT License](LICENSE) by Qilei Ren with 💝.
 
 Seriously I am not an expert on license issues, I just found out that you should keep codes open-sourced with the same license, that is what I mean, just do it for fun. 
