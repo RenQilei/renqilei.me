@@ -1,0 +1,71 @@
+@media(max-width: 767.98px) {
+    #archive {
+        .collection-title {
+            h2 {
+                font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, Heiti, “黑体”, sans-serif;
+                line-height: 1.5em;
+                font-size: 2em !important;
+            }
+        }
+
+        .collection-title:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        .archive-post {
+            .archive-post-time {
+                padding-right: 5px;
+            }
+
+            .archive-post-title {}
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #archive {
+        .collection-title {
+            h2 {
+                font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, Heiti, “黑体”, sans-serif;
+                line-height: 1.5em;
+                font-size: 2em !important;
+            }
+        }
+
+        .collection-title:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        .archive-post {
+            .archive-post-time {
+                padding-right: 5px;
+            }
+
+            .archive-post-title {}
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #archive {
+        .collection-title, .archive-title {
+            h2 {
+                font-family: "Roboto", Helvetica, Tahoma, Arial, STXihei, “华文细黑”, “Microsoft YaHei”, “微软雅黑”, Heiti, “黑体”, sans-serif;
+                line-height: 1.5em;
+                font-size: 2em !important;
+            }
+        }
+
+        .collection-title:not(:first-child) {
+            margin-top: 30px;
+        }
+
+        .archive-post {
+            .archive-post-time {
+                padding-right: 5px;
+            }
+
+            .archive-post-title {}
+        }
+    }
+}
