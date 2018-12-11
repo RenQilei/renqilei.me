@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jul 2017 14:25:31 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 19:07:01 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS</title>
+      <link>http://renqilei.me/tags/css/</link>
+      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/css/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CentOS7</title>
@@ -89,6 +98,15 @@
       <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/epel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>flexbox</title>
+      <link>http://renqilei.me/tags/flexbox/</link>
+      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/flexbox/</guid>
       <description></description>
     </item>
     

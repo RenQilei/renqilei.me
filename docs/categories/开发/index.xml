@@ -6,10 +6,19 @@
     <description>Recent content in 开发 on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Nov 2018 11:33:34 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Dec 2018 19:07:01 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS Flexbox 的使用</title>
+      <link>http://renqilei.me/post/use-css-flexbox/</link>
+      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/use-css-flexbox/</guid>
+      <description>使用场景 多个 &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; 能够实现按序排列，而不是独占一行。如下面的例子，.container 内的 .item 能够按序排列。 &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; ... &amp;lt;/div&amp;gt; 采用 flexbox 方案 父</description>
+    </item>
     
     <item>
       <title>Hugo 为不同的静态页面创建不同的页面模板</title>
