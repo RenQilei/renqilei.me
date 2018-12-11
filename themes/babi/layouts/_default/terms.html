@@ -1,0 +1,66 @@
+{{- define "content" -}}
+{{ $name := .Data.Plural }}
+{{ $terms := .Data.Terms.ByCount }}
+{{ $length := len $terms }}
+{{ if eq $name "categories" -}}
+<div class="terms">
+  <div class="terms-title">
+    {{/* if eq $length 0 */}}
+    {{/* T "zeroCategoryCounter" */}}
+    {{/* else */}}
+    {{/* T "categoryCounter" $length */}}
+    {{/* end */}}
+  </div>
+  <div class="terms-categories">
+    <ul class="list-unstyled">
+      {{ range $key, $value := $terms -}}
+      <li class="terms-link">
+        <a href="{{ $name | relLangURL }}/{{ $value.Term | urlize }}/">
+            <div class="terms-name">{{ $value.Term }}</div>
+            <!-- <div class="terms-count">{{ len $value.Pages }}</div> -->
+        </a>
+      </li>
+      {{ end -}}
+    </ul>
+  </div>
+</div>
+{{- else if eq $name "tags" -}}
+<div class="terms">
+  <div class="terms-title">
+      {{/* if eq $length 0 */}}
+      {{/* T "zeroTagCounter" */}}
+      {{/* else */}}
+      {{/* T "tagCounter" $length */}}
+      {{/* end */}}
+  </div>
+  <div class="terms-categories">
+    <ul class="list-unstyled">
+        {{- range $key, $value := $terms }}
+        <li class="terms-link">
+            <a href="{{ $name | relLangURL }}/{{ $value.Term | urlize }}/">
+                <div class="terms-name">{{ $value.Term }}</div>
+                <!-- <div class="terms-count">{{ len $value.Pages }}</div> -->
+            </a>
+          </li>
+        {{ end -}}
+    </ul>
+  </div>
+</div>
+{{- end }}
+{{- end }}
+
+{{- define "foot" -}}
+<script type="text/javascript">
+  $(function() {
+    $(".terms-link").each(function() {
+      $(this).height($(this).width());
+    });
+    $(".terms-name").each(function() {
+      let paddingTop = ($(this).parent("a").height() - $(this).height())/2;
+      $(this).css({
+        'padding-top': paddingTop
+      });
+    });
+  });
+</script>
+{{- end -}}
