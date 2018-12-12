@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>flexbox on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/tags/flexbox/</link>
+    <description>Recent content in flexbox on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 11 Dec 2018 19:07:01 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/tags/flexbox/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSS Flexbox 的使用</title>
+      <link>http://renqilei.me/post/use-css-flexbox/</link>
+      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/use-css-flexbox/</guid>
+      <description>使用场景 多个 &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; 能够实现按序排列，而不是独占一行。如下面的例子，.container 内的 .item 能够按序排列。 &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; ... &amp;lt;/div&amp;gt; 采用 flexbox 方案 父</description>
+    </item>
+    
+  </channel>
+</rss>
