@@ -19,7 +19,7 @@ I customized a theme called [*babi*](https://github.com/RenQilei/hugo-theme-babi
 
 ### Blogs
 
-All blogs are under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/). So feel free to read, reuse and share if under the same license.
+All blogs are under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/). So feel free to read, reuse and share if under the same license.
 
 Currently most blogs will be written in Chinese. So feel free to translate and pull request at anytime if you think it is valuable.
 
@@ -37,4 +37,4 @@ Please contact to me if I am suitable for any position or project.
 
 ## License
 
-This project is generally under the [MIT License](LICENSE), and blogs under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless special statements.
+This project is generally under the [MIT License](LICENSE), and blogs under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless special statements.
