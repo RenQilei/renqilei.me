@@ -37,4 +37,4 @@ Please contact to me if I am suitable for any position or project.
 
 ## License
 
-This project is generally under the [MIT License](LICENSE), and blogs under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless special statements.
+This project is generally under the [MIT License](LICENSE), and blogs under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) unless special statements.
