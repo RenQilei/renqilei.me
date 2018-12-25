@@ -3,7 +3,6 @@
 <html lang="zh-cn">
 
 <head>
-	<meta name="generator" content="Hugo 0.51" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,6 +16,10 @@
     <link href="/css/main.css" rel="stylesheet">
 
     
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -57,78 +60,96 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <div id="index">
-    <section id="posts" class="posts"><article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/deploy-docker-on-centos7/">CentOS 7 安装 Docker</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月25日 </span>
-      <span class="post-category">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
-          </span>
-    </div>
-  </header>
+                    
+  <div id="single">
+    <article class="post">
+      
+      <header class="post-header">
+        <h1 class="post-title">CentOS 7 安装 Docker</h1>
   
-  <div class="post-content">
-    <div class="post-summary">
-      依赖 devicemapper CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：Compatibility Matrix。 lvm CentOS 7 上可以使
-    </div>
-    <div class="read-more">
-      <a href="/post/deploy-docker-on-centos7/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/centos-check-ssd/">CentOS 检查磁盘是否为 SSD</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月13日 </span>
-      <span class="post-category">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
-          </span>
-    </div>
-  </header>
+        <div class="post-meta">
+          <span class="post-time"> 2018年12月25日 </span>
+          <span class="post-category">
+              <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+              </span>
+          
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/centos/">CentOS</a>
+            <a href="/tags/docker/">docker</a>
+            </span></div>
+      </header>
   
-  <div class="post-content">
-    <div class="post-summary">
-      cat /sys/block/[sda]/queue/rotational 打印结果： 0，即为 SSD 硬盘 1，即为机械硬盘 其中，[sda] 可以替换为各磁盘设备编号，其可以通过 fdisk -l 指令查看。
-    </div>
-    <div class="read-more">
-      <a href="/post/centos-check-ssd/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/use-git-subtree/">Git subtree 的使用</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月12日 </span>
-      <span class="post-category">
-          <a href="/categories/%E5%BC%80%E5%8F%91/"> 开发 </a>
-          <a href="/categories/%E5%B7%A5%E5%85%B7/"> 工具 </a>
-          </span>
-    </div>
-  </header>
+      
+      
   
-  <div class="post-content">
-    <div class="post-summary">
-      场景 目前，git 的使用已是必不可少，但在实际生产开发过程中，不可避免的会出现这种的情况：项目 P1 和 P2 共用了一个项目 S。 使用中，我们希望保持项目
-    </div>
-    <div class="read-more">
-      <a href="/post/use-git-subtree/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-</section>
-    
-    <nav id="pagination">
+      
+      
+  
+      
+      <div class="post-content">
         
-        <a class="next" href="/page/2/">
-            <span class="next-text">下一页</span>
-            <i class="iconfont icon-right"></i>
-        </a>
-    </nav>
-</div>
+
+<h1 id="依赖">依赖</h1>
+
+<h2 id="devicemapper">devicemapper</h2>
+
+<p>CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：<a href="https://success.docker.com/article/compatibility-matrix">Compatibility Matrix</a>。</p>
+
+<h2 id="lvm">lvm</h2>
+
+<p>CentOS 7 上可以使用 lvm2 来管理 Linux 上逻辑卷的用户空间。</p>
+
+<h1 id="安装">安装</h1>
+
+<pre><code># 安装必要的一些系统工具
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# 添加软件源信息
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# 更新并安装Docker-CE
+sudo yum makecache fast
+sudo yum -y install docker-ce
+</code></pre>
+
+<h1 id="启动">启动</h1>
+
+<pre><code># 启动 Docker
+sudo systemctl start docker
+# 开启自启动
+sudo systemctl enable docker
+</code></pre>
+
+<h1 id="参考文档">参考文档</h1>
+
+<ul>
+<li><a href="https://help.aliyun.com/document_detail/60742.html?spm=a2c4g.11186623.6.547.5eca378brCWftp">安装Docker</a></li>
+<li><a href="https://www.yangcs.net/posts/use-devicemapper/">Device Mapper系列 (3)：Docker 中使用 devicemapper 存储驱动</a></li>
+</ul>
+
+      </div>
+  
+      
+      
+  
+      
+      
+  
+      <footer class="post-footer">
+  
+        
+        <nav class="post-nav">
+          
+          <div class="next">
+              <a href="/post/centos-check-ssd/">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">下一篇</span>
+                <span class="next-text nav-default">CentOS 检查磁盘是否为 SSD</span>
+              </a>
+            </div>
+        </nav>
+      </footer>
+    </article>
+  </div>
                 </div>
             </div>
 

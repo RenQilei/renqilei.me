@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSD on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/tags/ssd/</link>
+    <description>Recent content in SSD on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 13 Dec 2018 15:14:02 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/tags/ssd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS 检查磁盘是否为 SSD</title>
+      <link>http://renqilei.me/post/centos-check-ssd/</link>
+      <pubDate>Thu, 13 Dec 2018 15:14:02 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/centos-check-ssd/</guid>
+      <description>cat /sys/block/[sda]/queue/rotational 打印结果： 0，即为 SSD 硬盘 1，即为机械硬盘 其中，[sda] 可以替换为各磁盘设备编号，其可以通过 fdisk -l 指令查看。</description>
+    </item>
+    
+  </channel>
+</rss>

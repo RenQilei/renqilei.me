@@ -6,10 +6,19 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 13 Dec 2018 15:14:02 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Dec 2018 17:35:50 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS 7 安装 Docker</title>
+      <link>http://renqilei.me/post/deploy-docker-on-centos7/</link>
+      <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/deploy-docker-on-centos7/</guid>
+      <description>依赖 devicemapper CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：Compatibility Matrix。 lvm CentOS 7 上可以使</description>
+    </item>
     
     <item>
       <title>CentOS 检查磁盘是否为 SSD</title>
