@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 25 Dec 2018 17:35:50 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Dec 2018 18:59:53 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS 7 挂载磁盘</title>
+      <link>http://renqilei.me/post/mount-disk-on-centos7/</link>
+      <pubDate>Wed, 26 Dec 2018 18:59:53 +0800</pubDate>
+      
+      <guid>http://renqilei.me/post/mount-disk-on-centos7/</guid>
+      <description>下面的指令未特别指出，均需 root 权限 检查磁盘分区和挂载情况 fdisk -l 如果 Disk 下无 Device Boot 信息，则表示未进行磁盘分区。 df -h 如果 FileSystem 下无 /dev/[vdx] 的挂载信息，则表示未进行</description>
+    </item>
     
     <item>
       <title>CentOS 7 安装 Docker</title>
