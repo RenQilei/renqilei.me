@@ -128,13 +128,12 @@
 
 <p>将格式化完成后的分区挂载在指定目录。</p>
 
-<pre><code class="language-/[directory]```">
-# 将新分区写入系统
+<p>其中，<code>/[directory]</code> 需要是存在的目录。如需要，可以通过 mkdir 新建。</p>
 
+<h1 id="将新分区写入系统">将新分区写入系统</h1>
+
+<pre><code>echo '/dev/[vdx1]   /[directory]    ext4    defaults    0   0'&gt;&gt; /etc/fstab
 </code></pre>
-
-<p>echo &lsquo;/dev/[vdx1]   /[directory]    ext4    defaults    0   0&rsquo;&gt;&gt; /etc/fstab
-```</p>
 
       </div>
   
