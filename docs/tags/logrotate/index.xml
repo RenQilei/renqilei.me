@@ -13,10 +13,10 @@
     
     <item>
       <title>使用logrotate进行Nginx日志切割</title>
-      <link>http://renqilei.me/post/use-logrotate-on-nginx-logs/</link>
+      <link>http://renqilei.me/posts/use-logrotate-on-nginx-logs/</link>
       <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-logrotate-on-nginx-logs/</guid>
+      <guid>http://renqilei.me/posts/use-logrotate-on-nginx-logs/</guid>
       <description>使用 Nginx 过程中，我们一定会通过记录访问日志和错误日志来记录和分析用户行为和运行情况。但随着时间的推移，日志文件就会变得愈来愈大，乃至占满有限的</description>
     </item>
     

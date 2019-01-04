@@ -13,10 +13,10 @@
     
     <item>
       <title>CentOS 检查磁盘是否为 SSD</title>
-      <link>http://renqilei.me/post/centos-check-ssd/</link>
+      <link>http://renqilei.me/posts/centos-check-ssd/</link>
       <pubDate>Thu, 13 Dec 2018 15:14:02 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/centos-check-ssd/</guid>
+      <guid>http://renqilei.me/posts/centos-check-ssd/</guid>
       <description>cat /sys/block/[sda]/queue/rotational 打印结果： 0，即为 SSD 硬盘 1，即为机械硬盘 其中，[sda] 可以替换为各磁盘设备编号，其可以通过 fdisk -l 指令查看。</description>
     </item>
     

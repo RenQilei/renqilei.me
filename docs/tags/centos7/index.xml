@@ -13,28 +13,28 @@
     
     <item>
       <title>CentOS 7 挂载磁盘</title>
-      <link>http://renqilei.me/post/mount-disk-on-centos7/</link>
+      <link>http://renqilei.me/posts/mount-disk-on-centos7/</link>
       <pubDate>Wed, 26 Dec 2018 18:59:53 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/mount-disk-on-centos7/</guid>
+      <guid>http://renqilei.me/posts/mount-disk-on-centos7/</guid>
       <description>下面的指令未特别指出，均需 root 权限 检查磁盘分区和挂载情况 fdisk -l 如果 Disk 下无 Device Boot 信息，则表示未进行磁盘分区。 df -h 如果 FileSystem 下无 /dev/[vdx] 的挂载信息，则表示未进行</description>
     </item>
     
     <item>
       <title>CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</title>
-      <link>http://renqilei.me/post/deploy-lnpp-on-centos-7/</link>
+      <link>http://renqilei.me/posts/deploy-lnpp-on-centos-7/</link>
       <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/deploy-lnpp-on-centos-7/</guid>
+      <guid>http://renqilei.me/posts/deploy-lnpp-on-centos-7/</guid>
       <description>安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就可以</description>
     </item>
     
     <item>
       <title>CentOS 7 安装 PHP 7</title>
-      <link>http://renqilei.me/post/install-php-7-on-centos-7/</link>
+      <link>http://renqilei.me/posts/install-php-7-on-centos-7/</link>
       <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/install-php-7-on-centos-7/</guid>
+      <guid>http://renqilei.me/posts/install-php-7-on-centos-7/</guid>
       <description>CentOS 7 的官方 yum 源中提供的 PHP 版本为 5.4.16。这一版本已经无法满足 PHP 较新框架（如 Laravel 5）的使用需求。下面就提供一种“优雅”方法，实现在 CentOS 7 上安装</description>
     </item>
     

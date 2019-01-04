@@ -13,10 +13,10 @@
     
     <item>
       <title>Git subtree 的使用</title>
-      <link>http://renqilei.me/post/use-git-subtree/</link>
+      <link>http://renqilei.me/posts/use-git-subtree/</link>
       <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-git-subtree/</guid>
+      <guid>http://renqilei.me/posts/use-git-subtree/</guid>
       <description>场景 目前，git 的使用已是必不可少，但在实际生产开发过程中，不可避免的会出现这种的情况：项目 P1 和 P2 共用了一个项目 S。 使用中，我们希望保持项目</description>
     </item>
     

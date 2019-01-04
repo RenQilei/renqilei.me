@@ -13,28 +13,28 @@
     
     <item>
       <title>Git subtree 的使用</title>
-      <link>http://renqilei.me/post/use-git-subtree/</link>
+      <link>http://renqilei.me/posts/use-git-subtree/</link>
       <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-git-subtree/</guid>
+      <guid>http://renqilei.me/posts/use-git-subtree/</guid>
       <description>场景 目前，git 的使用已是必不可少，但在实际生产开发过程中，不可避免的会出现这种的情况：项目 P1 和 P2 共用了一个项目 S。 使用中，我们希望保持项目</description>
     </item>
     
     <item>
       <title>CSS Flexbox 的使用</title>
-      <link>http://renqilei.me/post/use-css-flexbox/</link>
+      <link>http://renqilei.me/posts/use-css-flexbox/</link>
       <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-css-flexbox/</guid>
+      <guid>http://renqilei.me/posts/use-css-flexbox/</guid>
       <description>使用场景 多个 &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; 能够实现按序排列，而不是独占一行。如下面的例子，.container 内的 .item 能够按序排列。 &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; ... &amp;lt;/div&amp;gt; 采用 flexbox 方案 父</description>
     </item>
     
     <item>
       <title>Hugo 为不同的静态页面创建不同的页面模板</title>
-      <link>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</link>
+      <link>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</link>
       <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</guid>
+      <guid>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</guid>
       <description>背景 使用 Hugo 进行静态页面开发过程中，除了日常的博客文章记录外，准备新建一些“关于我（about me）”之类的特殊介绍性静态页面。 这类页面与普通</description>
     </item>
     

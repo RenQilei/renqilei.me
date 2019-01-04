@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reads on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/reads/</link>
+    <description>Recent content in Reads on Randy&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 04 Jan 2019 00:04:08 +0800</lastBuildDate>
+    
+	<atom:link href="http://renqilei.me/reads/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker 开发指南</title>
+      <link>http://renqilei.me/reads/using-docker/</link>
+      <pubDate>Fri, 04 Jan 2019 00:04:08 +0800</pubDate>
+      
+      <guid>http://renqilei.me/reads/using-docker/</guid>
+      <description>《Docker 开发指南》出版于 2017 年初，英文原版则应该更早些。当时的 Docker 应该在 1.8。那时还没有 Moby，更没有现在如此完整的 Docker 生态圈。但早期的</description>
+    </item>
+    
+  </channel>
+</rss>

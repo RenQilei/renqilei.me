@@ -13,10 +13,10 @@
     
     <item>
       <title>HttpDNS 原理</title>
-      <link>http://renqilei.me/post/httpdns-overview/</link>
+      <link>http://renqilei.me/posts/httpdns-overview/</link>
       <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/httpdns-overview/</guid>
+      <guid>http://renqilei.me/posts/httpdns-overview/</guid>
       <description>DNS DNS（Domain Name System，域名系统），提供将网站域名转为 IP 地址的服务。 通常，需要通过 UDP 协议访问就近的 DNS 服务器，来查询域名的真实 I</description>
     </item>
     

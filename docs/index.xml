@@ -6,134 +6,143 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Dec 2018 18:59:53 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jan 2019 00:04:08 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Docker 开发指南</title>
+      <link>http://renqilei.me/reads/using-docker/</link>
+      <pubDate>Fri, 04 Jan 2019 00:04:08 +0800</pubDate>
+      
+      <guid>http://renqilei.me/reads/using-docker/</guid>
+      <description>《Docker 开发指南》出版于 2017 年初，英文原版则应该更早些。当时的 Docker 应该在 1.8。那时还没有 Moby，更没有现在如此完整的 Docker 生态圈。但早期的</description>
+    </item>
+    
+    <item>
       <title>CentOS 7 挂载磁盘</title>
-      <link>http://renqilei.me/post/mount-disk-on-centos7/</link>
+      <link>http://renqilei.me/posts/mount-disk-on-centos7/</link>
       <pubDate>Wed, 26 Dec 2018 18:59:53 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/mount-disk-on-centos7/</guid>
+      <guid>http://renqilei.me/posts/mount-disk-on-centos7/</guid>
       <description>下面的指令未特别指出，均需 root 权限 检查磁盘分区和挂载情况 fdisk -l 如果 Disk 下无 Device Boot 信息，则表示未进行磁盘分区。 df -h 如果 FileSystem 下无 /dev/[vdx] 的挂载信息，则表示未进行</description>
     </item>
     
     <item>
       <title>CentOS 7 安装 Docker</title>
-      <link>http://renqilei.me/post/deploy-docker-on-centos7/</link>
+      <link>http://renqilei.me/posts/deploy-docker-on-centos7/</link>
       <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/deploy-docker-on-centos7/</guid>
+      <guid>http://renqilei.me/posts/deploy-docker-on-centos7/</guid>
       <description>依赖 devicemapper CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：Compatibility Matrix。 lvm CentOS 7 上可以使</description>
     </item>
     
     <item>
       <title>CentOS 检查磁盘是否为 SSD</title>
-      <link>http://renqilei.me/post/centos-check-ssd/</link>
+      <link>http://renqilei.me/posts/centos-check-ssd/</link>
       <pubDate>Thu, 13 Dec 2018 15:14:02 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/centos-check-ssd/</guid>
+      <guid>http://renqilei.me/posts/centos-check-ssd/</guid>
       <description>cat /sys/block/[sda]/queue/rotational 打印结果： 0，即为 SSD 硬盘 1，即为机械硬盘 其中，[sda] 可以替换为各磁盘设备编号，其可以通过 fdisk -l 指令查看。</description>
     </item>
     
     <item>
       <title>Git subtree 的使用</title>
-      <link>http://renqilei.me/post/use-git-subtree/</link>
+      <link>http://renqilei.me/posts/use-git-subtree/</link>
       <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-git-subtree/</guid>
+      <guid>http://renqilei.me/posts/use-git-subtree/</guid>
       <description>场景 目前，git 的使用已是必不可少，但在实际生产开发过程中，不可避免的会出现这种的情况：项目 P1 和 P2 共用了一个项目 S。 使用中，我们希望保持项目</description>
     </item>
     
     <item>
       <title>CSS Flexbox 的使用</title>
-      <link>http://renqilei.me/post/use-css-flexbox/</link>
+      <link>http://renqilei.me/posts/use-css-flexbox/</link>
       <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-css-flexbox/</guid>
+      <guid>http://renqilei.me/posts/use-css-flexbox/</guid>
       <description>使用场景 多个 &amp;lt;div&amp;gt;&amp;lt;/div&amp;gt; 能够实现按序排列，而不是独占一行。如下面的例子，.container 内的 .item 能够按序排列。 &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;div class=&amp;quot;item&amp;quot;&amp;gt; &amp;lt;/div&amp;gt; ... &amp;lt;/div&amp;gt; 采用 flexbox 方案 父</description>
     </item>
     
     <item>
       <title>网络诊断工具 mtr</title>
-      <link>http://renqilei.me/post/use-mtr/</link>
+      <link>http://renqilei.me/posts/use-mtr/</link>
       <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-mtr/</guid>
+      <guid>http://renqilei.me/posts/use-mtr/</guid>
       <description>mtr 结合了 traceroute 和 ping 的功能，完成对网络的诊断。 不同于 traceroute 默认使用 UDP 数据包进行探测的是，mtr 默认使用 ICMP 报文进行探测，在某些路由器上 ICMP 的优先级低于其他</description>
     </item>
     
     <item>
       <title>Hugo 为不同的静态页面创建不同的页面模板</title>
-      <link>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</link>
+      <link>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</link>
       <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</guid>
+      <guid>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</guid>
       <description>背景 使用 Hugo 进行静态页面开发过程中，除了日常的博客文章记录外，准备新建一些“关于我（about me）”之类的特殊介绍性静态页面。 这类页面与普通</description>
     </item>
     
     <item>
       <title>中国官方 DRG 相关文件列表</title>
-      <link>http://renqilei.me/post/chinese-government-docs-for-drg/</link>
+      <link>http://renqilei.me/posts/chinese-government-docs-for-drg/</link>
       <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/chinese-government-docs-for-drg/</guid>
+      <guid>http://renqilei.me/posts/chinese-government-docs-for-drg/</guid>
       <description>下面是2011年至2018年国家和重点地方政府关于 DRG 的通知和指导意见。 2018，深圳人社局，《深圳市人力资源和社会保障局关于印发《深圳市社会</description>
     </item>
     
     <item>
       <title>HttpDNS 原理</title>
-      <link>http://renqilei.me/post/httpdns-overview/</link>
+      <link>http://renqilei.me/posts/httpdns-overview/</link>
       <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/httpdns-overview/</guid>
+      <guid>http://renqilei.me/posts/httpdns-overview/</guid>
       <description>DNS DNS（Domain Name System，域名系统），提供将网站域名转为 IP 地址的服务。 通常，需要通过 UDP 协议访问就近的 DNS 服务器，来查询域名的真实 I</description>
     </item>
     
     <item>
       <title>社交需求相关文档综述</title>
-      <link>http://renqilei.me/post/literature-review-on-social-requirements/</link>
+      <link>http://renqilei.me/posts/literature-review-on-social-requirements/</link>
       <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/literature-review-on-social-requirements/</guid>
+      <guid>http://renqilei.me/posts/literature-review-on-social-requirements/</guid>
       <description>《社交类用户习惯养成分析：叫好不叫座，中老年生意不好做？》 人群 中老年人 同质化的精神文化需求 组织归属感，集体活动 行为养成 背景 80%的人起床后1</description>
     </item>
     
     <item>
       <title>使用logrotate进行Nginx日志切割</title>
-      <link>http://renqilei.me/post/use-logrotate-on-nginx-logs/</link>
+      <link>http://renqilei.me/posts/use-logrotate-on-nginx-logs/</link>
       <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-logrotate-on-nginx-logs/</guid>
+      <guid>http://renqilei.me/posts/use-logrotate-on-nginx-logs/</guid>
       <description>使用 Nginx 过程中，我们一定会通过记录访问日志和错误日志来记录和分析用户行为和运行情况。但随着时间的推移，日志文件就会变得愈来愈大，乃至占满有限的</description>
     </item>
     
     <item>
       <title>CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</title>
-      <link>http://renqilei.me/post/deploy-lnpp-on-centos-7/</link>
+      <link>http://renqilei.me/posts/deploy-lnpp-on-centos-7/</link>
       <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/deploy-lnpp-on-centos-7/</guid>
+      <guid>http://renqilei.me/posts/deploy-lnpp-on-centos-7/</guid>
       <description>安装 安装版本： CentOS 7.3 64位 Nginx 1.10.2 PHP 7.1.6 PostgreSQL 9.2.18 CentOS 7 上的 PHP 版本较低。所以首先，我们需要强化一下我们的 yum，添加 EPEL 源和 Webtatic 源。 rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm 接下来我们就可以</description>
     </item>
     
     <item>
       <title>在 Mac 上优雅地使用 rz 和 sz</title>
-      <link>http://renqilei.me/post/use-rz-sz-on-mac/</link>
+      <link>http://renqilei.me/posts/use-rz-sz-on-mac/</link>
       <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-rz-sz-on-mac/</guid>
+      <guid>http://renqilei.me/posts/use-rz-sz-on-mac/</guid>
       <description>敲黑板：本文终端默认使用 iTerm2。 windows 上，通过 Xshell 和 SecureCRT 使用 rz/sz 时，都会弹出一个路径上传/下载选择窗口。 可 Mac 在手，不容掉粉啊。 本文就来介绍一下如</description>
     </item>
     
     <item>
       <title>CentOS 7 安装 PHP 7</title>
-      <link>http://renqilei.me/post/install-php-7-on-centos-7/</link>
+      <link>http://renqilei.me/posts/install-php-7-on-centos-7/</link>
       <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/install-php-7-on-centos-7/</guid>
+      <guid>http://renqilei.me/posts/install-php-7-on-centos-7/</guid>
       <description>CentOS 7 的官方 yum 源中提供的 PHP 版本为 5.4.16。这一版本已经无法满足 PHP 较新框架（如 Laravel 5）的使用需求。下面就提供一种“优雅”方法，实现在 CentOS 7 上安装</description>
     </item>
     

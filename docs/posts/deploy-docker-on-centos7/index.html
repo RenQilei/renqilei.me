@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>任琦磊的个人博客</title>
+
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+
+    <link href="/css/main.css" rel="stylesheet">
+
+    
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</head>
+
+<body>
+
+    <div id="baseof-wrapper">
+        <div class="row">
+
+            
+            <div class="col-12 d-lg-none" id="top-wrapper">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="http://renqilei.me/">
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
+                        aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="/">Home</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/posts/">Archives</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/tags/">Tags</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/reads/">Reads</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-9" id="main-wrapper">
+                <div id="main">
+                    
+  <div id="single">
+    <article class="post">
+      
+      <header class="post-header">
+        <h1 class="post-title">CentOS 7 安装 Docker</h1>
+  
+        <div class="post-meta">
+          <span class="post-time"> 2018年12月25日 </span>
+          <span class="post-category">
+              <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+              </span>
+          
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/centos/">CentOS</a>
+            <a href="/tags/docker/">docker</a>
+            </span></div>
+      </header>
+  
+      
+      
+  
+      
+      
+  
+      
+      <div class="post-content">
+        
+
+<h1 id="依赖">依赖</h1>
+
+<h2 id="devicemapper">devicemapper</h2>
+
+<p>CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：<a href="https://success.docker.com/article/compatibility-matrix">Compatibility Matrix</a>。</p>
+
+<h2 id="lvm">lvm</h2>
+
+<p>CentOS 7 上可以使用 lvm2 来管理 Linux 上逻辑卷的用户空间。</p>
+
+<h1 id="安装">安装</h1>
+
+<pre><code># 安装必要的一些系统工具
+sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+# 添加软件源信息
+sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+# 更新并安装Docker-CE
+sudo yum makecache fast
+sudo yum -y install docker-ce
+</code></pre>
+
+<h1 id="启动">启动</h1>
+
+<pre><code># 启动 Docker
+sudo systemctl start docker
+# 开启自启动
+sudo systemctl enable docker
+</code></pre>
+
+<h1 id="参考文档">参考文档</h1>
+
+<ul>
+<li><a href="https://help.aliyun.com/document_detail/60742.html?spm=a2c4g.11186623.6.547.5eca378brCWftp">安装Docker</a></li>
+<li><a href="https://www.yangcs.net/posts/use-devicemapper/">Device Mapper系列 (3)：Docker 中使用 devicemapper 存储驱动</a></li>
+</ul>
+
+      </div>
+  
+      
+      
+  
+      
+      
+  
+      <footer class="post-footer">
+  
+        
+        <nav class="post-nav">
+          <div class="prev">
+              <a href="/posts/mount-disk-on-centos7/">
+                <i class="fa fa-angle-up fa-lg" aria-hidden="true"></i>
+                <span class="prev-text nav-mobile">上一篇</span>
+                <span class="prev-text nav-default">CentOS 7 挂载磁盘</span>
+              </a>
+            </div>
+          <div class="next">
+              <a href="/posts/centos-check-ssd/">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">下一篇</span>
+                <span class="next-text nav-default">CentOS 检查磁盘是否为 SSD</span>
+              </a>
+            </div>
+        </nav>
+      </footer>
+    </article>
+  </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
+                <div id="sidebar">
+                    <div id="navigation">
+                        <ul class="list-unstyled">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="/">Home</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/posts/">Archives</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/tags/">Tags</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/reads/">Reads</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cc-license">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <i class="cc cc-by-nc-sa"></i>
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me<br />
+                        Proudly maintained by Qilei Ren,<br />
+                        and hosted on <a href="https://github.com/RenQilei/renqilei.me">Github</a>.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 d-lg-none" id="foot-wrapper">
+                <div id="foot">
+                    <div id="email">
+                        renqilei@foxmail.com
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="download-cv">
+
+                    </div>
+                    <div id="cc-license">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <i class="cc cc-by-nc-sa"></i>
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me<br />
+                        Proudly maintained by Qilei Ren,<br />
+                        and hosted on <a href="https://github.com/RenQilei/renqilei.me">Github</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>

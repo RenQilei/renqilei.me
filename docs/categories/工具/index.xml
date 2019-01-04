@@ -13,28 +13,28 @@
     
     <item>
       <title>Git subtree 的使用</title>
-      <link>http://renqilei.me/post/use-git-subtree/</link>
+      <link>http://renqilei.me/posts/use-git-subtree/</link>
       <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-git-subtree/</guid>
+      <guid>http://renqilei.me/posts/use-git-subtree/</guid>
       <description>场景 目前，git 的使用已是必不可少，但在实际生产开发过程中，不可避免的会出现这种的情况：项目 P1 和 P2 共用了一个项目 S。 使用中，我们希望保持项目</description>
     </item>
     
     <item>
       <title>网络诊断工具 mtr</title>
-      <link>http://renqilei.me/post/use-mtr/</link>
+      <link>http://renqilei.me/posts/use-mtr/</link>
       <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-mtr/</guid>
+      <guid>http://renqilei.me/posts/use-mtr/</guid>
       <description>mtr 结合了 traceroute 和 ping 的功能，完成对网络的诊断。 不同于 traceroute 默认使用 UDP 数据包进行探测的是，mtr 默认使用 ICMP 报文进行探测，在某些路由器上 ICMP 的优先级低于其他</description>
     </item>
     
     <item>
       <title>在 Mac 上优雅地使用 rz 和 sz</title>
-      <link>http://renqilei.me/post/use-rz-sz-on-mac/</link>
+      <link>http://renqilei.me/posts/use-rz-sz-on-mac/</link>
       <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-rz-sz-on-mac/</guid>
+      <guid>http://renqilei.me/posts/use-rz-sz-on-mac/</guid>
       <description>敲黑板：本文终端默认使用 iTerm2。 windows 上，通过 Xshell 和 SecureCRT 使用 rz/sz 时，都会弹出一个路径上传/下载选择窗口。 可 Mac 在手，不容掉粉啊。 本文就来介绍一下如</description>
     </item>
     

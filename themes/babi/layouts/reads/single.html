@@ -1,0 +1,85 @@
+{{ define "head" }}
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{{ end }}
+
+{{ define "content" }}
+  <div id="single">
+    <article class="post">
+      <!-- post-header -->
+      <header class="post-header">
+        <h1 class="post-title">《{{ .Title }}》读后小结</h1>
+  
+        <div class="post-meta">
+          <span class="post-time"> {{ .Date.Format (.Site.Params.dateFormatToUse | default "2006-01-02") }} </span>
+          {{ with .Params.categories -}}
+            <span class="post-category">
+              {{ range . -}}
+                <a href="{{ "categories" | relLangURL }}/{{ . | urlize }}/"> {{ . }} </a>
+              {{ end -}}
+            </span>
+          {{- end }}
+          {{- if .Site.Params.moreMeta }}
+            <span class="more-meta"> {{ T "wordCount" .WordCount }} </span>
+            <span class="more-meta"> {{ T "readingTime" .ReadingTime }} </span>
+          {{- end }}
+          {{ if and .Site.Params.busuanzi.enable .Site.Params.busuanzi.pagePV -}}
+            {{ $valueSpan := printf `<span id="busuanzi_value_page_pv"><img src="%s" alt="spinner.svg"/></span>` ("img/spinner.svg" | relURL) -}}
+            <span id="busuanzi_container_page_pv" class="more-meta"> {{ printf (T "pagePV") $valueSpan | safeHTML }} </span>
+          {{- end }}
+          {{ with .Params.tags -}}
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            {{ range . -}}
+              <a href="{{ "tags" | relLangURL }}/{{ . | urlize }}/">{{ . }}</a>
+            {{ end -}}
+          </span>
+        {{- end -}}
+        </div>
+      </header>
+  
+      <!-- TOC -->
+      {{/* partial "post/toc.html" . */}}
+  
+      <!-- Outdated Info Warning -->
+      {{/* partial "post/outdated-info-warning.html" . */}}
+  
+      <!-- Content -->
+      <div class="post-content">
+        {{ .Content }}
+      </div>
+  
+      <!-- Copyright -->
+      {{/* partial "post/copyright.html" . */}}
+  
+      <!-- Reward -->
+      {{/* partial "post/reward.html" . */}}
+  
+      <footer class="post-footer">
+  
+        <!-- Post Pagination -->
+        <nav class="post-nav">
+          {{ with .NextInSection -}}
+            <div class="prev">
+              <a href="{{ .URL }}">
+                <i class="fa fa-angle-up fa-lg" aria-hidden="true"></i>
+                <span class="prev-text nav-mobile">{{ T "prevPost" }}</span>
+                <span class="prev-text nav-default">{{ .Title }}</span>
+              </a>
+            </div>
+          {{- end }}
+          {{ with .PrevInSection -}}
+            <div class="next">
+              <a href="{{ .URL }}">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">{{ T "nextPost" }}</span>
+                <span class="next-text nav-default">{{ .Title }}</span>
+              </a>
+            </div>
+          {{- end }}
+        </nav>
+      </footer>
+    </article>
+  </div>
+{{- end }}

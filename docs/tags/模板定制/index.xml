@@ -13,10 +13,10 @@
     
     <item>
       <title>Hugo 为不同的静态页面创建不同的页面模板</title>
-      <link>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</link>
+      <link>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</link>
       <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/multi-templates-for-multi-static-pages-in-hugo/</guid>
+      <guid>http://renqilei.me/posts/multi-templates-for-multi-static-pages-in-hugo/</guid>
       <description>背景 使用 Hugo 进行静态页面开发过程中，除了日常的博客文章记录外，准备新建一些“关于我（about me）”之类的特殊介绍性静态页面。 这类页面与普通</description>
     </item>
     

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>任琦磊的个人博客</title>
+
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC|Roboto" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/cc-icons/1.2.1/css/cc-icons.min.css" rel="stylesheet">
+
+    <link href="/css/main.css" rel="stylesheet">
+
+    
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+</head>
+
+<body>
+
+    <div id="baseof-wrapper">
+        <div class="row">
+
+            
+            <div class="col-12 d-lg-none" id="top-wrapper">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="http://renqilei.me/">
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
+                        aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbar-toggler">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="/">Home</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/posts/">Archives</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/tags/">Tags</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/reads/">Reads</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-lg-9" id="main-wrapper">
+                <div id="main">
+                    
+  <div id="single">
+    <article class="post">
+      
+      <header class="post-header">
+        <h1 class="post-title">CentOS 7 挂载磁盘</h1>
+  
+        <div class="post-meta">
+          <span class="post-time"> 2018年12月26日 </span>
+          <span class="post-category">
+              <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+              </span>
+          
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/centos7/">CentOS7</a>
+            </span></div>
+      </header>
+  
+      
+      
+  
+      
+      
+  
+      
+      <div class="post-content">
+        
+
+<blockquote>
+<p>下面的指令未特别指出，均需 root 权限</p>
+</blockquote>
+
+<h1 id="检查磁盘分区和挂载情况">检查磁盘分区和挂载情况</h1>
+
+<pre><code>fdisk -l
+</code></pre>
+
+<p>如果 Disk 下无 Device Boot 信息，则表示未进行磁盘分区。</p>
+
+<pre><code>df -h
+</code></pre>
+
+<p>如果 FileSystem 下无 /dev/[vdx] 的挂载信息，则表示未进行磁盘挂载。其中，[vdx] 可能为其他命名方式，视实际信息查看。</p>
+
+<h1 id="磁盘分区">磁盘分区</h1>
+
+<pre><code>fdisk /dev/[vdx]
+</code></pre>
+
+<p>对磁盘进行初分区，需要根据提示键入指令，如果计划分区为单块物理分区，则依次输入 n, p, 1, ↩︎（回车）, ↩︎（回车），wq（保存）。</p>
+
+<p>完成分区后，可以通过 <code>fdisk -l</code> 查看分区情况。</p>
+
+<h1 id="磁盘格式化">磁盘格式化</h1>
+
+<pre><code>mkfs.ext4 /dev/[vdx1]
+</code></pre>
+
+<p>此处使用 ext4 格式对磁盘进行格式化，格式化的是方才创建完的新分区，<strong>（注意不是磁盘）</strong>。</p>
+
+<h1 id="挂载磁盘">挂载磁盘</h1>
+
+<pre><code>mount /dev/[vdx1] /[directory]
+</code></pre>
+
+<p>将格式化完成后的分区挂载在指定目录。</p>
+
+<p>其中，<code>/[directory]</code> 需要是存在的目录。如需要，可以通过 mkdir 新建。</p>
+
+<h1 id="将新分区写入系统">将新分区写入系统</h1>
+
+<pre><code>echo '/dev/[vdx1]   /[directory]    ext4    defaults    0   0'&gt;&gt; /etc/fstab
+</code></pre>
+
+      </div>
+  
+      
+      
+  
+      
+      
+  
+      <footer class="post-footer">
+  
+        
+        <nav class="post-nav">
+          
+          <div class="next">
+              <a href="/posts/deploy-docker-on-centos7/">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">下一篇</span>
+                <span class="next-text nav-default">CentOS 7 安装 Docker</span>
+              </a>
+            </div>
+        </nav>
+      </footer>
+    </article>
+  </div>
+                </div>
+            </div>
+
+            
+            <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
+                <div id="sidebar">
+                    <div id="navigation">
+                        <ul class="list-unstyled">
+                            <li class="menu-item">
+                                <a class="menu-item-link" href="/">Home</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/posts/">Archives</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/tags/">Tags</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/categories/">Categories</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/reads/">Reads</a>
+                            </li><li class="menu-item">
+                                <a class="menu-item-link" href="/resume/">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="cc-license">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <i class="cc cc-by-nc-sa"></i>
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me<br />
+                        Proudly maintained by Qilei Ren,<br />
+                        and hosted on <a href="https://github.com/RenQilei/renqilei.me">Github</a>.
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-12 d-lg-none" id="foot-wrapper">
+                <div id="foot">
+                    <div id="email">
+                        renqilei@foxmail.com
+                    </div>
+                    <div id="social">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://github.com/RenQilei">
+                                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/renqilei">
+                                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="download-cv">
+
+                    </div>
+                    <div id="cc-license">
+                        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                            <i class="cc cc-by-nc-sa"></i>
+                        </a>
+                    </div>
+                    <div id="copyright">
+                        &copy; 2018 renqilei.me<br />
+                        Proudly maintained by Qilei Ren,<br />
+                        and hosted on <a href="https://github.com/RenQilei/renqilei.me">Github</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>

@@ -13,10 +13,10 @@
     
     <item>
       <title>网络诊断工具 mtr</title>
-      <link>http://renqilei.me/post/use-mtr/</link>
+      <link>http://renqilei.me/posts/use-mtr/</link>
       <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
       
-      <guid>http://renqilei.me/post/use-mtr/</guid>
+      <guid>http://renqilei.me/posts/use-mtr/</guid>
       <description>mtr 结合了 traceroute 和 ping 的功能，完成对网络的诊断。 不同于 traceroute 默认使用 UDP 数据包进行探测的是，mtr 默认使用 ICMP 报文进行探测，在某些路由器上 ICMP 的优先级低于其他</description>
     </item>
     
