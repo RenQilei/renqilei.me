@@ -2,7 +2,7 @@
 
 <div id="index">
     <section id="posts" class="posts">
-        {{- $paginator := .Paginate (where (where .Data.Pages "Type" "post") ".Params.hiddenfromhomepage" "!=" true) }}
+        {{- $paginator := .Paginate (where (where .Data.Pages "Type" "posts") ".Params.hiddenfromhomepage" "!=" true) }}
         {{- range $paginator.Pages -}}
         {{ .Render "summary" }}
         {{- end -}}
