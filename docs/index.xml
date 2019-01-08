@@ -6,10 +6,19 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 04 Jan 2019 00:04:08 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jan 2019 23:36:34 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS 7 卸载文件系统</title>
+      <link>http://renqilei.me/posts/unmount-filesystem-on-centos7/</link>
+      <pubDate>Mon, 07 Jan 2019 23:36:34 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/unmount-filesystem-on-centos7/</guid>
+      <description>卸载文件系统（或设备）是基于已挂载的文件系统（或设备）进行操作的。CentOS 7 的文件系统挂载包括对磁盘的初始化和文件目录的挂载，具体可参考</description>
+    </item>
     
     <item>
       <title>Docker 开发指南</title>
