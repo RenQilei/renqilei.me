@@ -6,10 +6,19 @@
     <description>Recent content in CentOS7 on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 Jan 2019 23:36:34 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 19:17:55 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/centos7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CentOS 7 添加和删除 swap 分区</title>
+      <link>http://renqilei.me/posts/add-and-delete-swap-on-centos-7/</link>
+      <pubDate>Thu, 10 Jan 2019 19:17:55 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/add-and-delete-swap-on-centos-7/</guid>
+      <description>什么是 swap swap，中文名为交换空间。具体来说，Linux 将物理内存分为内存段，叫做页面。交换是指内存页面被复制到预先设定好的硬盘空间(叫做交</description>
+    </item>
     
     <item>
       <title>CentOS 7 卸载文件系统</title>

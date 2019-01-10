@@ -23,7 +23,7 @@ draft: false
 -V：显示版本信息。
 ```
 
-如果出现 ````umount``` 指令报错的情况，如 ```umount: /myfs: device is busy```，则为待写在文件系统仍在使用，可以通过 ```lsof``` 查看：
+如果出现 ```umount``` 指令报错的情况，如 ```umount: /myfs: device is busy```，则为待写在文件系统仍在使用，可以通过 ```lsof``` 查看：
 
 ```
 lsof | grep myfs
