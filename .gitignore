@@ -1,2 +1,4 @@
 .vscode
+.env
 deploy.sh
+node_modules

@@ -1,0 +1,27 @@
+{
+  "name": "renqilei.me",
+  "version": "1.0.0",
+  "description": "Personal website of Ren Qilei hosted on Hugo",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "atomic-algolia": "^0.3.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "algolia": "atomic-algolia"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenQilei/renqilei.me.git"
+  },
+  "author": "Ren Qilei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RenQilei/renqilei.me/issues"
+  },
+  "homepage": "https://github.com/RenQilei/renqilei.me#readme"
+}
