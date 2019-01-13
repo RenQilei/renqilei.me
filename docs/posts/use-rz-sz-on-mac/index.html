@@ -200,7 +200,12 @@ sudo chmod 777 /usr/local/bin/iterm2-*
             
             <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
                 <div id="search-wrapper">
-                    <div id="search-box"></div>
+                    <div id="search-box-wrapper">
+                        <div id="search-box"></div>
+                        <div id="search-icon">
+                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                        </div>
+                    </div>
                     <div id="search-hits"></div>
                     <div id="search-footer">
                         <div id="search-more">
@@ -298,6 +303,7 @@ sudo chmod 777 /usr/local/bin/iterm2-*
     <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
     <script>
+
         const searchClient = algoliasearch('JJT7T9HLJE', '010bdb6c7caebd6131ff54f2cf1d95e5');
 
         const search = instantsearch({
@@ -307,6 +313,8 @@ sudo chmod 777 /usr/local/bin/iterm2-*
 
         const searchBox = instantsearch.widgets.searchBox({
             container: '#search-box',
+            showSubmit: false,
+            showReset: false,
         });
 
         const hits = instantsearch.widgets.hits({
@@ -333,6 +341,17 @@ sudo chmod 777 /usr/local/bin/iterm2-*
                     search.removeWidgets([hits, poweredBy]);
                     $("#search-footer").hide();
                 }
+            });
+
+            $("#search-icon").click(function() {
+                $("ais-SearchBox-input").val("");
+                $("#search-box").toggle();
+            });
+
+            $("#top-wrapper, #main-wrapper, #sidebar, #foot-wrapper").click(function(){
+                search.removeWidgets([hits, poweredBy]);
+                $("#search-footer").hide();
+                $("#search-box").hide();
             });
         });
 

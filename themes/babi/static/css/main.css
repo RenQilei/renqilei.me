@@ -195,13 +195,45 @@ h2 {
       margin: 0 10%;
       padding-top: 15vh; }
     #baseof-wrapper #search-wrapper {
+      width: 100%;
+      margin: 0 4%;
       position: absolute;
       z-index: 9; }
-      #baseof-wrapper #search-wrapper #search-box {
-        margin-top: 3vh; }
+      #baseof-wrapper #search-wrapper #search-box-wrapper {
+        height: 36px;
+        width: 100%;
+        margin-top: 3vh;
+        display: inline-flex; }
+        #baseof-wrapper #search-wrapper #search-box-wrapper #search-box {
+          height: 36px;
+          width: calc(87% - 36px);
+          font-size: 0.92em;
+          display: none; }
+          #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox, #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox-form, #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox-input {
+            height: 36px;
+            width: calc(100% - 3px);
+            padding: 0; }
+          #baseof-wrapper #search-wrapper #search-box-wrapper #search-box *:not(span) {
+            height: 36px;
+            position: relative;
+            display: inherit;
+            border-radius: inherit;
+            margin: 0;
+            border: none;
+            outline: none;
+            padding: 0 .325em;
+            z-index: 1; }
+            #baseof-wrapper #search-wrapper #search-box-wrapper #search-box *:not(span):focus + span {
+              opacity: 1;
+              transform: scale(1); }
+        #baseof-wrapper #search-wrapper #search-box-wrapper #search-icon {
+          width: 36px;
+          margin: 5px 0;
+          color: #fff; }
       #baseof-wrapper #search-wrapper #search-hits {
-        width: 95%;
-        background-color: #fff; }
+        width: calc(87% - 45px);
+        background-color: #fff;
+        font-size: 0.92em; }
         #baseof-wrapper #search-wrapper #search-hits .ais-Hits--empty {
           padding: 5px 10px; }
         #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list {
@@ -221,15 +253,15 @@ h2 {
             color: #fff;
             text-decoration: none; }
       #baseof-wrapper #search-wrapper #search-footer {
-        width: 95%;
+        width: calc(87% - 45px);
         padding: 10px;
         background-color: #fff;
         display: none; }
         #baseof-wrapper #search-wrapper #search-footer #search-more {
-          width: 50%;
+          width: 40%;
           float: left; }
         #baseof-wrapper #search-wrapper #search-footer #powered-by {
-          width: 50%;
+          width: 60%;
           float: left;
           text-align: right; }
     #baseof-wrapper #sidebar-wrapper {
