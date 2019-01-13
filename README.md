@@ -23,7 +23,11 @@ All blogs are under the [CC BY-NC-SA 4.0 License](https://creativecommons.org/li
 
 Currently most blogs will be written in Chinese. So feel free to translate and pull request at anytime if you think it is valuable.
 
-### Project
+### Reads
+
+I am trying to encouraging myself to keep reading books whatever they are but finishing them. After each one, I will write down something about the conclusions, comments or thoughts, anything. Hope I could success.
+
+### Projects
 
 In progress.
 
@@ -34,6 +38,10 @@ I will update my resume regularly.
 I am always interested in new challenging job positions, as well as public welfare or academical projects.
 
 Please contact to me if I am suitable for any position or project.
+
+## References
+
+* [Static site search with Hugo + Algolia](https://forestry.io/blog/search-with-algolia-in-hugo/?q=&hPP=10&idx=blog&p=0)
 
 ## License
 

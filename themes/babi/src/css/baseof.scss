@@ -285,6 +285,68 @@ h2 {
                 }
             }
 
+            #search-wrapper {
+                position: absolute;
+                z-index:9;
+
+                #search-box {
+                    margin-top: 3vh;
+                }
+
+                #search-hits {
+                    width: 95%;
+                    background-color: #fff;
+
+                    .ais-Hits--empty {
+                        padding: 5px 10px;
+                    }
+
+                    .ais-Hits-list {
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: none;
+
+                        a {
+                            display: block;
+                            padding: 5px 10px;
+
+                            .hits-title {
+                                line-height: 1.5em;
+
+                                .ais-Highlight-highlighted {
+                                    color: #f84c11;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+
+                        a:hover {
+                            background-color: #f47645;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                #search-footer {
+                    width: 95%;
+                    padding: 10px;
+                    background-color: #fff;
+                    display: none;
+
+                    #search-more {
+                        width: 50%;
+                        float: left;
+                    }
+
+                    #powered-by {
+                        width: 50%;
+                        float: left;
+                        text-align: right;
+                    }
+                }
+            }
+
             #sidebar-wrapper {
                 height: 100vh;
                 background-color: #24292D;
