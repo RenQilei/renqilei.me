@@ -194,6 +194,44 @@ h2 {
     #baseof-wrapper #main-wrapper #main {
       margin: 0 10%;
       padding-top: 15vh; }
+    #baseof-wrapper #search-wrapper {
+      position: absolute;
+      z-index: 9; }
+      #baseof-wrapper #search-wrapper #search-box {
+        margin-top: 3vh; }
+      #baseof-wrapper #search-wrapper #search-hits {
+        width: 95%;
+        background-color: #fff; }
+        #baseof-wrapper #search-wrapper #search-hits .ais-Hits--empty {
+          padding: 5px 10px; }
+        #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list {
+          margin: 0;
+          padding: 0;
+          list-style-type: none; }
+          #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list a {
+            display: block;
+            padding: 5px 10px; }
+            #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list a .hits-title {
+              line-height: 1.5em; }
+              #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list a .hits-title .ais-Highlight-highlighted {
+                color: #f84c11;
+                font-weight: bold; }
+          #baseof-wrapper #search-wrapper #search-hits .ais-Hits-list a:hover {
+            background-color: #f47645;
+            color: #fff;
+            text-decoration: none; }
+      #baseof-wrapper #search-wrapper #search-footer {
+        width: 95%;
+        padding: 10px;
+        background-color: #fff;
+        display: none; }
+        #baseof-wrapper #search-wrapper #search-footer #search-more {
+          width: 50%;
+          float: left; }
+        #baseof-wrapper #search-wrapper #search-footer #powered-by {
+          width: 50%;
+          float: left;
+          text-align: right; }
     #baseof-wrapper #sidebar-wrapper {
       height: 100vh;
       background-color: #24292D;
