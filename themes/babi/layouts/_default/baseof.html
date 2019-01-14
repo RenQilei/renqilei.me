@@ -177,35 +177,39 @@
             });
 
             $searchIcon.click(function() {
+
                 $searchWrapper.animate({
                     left: '-50px'
-                }, 200)
+                }, 200, function() {
+                    $searchResult.show();
+                    $searchBox.show();
+                    $('.ais-SearchBox').animate({
+                        width: '100%'
+                    }, 200)
+                })
                 $searchIcon.addClass('active')
-                $searchInput.val('');
-                $searchResult.show();
-                $searchBox.toggle();
+
             });
 
             $D.on('click', function (e) {
                 const $con = $searchWrapper
                 if(!$con.is(e.target) && $con.has(e.target).length === 0){
                     $searchInput.val('');
-
                     // search.removeWidgets([hits, poweredBy]);
                     $searchWrapper.animate({
                         left: '0'
-                    }, 200)
+                    }, 200, function() {
+                        $('.ais-SearchBox').animate({
+                            width: '0%'
+                        }, 200, function() {
+                            $searchBox.hide()
+                            $searchResult.hide();
+                        })
+                    })
                     $searchIcon.removeClass('active')
-                    $searchBox.hide()
-                    $searchResult.hide();
+
                 }
             })
-
-            // $("#top-wrapper, #main-wrapper, #sidebar, #foot-wrapper").click(function(){
-                //search.removeWidgets([hits, poweredBy]);
-                //$("#search-footer").hide();
-              //  $("#search-box").hide();
-            //});
         });
 
         const searchClient = algoliasearch('JJT7T9HLJE', '010bdb6c7caebd6131ff54f2cf1d95e5');
