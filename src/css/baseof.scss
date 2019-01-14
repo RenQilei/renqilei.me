@@ -134,7 +134,7 @@ h2 {
                             font-size: 1.8em;
                         }
                     }
-                    
+
                     a:hover {
                         color: #f47645;
                         text-decoration: none;
@@ -250,7 +250,7 @@ h2 {
                                 font-size: 2em;
                             }
                         }
-                        
+
                         a:hover {
                             color: #f47645;
                             text-decoration: none;
@@ -299,15 +299,25 @@ h2 {
 
                     #search-box {
                         height: 36px;
-                        width: calc(87% - 36px);
+                        width: calc(98% - 36px);
                         font-size: 0.92em;
                         display: none;
-
-                        .ais-SearchBox, .ais-SearchBox-form, .ais-SearchBox-input {
-                            height: 36px;
-                            width: calc(100% - 3px);
+                        .ais-SearchBox {
                             padding: 0;
+                            height: 36px;
+                            width: 100%;
+
+                            .ais-SearchBox-form {
+                                padding: 0;
+
+                                .ais-SearchBox-input {
+                                    padding: 0 0 0 10px;
+                                    width: 100%;
+                                }
+                            }
                         }
+
+
 
                         *:not(span) {
                             height: 36px;
@@ -319,7 +329,7 @@ h2 {
                             outline: none;
                             padding: 0 .325em;
                             z-index: 1; // needs to be above the :focus span
-                            
+
                             // summon fancy shadow styles when focussed
                             &:focus + span {
                                 opacity: 1;
@@ -330,62 +340,78 @@ h2 {
 
                     #search-icon {
                         width: 36px;
-                        margin: 5px 0;
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: center;
                         color: #fff;
+                        transition: all .3s;
+                        cursor: pointer;
+                        &:hover {
+                            color: #24292D;
+                            background-color: #fff;
+                        }
+                        &.active {
+                            color: #fff;
+                            background-color: #24292D;
+                        }
                     }
                 }
+                #search-result {
+                    margin-left: 36px;
+                    width: calc(98% - 36px);
 
-                #search-hits {
-                    width: calc(87% - 45px);
-                    background-color: #fff;
-                    font-size: 0.92em;
+                    #search-hits {
+                        width: 100%;
+                        background-color: #fff;
+                        font-size: 0.92em;
 
-                    .ais-Hits--empty {
-                        padding: 5px 10px;
-                    }
-
-                    .ais-Hits-list {
-                        margin: 0;
-                        padding: 0;
-                        list-style-type: none;
-
-                        a {
-                            display: block;
+                        .ais-Hits--empty {
                             padding: 5px 10px;
+                        }
 
-                            .hits-title {
-                                line-height: 1.5em;
+                        .ais-Hits-list {
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: none;
 
-                                .ais-Highlight-highlighted {
-                                    color: #f84c11;
-                                    font-weight: bold;
+                            a {
+                                display: block;
+                                padding: 5px 10px;
+
+                                .hits-title {
+                                    line-height: 1.5em;
+
+                                    .ais-Highlight-highlighted {
+                                        color: #f84c11;
+                                        font-weight: bold;
+                                    }
                                 }
                             }
-                        }
 
-                        a:hover {
-                            background-color: #f47645;
-                            color: #fff;
-                            text-decoration: none;
+                            a:hover {
+                                background-color: #f47645;
+                                color: #fff;
+                                text-decoration: none;
+                            }
                         }
                     }
-                }
 
-                #search-footer {
-                    width: calc(87% - 45px);
-                    padding: 10px;
-                    background-color: #fff;
-                    display: none;
+                    #search-footer {
+                        width: 100%;
+                        padding: 10px;
+                        background-color: #fff;
+                        display: none;
 
-                    #search-more {
-                        width: 40%;
-                        float: left;
-                    }
+                        #search-more {
+                            width: 40%;
+                            float: left;
+                        }
 
-                    #powered-by {
-                        width: 60%;
-                        float: left;
-                        text-align: right;
+                        #powered-by {
+                            width: 60%;
+                            float: left;
+                            text-align: right;
+                        }
                     }
                 }
             }
@@ -439,7 +465,7 @@ h2 {
                                 font-size: 2em;
                             }
                         }
-                        
+
                         a:hover {
                             color: #f47645;
                             text-decoration: none;
