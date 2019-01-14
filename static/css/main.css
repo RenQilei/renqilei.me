@@ -205,14 +205,14 @@ h2 {
         margin-top: 3vh;
         display: inline-flex; }
         #baseof-wrapper #search-wrapper #search-box-wrapper #search-box {
+          display: none;
           height: 36px;
           width: calc(98% - 36px);
-          font-size: 0.92em;
-          display: none; }
+          font-size: 0.92em; }
           #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox {
             padding: 0;
             height: 36px;
-            width: 100%; }
+            width: 0%; }
             #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox .ais-SearchBox-form {
               padding: 0; }
               #baseof-wrapper #search-wrapper #search-box-wrapper #search-box .ais-SearchBox .ais-SearchBox-form .ais-SearchBox-input {
@@ -247,7 +247,9 @@ h2 {
             background-color: #24292D; }
       #baseof-wrapper #search-wrapper #search-result {
         margin-left: 36px;
-        width: calc(98% - 36px); }
+        width: calc(98% - 36px);
+        border-top: 1px solid #24292D;
+        border-left: 1px solid #24292D; }
         #baseof-wrapper #search-wrapper #search-result #search-hits {
           width: 100%;
           background-color: #fff;
