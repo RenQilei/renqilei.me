@@ -140,18 +140,21 @@
             <div class="col-lg-3 d-none d-lg-block" id="sidebar-wrapper">
                 <div id="search-wrapper">
                     <div id="search-box-wrapper">
-                        <div id="search-box"></div>
                         <div id="search-icon">
                             <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                         </div>
+                        <div id="search-box"></div>
                     </div>
-                    <div id="search-hits"></div>
-                    <div id="search-footer">
-                        <div id="search-more">
-                            &nbsp;
+                    <div id="search-result">
+                        <div id="search-hits"></div>
+                        <div id="search-footer-wrapper">
+                                <div id="search-footer">
+                                        <div id="search-more">
+                                            <a href="">查看全部</a>&nbsp;
+                                        </div>
+                                        <div id="powered-by"></div>
+                                    </div>
                         </div>
-                        <div id="powered-by"></div>
-                        <div style="clear: both;"></div>
                     </div>
                 </div>
                 <div id="sidebar">
@@ -243,6 +246,66 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
     <script>
 
+        $(document).ready(function(){
+            const $D = $(document)
+            const $searchWrapper = $('#search-wrapper')
+            const $searchBox = $('#search-box')
+            const $searchIcon = $searchWrapper.find('#search-icon')
+            const $searchResult = $searchWrapper.find('#search-result')
+            const $searchInput = $('.ais-SearchBox-input')
+            const $searchFooter = $('#search-footer-wrapper')
+
+            $('.ais-SearchBox-input').bind('input propertychange', function() {
+                if($(this).val().length != 0) {
+                    search.addWidgets([hits, poweredBy]);
+                    $searchResult.show();
+                    $searchFooter.show();
+                }
+                else {
+                    search.removeWidgets([hits, poweredBy]);
+                    $searchResult.hide();
+                    $searchFooter.hide();
+                }
+            });
+
+            $searchIcon.click(function() {
+
+                $searchWrapper.animate({
+                    left: '-45px'
+                }, 200, function() {
+                    $searchInput.val('');
+                    $searchBox.show();
+                    $('.ais-SearchBox').animate({
+                        width: '100%'
+                    }, 200)
+                })
+                $searchIcon.addClass('active')
+
+            });
+
+            $D.bind('click', function (e) {
+                const $con = $searchWrapper
+                if(!$con.is(e.target) && $con.has(e.target).length === 0){
+                    if($searchInput.val().length != 0) {
+                        search.removeWidgets([hits, poweredBy]);
+                    }
+                    $searchWrapper.animate({
+                        left: '4%'
+                    }, 200, function() {
+                        $('.ais-SearchBox').animate({
+                            width: '0%'
+                        }, 200, function() {
+                            $searchBox.hide()
+                            $searchResult.hide();
+                            $searchFooter.hide();
+                        })
+                    })
+                    $searchIcon.removeClass('active')
+
+                }
+            })
+        });
+
         const searchClient = algoliasearch('JJT7T9HLJE', '010bdb6c7caebd6131ff54f2cf1d95e5');
 
         const search = instantsearch({
@@ -269,38 +332,6 @@
         });
 
         search.addWidgets([searchBox]);
-
-        $(document).ready(function(){
-            $('.ais-SearchBox-input').bind('input propertychange', function() {
-                if($(this).val().length != 0) {
-                    search.addWidgets([hits, poweredBy]);
-                    $("#search-footer").show();
-                }
-                else {
-                    search.removeWidgets([hits, poweredBy]);
-                    $("#search-footer").hide();
-                }
-            });
-
-            $("#search-icon").click(function() {
-                $("ais-SearchBox-input").val("");
-                $("#search-box").toggle();
-            });
-
-            $("#top-wrapper, #main-wrapper, #sidebar, #foot-wrapper").click(function(){
-                search.removeWidgets([hits, poweredBy]);
-                $("#search-footer").hide();
-                $("#search-box").hide();
-            });
-        });
-
-        search.addWidget(
-            instantsearch.widgets.configure({
-                hitsPerPage: 8,
-                distinct: true,
-                clickAnalytics: true,
-            })
-        );
 
         search.start();
 
