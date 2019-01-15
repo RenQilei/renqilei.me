@@ -66,12 +66,13 @@
                     </div>
                     <div id="search-result">
                         <div id="search-hits"></div>
-                        <div id="search-footer">
-                            <div id="search-more">
-                                <!-- <a href="">查看全部</a> -->&nbsp;
-                            </div>
-                            <div id="powered-by"></div>
-                            <div style="clear: both;"></div>
+                        <div id="search-footer-wrapper">
+                                <div id="search-footer">
+                                        <div id="search-more">
+                                            <a href="">查看全部</a>&nbsp;
+                                        </div>
+                                        <div id="powered-by"></div>
+                                    </div>
                         </div>
                     </div>
                 </div>
@@ -163,15 +164,17 @@
             const $searchIcon = $searchWrapper.find('#search-icon')
             const $searchResult = $searchWrapper.find('#search-result')
             const $searchInput = $('.ais-SearchBox-input')
-            const $searchFooter = $('#search-footer')
+            const $searchFooter = $('#search-footer-wrapper')
 
             $('.ais-SearchBox-input').bind('input propertychange', function() {
                 if($(this).val().length != 0) {
                     search.addWidgets([hits, poweredBy]);
+                    $searchResult.show();
                     $searchFooter.show();
                 }
                 else {
                     search.removeWidgets([hits, poweredBy]);
+                    $searchResult.hide();
                     $searchFooter.hide();
                 }
             });
@@ -179,9 +182,9 @@
             $searchIcon.click(function() {
 
                 $searchWrapper.animate({
-                    left: '-50px'
+                    left: '-45px'
                 }, 200, function() {
-                    $searchResult.show();
+                    $searchInput.val('');
                     $searchBox.show();
                     $('.ais-SearchBox').animate({
                         width: '100%'
@@ -191,19 +194,21 @@
 
             });
 
-            $D.on('click', function (e) {
+            $D.bind('click', function (e) {
                 const $con = $searchWrapper
                 if(!$con.is(e.target) && $con.has(e.target).length === 0){
-                    $searchInput.val('');
-                    // search.removeWidgets([hits, poweredBy]);
+                    if($searchInput.val().length != 0) {
+                        search.removeWidgets([hits, poweredBy]);
+                    }
                     $searchWrapper.animate({
-                        left: '0'
+                        left: '4%'
                     }, 200, function() {
                         $('.ais-SearchBox').animate({
                             width: '0%'
                         }, 200, function() {
                             $searchBox.hide()
                             $searchResult.hide();
+                            $searchFooter.hide();
                         })
                     })
                     $searchIcon.removeClass('active')
@@ -244,14 +249,6 @@
         });
 
         search.addWidgets([searchBox]);
-
-        search.addWidget(
-            instantsearch.widgets.configure({
-                hitsPerPage: 8,
-                distinct: true,
-                clickAnalytics: true,
-            })
-        );
 
         search.start();
 
