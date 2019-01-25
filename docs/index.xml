@@ -6,10 +6,19 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 10 Jan 2019 19:17:55 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jan 2019 00:17:01 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSH 登录报错 Authentication refused: bad ownership or modes for directory</title>
+      <link>http://renqilei.me/posts/ssh-authentication-refused/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/ssh-authentication-refused/</guid>
+      <description>在一次服务器故障后，发现常用的非 root 用户无法正常登录服务器了。通过 root 登录后查看 /var/log/secure，其报错为：Authenticat</description>
+    </item>
     
     <item>
       <title>CentOS 7 添加和删除 swap 分区</title>

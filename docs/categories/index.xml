@@ -11,11 +11,38 @@
     
     
     <item>
+      <title>CentOS</title>
+      <link>http://renqilei.me/categories/centos/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hugo</title>
       <link>http://renqilei.me/categories/hugo/</link>
       <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
       
       <guid>http://renqilei.me/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://renqilei.me/categories/linux/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>http://renqilei.me/categories/ssh/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/ssh/</guid>
       <description></description>
     </item>
     

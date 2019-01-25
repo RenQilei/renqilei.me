@@ -6,10 +6,19 @@
     <description>Recent content in 页面 on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Nov 2018 11:33:34 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jan 2019 00:17:01 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSH 登录报错 Authentication refused: bad ownership or modes for directory</title>
+      <link>http://renqilei.me/posts/ssh-authentication-refused/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/ssh-authentication-refused/</guid>
+      <description>在一次服务器故障后，发现常用的非 root 用户无法正常登录服务器了。通过 root 登录后查看 /var/log/secure，其报错为：Authenticat</description>
+    </item>
     
     <item>
       <title>Hugo 为不同的静态页面创建不同的页面模板</title>
