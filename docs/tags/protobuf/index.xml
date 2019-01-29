@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mac on Randy&#39;s Blog</title>
-    <link>http://renqilei.me/tags/mac/</link>
-    <description>Recent content in mac on Randy&#39;s Blog</description>
+    <title>protobuf on Randy&#39;s Blog</title>
+    <link>http://renqilei.me/tags/protobuf/</link>
+    <description>Recent content in protobuf on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 28 Jan 2019 17:47:29 +0800</lastBuildDate>
     
-	<atom:link href="http://renqilei.me/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://renqilei.me/tags/protobuf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://renqilei.me/posts/use-google-protobuf-in-php-project/</guid>
       <description>使用 brew 安装 protobuf brew 安装 protobuf： brew install protobuf 检查是否安装成功： protoc --version 源码安装 php-protobuf 下载 allegro/php-protobuf 项目并编译安装： git clone https://github.com/allegro/php-protobuf cd php-protobuf composer install ./configure make make install 检查 php.ini 的路径并编辑添加</description>
-    </item>
-    
-    <item>
-      <title>在 Mac 上优雅地使用 rz 和 sz</title>
-      <link>http://renqilei.me/posts/use-rz-sz-on-mac/</link>
-      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/posts/use-rz-sz-on-mac/</guid>
-      <description>敲黑板：本文终端默认使用 iTerm2。 windows 上，通过 Xshell 和 SecureCRT 使用 rz/sz 时，都会弹出一个路径上传/下载选择窗口。 可 Mac 在手，不容掉粉啊。 本文就来介绍一下如</description>
     </item>
     
   </channel>
