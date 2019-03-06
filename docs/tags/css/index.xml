@@ -6,10 +6,19 @@
     <description>Recent content in CSS on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Dec 2018 19:07:01 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 00:18:09 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于 CSS 文字两端对齐的小结</title>
+      <link>http://renqilei.me/posts/summary-of-css-paragraph-justify/</link>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/summary-of-css-paragraph-justify/</guid>
+      <description>最近网页开发中，碰到一个需求：希望对文字实现两端对齐。 第一时间使用了 text-align: justify。但发现一个问题，如果是单行文字，中文可以实现两端对齐，</description>
+    </item>
     
     <item>
       <title>CSS Flexbox 的使用</title>

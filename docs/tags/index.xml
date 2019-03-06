@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Dec 2018 19:07:01 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 Mar 2019 00:18:09 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>CSS</title>
       <link>http://renqilei.me/tags/css/</link>
-      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/css/</guid>
       <description></description>
@@ -314,6 +314,15 @@
       <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</guid>
       <description></description>
     </item>
     
