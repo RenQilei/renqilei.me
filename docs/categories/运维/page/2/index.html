@@ -3,7 +3,6 @@
 <html lang="zh-cn">
 
 <head>
-	<meta name="generator" content="Hugo 0.51" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -69,80 +68,28 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <div id="index">
-    <section id="posts" class="posts"><article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/posts/mount-disk-on-centos7/">CentOS 7 挂载磁盘</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月26日 </span>
-      <span class="post-category">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
-          </span>
-    </div>
-  </header>
+                    <section id="archive" class="archive">
   
-  <div class="post-content">
-    <div class="post-summary">
-      下面的指令未特别指出，均需 root 权限 检查磁盘分区和挂载情况 fdisk -l 如果 Disk 下无 Device Boot 信息，则表示未进行磁盘分区。 df -h 如果 FileSystem 下无 /dev/[vdx] 的挂载信息，则表示未进行
+
+  <div class="archive-post">
+      <span class="archive-post-time">
+        2017年07月25日
+      </span>
+      <span class="archive-post-title">
+        <a href="/posts/install-php-7-on-centos-7/" class="archive-post-link">
+          CentOS 7 安装 PHP 7
+        </a>
+      </span>
     </div>
-    <div class="read-more">
-      <a href="/posts/mount-disk-on-centos7/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/posts/deploy-docker-on-centos7/">CentOS 7 安装 Docker</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月25日 </span>
-      <span class="post-category">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
-          </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      依赖 devicemapper CentOS 7 上需要安装 devicemapper 存储驱动来支持 Docker 的安装。具体 Docker 在各操作系统中使用的存储驱动参考：Compatibility Matrix。 lvm CentOS 7 上可以使
-    </div>
-    <div class="read-more">
-      <a href="/posts/deploy-docker-on-centos7/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-<article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/posts/centos-check-ssd/">CentOS 检查磁盘是否为 SSD</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2018年12月13日 </span>
-      <span class="post-category">
-          <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
-          </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      cat /sys/block/[sda]/queue/rotational 打印结果： 0，即为 SSD 硬盘 1，即为机械硬盘 其中，[sda] 可以替换为各磁盘设备编号，其可以通过 fdisk -l 指令查看。
-    </div>
-    <div class="read-more">
-      <a href="/posts/centos-check-ssd/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
 </section>
-    
-    <nav id="pagination">
-        <a class="prev" href="/page/2/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text">上一页</span>
-        </a>
-        <a class="next" href="/page/4/">
-            <span class="next-text">下一页</span>
-            <i class="iconfont icon-right"></i>
-        </a>
-    </nav>
-</div>
+
+<nav class="pagination">
+  <a class="prev" href="/categories/%E8%BF%90%E7%BB%B4/">
+      <i class="iconfont icon-left"></i>
+      <span class="prev-text">上一页</span>
+    </a>
+  
+</nav>
                 </div>
             </div>
 
