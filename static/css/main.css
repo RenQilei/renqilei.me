@@ -320,6 +320,13 @@ h2 {
           #baseof-wrapper #sidebar-wrapper #sidebar #cc-license a:hover {
             color: #f47645;
             text-decoration: none; }
+        #baseof-wrapper #sidebar-wrapper #sidebar #anti-996-license {
+          margin-top: 10px; }
+          #baseof-wrapper #sidebar-wrapper #sidebar #anti-996-license a:hover {
+            color: #24292D;
+            text-decoration: none; }
+          #baseof-wrapper #sidebar-wrapper #sidebar #anti-996-license p {
+            margin-top: 3px; }
         #baseof-wrapper #sidebar-wrapper #sidebar #copyright {
           margin-top: 10px;
           font-size: 0.8em;
