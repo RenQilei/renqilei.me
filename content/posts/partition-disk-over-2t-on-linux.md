@@ -61,6 +61,10 @@ Number  Start   End     Size    File system  Name     Flags
 Information: You may need to update /etc/fstab.
 ```
 
+上面打印的信息中，Number 对应当前的分区，如上面的分区即为 ```/dev/sdb1```。
+
+当然，如果需要删除已分区的磁盘，可以直接通过 ```(parted) rm number``` 完成。
+
 # 参考文档
 
 * [CentOS下使用parted分区工具分区大于2T硬盘](http://zhmgz.lofter.com/post/90909_6bb1ed3)

@@ -6,10 +6,19 @@
     <description>Recent content on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Apr 2019 14:50:45 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Apr 2019 00:30:12 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>反转</title>
+      <link>http://renqilei.me/reads/reverse-kanae-minato/</link>
+      <pubDate>Thu, 25 Apr 2019 00:30:12 +0800</pubDate>
+      
+      <guid>http://renqilei.me/reads/reverse-kanae-minato/</guid>
+      <description>这是第一次接触凑佳苗的书，亦是一本典型的日本悬疑类小说，豆瓣高分日剧《逆转重生》的原著小说。 全书由两根时间线和一个故事内核交织完成，有着大量</description>
+    </item>
     
     <item>
       <title>Linux 上分区大于 2T 的磁盘</title>
