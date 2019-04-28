@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>CDH本地镜像源的部署</title>
+      <link>http://renqilei.me/posts/cdh-repo-local-source-deployment/</link>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/cdh-repo-local-source-deployment/</guid>
+      <description>CDH 是 Cloudera 提供的开源企业级大数据工具集，包括 Hadoop、Flume、HBase、Hive 等一系列资源。 本文基于 CentOS 7，完成了 CDH 本地 yum 镜像源的制作</description>
+    </item>
+    
+    <item>
       <title>Linux 上分区大于 2T 的磁盘</title>
       <link>http://renqilei.me/posts/partition-disk-over-2t-on-linux/</link>
       <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>

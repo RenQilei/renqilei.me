@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Mar 2019 00:18:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 20 Apr 2019 14:50:45 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CDH</title>
+      <link>http://renqilei.me/tags/cdh/</link>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/cdh/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CSS</title>
@@ -32,7 +41,7 @@
     <item>
       <title>CentOS7</title>
       <link>http://renqilei.me/tags/centos7/</link>
-      <pubDate>Thu, 10 Jan 2019 19:17:55 +0800</pubDate>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/centos7/</guid>
       <description></description>
@@ -264,6 +273,15 @@
     </item>
     
     <item>
+      <title>repo</title>
+      <link>http://renqilei.me/tags/repo/</link>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/repo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>rz/sz</title>
       <link>http://renqilei.me/tags/rz-sz/</link>
       <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
@@ -293,7 +311,7 @@
     <item>
       <title>yum</title>
       <link>http://renqilei.me/tags/yum/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/yum/</guid>
       <description></description>
