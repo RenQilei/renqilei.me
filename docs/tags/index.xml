@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Apr 2019 14:50:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 May 2019 00:34:57 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://renqilei.me/tags/kubernetes/</link>
+      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/kubernetes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>CDH</title>
@@ -17,24 +26,6 @@
       <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/cdh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CSS</title>
-      <link>http://renqilei.me/tags/css/</link>
-      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CentOS</title>
-      <link>http://renqilei.me/tags/centos/</link>
-      <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/centos/</guid>
       <description></description>
     </item>
     
@@ -48,227 +39,11 @@
     </item>
     
     <item>
-      <title>DRG</title>
-      <link>http://renqilei.me/tags/drg/</link>
-      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/drg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://renqilei.me/tags/hugo/</link>
-      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Linux</title>
       <link>http://renqilei.me/tags/linux/</link>
       <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nginx</title>
-      <link>http://renqilei.me/tags/nginx/</link>
-      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PHP</title>
-      <link>http://renqilei.me/tags/php/</link>
-      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PHP7</title>
-      <link>http://renqilei.me/tags/php7/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PostgreSQL</title>
-      <link>http://renqilei.me/tags/postgresql/</link>
-      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/postgresql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SSD</title>
-      <link>http://renqilei.me/tags/ssd/</link>
-      <pubDate>Thu, 13 Dec 2018 15:14:02 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/ssd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>http://renqilei.me/tags/docker/</link>
-      <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>epel</title>
-      <link>http://renqilei.me/tags/epel/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/epel/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>flexbox</title>
-      <link>http://renqilei.me/tags/flexbox/</link>
-      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/flexbox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>http://renqilei.me/tags/git/</link>
-      <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>httpdns</title>
-      <link>http://renqilei.me/tags/httpdns/</link>
-      <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/httpdns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iterm2</title>
-      <link>http://renqilei.me/tags/iterm2/</link>
-      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/iterm2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>iterm2-zmodem</title>
-      <link>http://renqilei.me/tags/iterm2-zmodem/</link>
-      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/iterm2-zmodem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>http://renqilei.me/tags/linux/</link>
-      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/linux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lnpp</title>
-      <link>http://renqilei.me/tags/lnpp/</link>
-      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/lnpp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>logrotate</title>
-      <link>http://renqilei.me/tags/logrotate/</link>
-      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/logrotate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>lrzsz</title>
-      <link>http://renqilei.me/tags/lrzsz/</link>
-      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/lrzsz/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mac</title>
-      <link>http://renqilei.me/tags/mac/</link>
-      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/mac/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mtr</title>
-      <link>http://renqilei.me/tags/mtr/</link>
-      <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/mtr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>http://renqilei.me/tags/php/</link>
-      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php-fpm</title>
-      <link>http://renqilei.me/tags/php-fpm/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php-fpm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php-opcache</title>
-      <link>http://renqilei.me/tags/php-opcache/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php-opcache/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>protobuf</title>
-      <link>http://renqilei.me/tags/protobuf/</link>
-      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/protobuf/</guid>
       <description></description>
     </item>
     
@@ -282,11 +57,128 @@
     </item>
     
     <item>
-      <title>rz/sz</title>
-      <link>http://renqilei.me/tags/rz-sz/</link>
-      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      <title>yum</title>
+      <link>http://renqilei.me/tags/yum/</link>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/rz-sz/</guid>
+      <guid>http://renqilei.me/tags/yum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>磁盘</title>
+      <link>http://renqilei.me/tags/%E7%A3%81%E7%9B%98/</link>
+      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E7%A3%81%E7%9B%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>http://renqilei.me/tags/css/</link>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>前端</title>
+      <link>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</link>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mac</title>
+      <link>http://renqilei.me/tags/mac/</link>
+      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>http://renqilei.me/tags/php/</link>
+      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>protobuf</title>
+      <link>http://renqilei.me/tags/protobuf/</link>
+      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/protobuf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://renqilei.me/tags/hugo/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>模板定制</title>
+      <link>http://renqilei.me/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>页面</title>
+      <link>http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/</link>
+      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CentOS</title>
+      <link>http://renqilei.me/tags/centos/</link>
+      <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>http://renqilei.me/tags/docker/</link>
+      <pubDate>Tue, 25 Dec 2018 17:35:50 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSD</title>
+      <link>http://renqilei.me/tags/ssd/</link>
+      <pubDate>Thu, 13 Dec 2018 15:14:02 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/ssd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>http://renqilei.me/tags/git/</link>
+      <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/git/</guid>
       <description></description>
     </item>
     
@@ -300,47 +192,29 @@
     </item>
     
     <item>
-      <title>webtatic</title>
-      <link>http://renqilei.me/tags/webtatic/</link>
-      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      <title>flexbox</title>
+      <link>http://renqilei.me/tags/flexbox/</link>
+      <pubDate>Tue, 11 Dec 2018 19:07:01 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/webtatic/</guid>
+      <guid>http://renqilei.me/tags/flexbox/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>yum</title>
-      <link>http://renqilei.me/tags/yum/</link>
-      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      <title>mtr</title>
+      <link>http://renqilei.me/tags/mtr/</link>
+      <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/yum/</guid>
+      <guid>http://renqilei.me/tags/mtr/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>产品</title>
-      <link>http://renqilei.me/tags/%E4%BA%A7%E5%93%81/</link>
-      <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
+      <title>DRG</title>
+      <link>http://renqilei.me/tags/drg/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/%E4%BA%A7%E5%93%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>人人都是产品经理</title>
-      <link>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</link>
-      <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>前端</title>
-      <link>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</link>
-      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/%E5%89%8D%E7%AB%AF/</guid>
+      <guid>http://renqilei.me/tags/drg/</guid>
       <description></description>
     </item>
     
@@ -363,20 +237,29 @@
     </item>
     
     <item>
-      <title>模板定制</title>
-      <link>http://renqilei.me/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</link>
-      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      <title>httpdns</title>
+      <link>http://renqilei.me/tags/httpdns/</link>
+      <pubDate>Wed, 21 Nov 2018 19:29:48 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/%E6%A8%A1%E6%9D%BF%E5%AE%9A%E5%88%B6/</guid>
+      <guid>http://renqilei.me/tags/httpdns/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>磁盘</title>
-      <link>http://renqilei.me/tags/%E7%A3%81%E7%9B%98/</link>
-      <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
+      <title>产品</title>
+      <link>http://renqilei.me/tags/%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/%E7%A3%81%E7%9B%98/</guid>
+      <guid>http://renqilei.me/tags/%E4%BA%A7%E5%93%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>人人都是产品经理</title>
+      <link>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</link>
+      <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/%E4%BA%BA%E4%BA%BA%E9%83%BD%E6%98%AF%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86/</guid>
       <description></description>
     </item>
     
@@ -390,11 +273,119 @@
     </item>
     
     <item>
-      <title>页面</title>
-      <link>http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/</link>
-      <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
+      <title>Nginx</title>
+      <link>http://renqilei.me/tags/nginx/</link>
+      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
       
-      <guid>http://renqilei.me/tags/%E9%A1%B5%E9%9D%A2/</guid>
+      <guid>http://renqilei.me/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logrotate</title>
+      <link>http://renqilei.me/tags/logrotate/</link>
+      <pubDate>Sun, 11 Nov 2018 12:11:44 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/logrotate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PostgreSQL</title>
+      <link>http://renqilei.me/tags/postgresql/</link>
+      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lnpp</title>
+      <link>http://renqilei.me/tags/lnpp/</link>
+      <pubDate>Wed, 26 Jul 2017 14:25:31 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/lnpp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iterm2</title>
+      <link>http://renqilei.me/tags/iterm2/</link>
+      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/iterm2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iterm2-zmodem</title>
+      <link>http://renqilei.me/tags/iterm2-zmodem/</link>
+      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/iterm2-zmodem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lrzsz</title>
+      <link>http://renqilei.me/tags/lrzsz/</link>
+      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/lrzsz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rz/sz</title>
+      <link>http://renqilei.me/tags/rz/sz/</link>
+      <pubDate>Tue, 25 Jul 2017 13:56:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/rz/sz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP7</title>
+      <link>http://renqilei.me/tags/php7/</link>
+      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/php7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>epel</title>
+      <link>http://renqilei.me/tags/epel/</link>
+      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/epel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php-fpm</title>
+      <link>http://renqilei.me/tags/php-fpm/</link>
+      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/php-fpm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php-opcache</title>
+      <link>http://renqilei.me/tags/php-opcache/</link>
+      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/php-opcache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webtatic</title>
+      <link>http://renqilei.me/tags/webtatic/</link>
+      <pubDate>Tue, 25 Jul 2017 13:52:04 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/webtatic/</guid>
       <description></description>
     </item>
     

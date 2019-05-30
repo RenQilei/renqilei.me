@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 20 Apr 2019 14:50:45 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 31 May 2019 00:34:57 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>优雅地删除 Kubernetes 服务账号</title>
+      <link>http://renqilei.me/posts/delete-kubernetes-service-account-elegantly/</link>
+      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/delete-kubernetes-service-account-elegantly/</guid>
+      <description>在优雅地删除 Kubernetes 服务账号（Service Account）前，我们得先通过 kubectl 创建一个账号： kubectl create serviceaccount test-account -n default 这一条指令就能够完成服务账号的创建了，同样</description>
+    </item>
     
     <item>
       <title>CDH本地镜像源的部署</title>

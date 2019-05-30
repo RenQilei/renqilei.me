@@ -26,6 +26,10 @@
 </script>
 
     
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -68,46 +72,99 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <section id="archive" class="archive">
+                    
+  <div id="single">
+    <article class="post">
+      
+      <header class="post-header">
+        <h1 class="post-title">优雅地删除 Kubernetes 服务账号</h1>
   
-
-  <div class="archive-post">
-      <span class="archive-post-time">
-        2018年11月11日
-      </span>
-      <span class="archive-post-title">
-        <a href="/posts/use-logrotate-on-nginx-logs/" class="archive-post-link">
-          使用logrotate进行Nginx日志切割
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2017年07月26日
-      </span>
-      <span class="archive-post-title">
-        <a href="/posts/deploy-lnpp-on-centos-7/" class="archive-post-link">
-          CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2017年07月25日
-      </span>
-      <span class="archive-post-title">
-        <a href="/posts/install-php-7-on-centos-7/" class="archive-post-link">
-          CentOS 7 安装 PHP 7
-        </a>
-      </span>
-    </div>
-</section>
-
-<nav class="pagination">
-  <a class="prev" href="/categories/%E8%BF%90%E7%BB%B4/">
-      <i class="iconfont icon-left"></i>
-      <span class="prev-text">上一页</span>
-    </a>
+        <div class="post-meta">
+          <span class="post-time"> 2019年05月31日 </span>
+          <span class="post-category">
+              <a href="/categories/%E8%BF%90%E7%BB%B4/"> 运维 </a>
+              <a href="/categories/kubernetes/"> Kubernetes </a>
+              </span>
+          
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/kubernetes/">Kubernetes</a>
+            </span></div>
+      </header>
   
-</nav>
+      
+      
+  
+      
+      
+  
+      
+      <div class="post-content">
+        
+
+<p>在优雅地删除 Kubernetes 服务账号（Service Account）前，我们得先通过 kubectl 创建一个账号：</p>
+
+<pre><code>kubectl create serviceaccount test-account -n default
+</code></pre>
+
+<p>这一条指令就能够完成服务账号的创建了，同样可以通过 kubectl 来查看：</p>
+
+<pre><code>kubectl get secret -n default
+</code></pre>
+
+<p>这里会看到一个包含 NAME、TYPE、DATA、AGE 等字段的列表，其中包含 test-account-token-sg4fc，其中最后一组字符串随机生成。</p>
+
+<p>走到这里，为了简单起见，不再对该账号产生任何想法，准备直接删除它。</p>
+
+<h1 id="删除-secret">删除 secret</h1>
+
+<p>如果删除账户的目的仅仅是因为其 Token 或信息泄露导致，那么这里可以通过直接删除 secret 来实现账户信息的重新创建。</p>
+
+<pre><code>kubectl delete secret test-account-token-sg4fc -n default
+</code></pre>
+
+<p>当 secret 被删除后，会自动重建一个新的 secret，名称上最后一组字符串会有改变。</p>
+
+<h1 id="彻底删除-service-account">彻底删除 Service Account</h1>
+
+<p>如果确实想直接删除服务账户，那么就直接通过其名称就行删除。</p>
+
+<pre><code>kubectl delete serviceaccount test-account -n default
+</code></pre>
+
+<p>这里的 Service Account 显然不是和上面创建的 secret 有所不同，为服务账户创建时的名称。</p>
+
+<h1 id="参考文档">参考文档</h1>
+
+<ul>
+<li><a href="https://juejin.im/post/5ce63ed6e51d4556f76e7fe8#heading-20">干货 | 京东云托管Kubernetes集成镜像仓库并部署原生DashBoard 5.1 创建 ServiceAccount</a></li>
+<li><a href="https://stackoverflow.com/a/52323436">How to delete a service account in kubernetes?</a></li>
+</ul>
+
+      </div>
+  
+      
+      
+  
+      
+      
+  
+      <footer class="post-footer">
+  
+        
+        <nav class="post-nav">
+          
+          <div class="next">
+              <a href="/posts/cdh-repo-local-source-deployment/">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">下一篇</span>
+                <span class="next-text nav-default">CDH本地镜像源的部署</span>
+              </a>
+            </div>
+        </nav>
+      </footer>
+    </article>
+  </div>
                 </div>
             </div>
 
