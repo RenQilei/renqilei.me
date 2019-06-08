@@ -210,26 +210,27 @@ static domain_name_servers=192.168.1.1
 </code></pre>
 
 <blockquote>
-<pre><code class="language-/etc/dhcpcd.conf```">&gt; 配置中的
-&gt; interface 为指定的网卡口，eth0 为默认有线口，wlan0 为默认无线口
-&gt; ip_address 为固定 IP 地址及其子网掩码
-&gt; routers 为其网关
-&gt; domain_name_servers 为其 DNS 服务器
+<p>/etc/dhcpcd.conf 文件中包含了大量的配置和示例配置，切勿随意修改或覆盖。
+配置中的
+interface 为指定的网卡口，eth0 为默认有线口，wlan0 为默认无线口
+ip_address 为固定 IP 地址及其子网掩码
+routers 为其网关
+domain_name_servers 为其 DNS 服务器</p>
+</blockquote>
 
-当然，只在树莓派上配置固定 IP 并不是完整的静态化操作，在条件允许的情况下，可以在路由器上直接将 IP 与树莓派的 MAC 地址对应绑定。
+<p>当然，只在树莓派上配置固定 IP 并不是完整的静态化操作，在条件允许的情况下，可以在路由器上直接将 IP 与树莓派的 MAC 地址对应绑定。</p>
 
-## 设置时区、语言
+<h2 id="设置时区-语言">设置时区、语言</h2>
 
-系统的相关设置可以通过修改相应的 Linux 系统配置完成，亦可通过 GUI 窗口化设置调整。Raspbian 提供了便捷的命令行配置工具 raspi-config，可通过 ```sudo raspi-config``` 开启并配置。相关设置可根据提示进行操作。
+<p>系统的相关设置可以通过修改相应的 Linux 系统配置完成，亦可通过 GUI 窗口化设置调整。Raspbian 提供了便捷的命令行配置工具 raspi-config，可通过 <code>sudo raspi-config</code> 开启并配置。相关设置可根据提示进行操作。</p>
 
-## 启用 VNC
+<h2 id="启用-vnc">启用 VNC</h2>
 
-### 安装 VNC
+<h3 id="安装-vnc">安装 VNC</h3>
 
-vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 ```sudo raspi-config``` 中的配置进行启用。
+<p>vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 <code>sudo raspi-config</code> 中的配置进行启用。</p>
 
-```Interfacing Options --&gt; VNC --&gt; select```，选择后会进行一系列的应用包安装，根据提示进行确认操作完成安装即可。
-
+<pre><code class="language-Interfacing">
 ### 设置 VNC 密码
 
 重设 VNC 密码的命令为：```vncpasswd```。
@@ -261,7 +262,6 @@ vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已�
 <h1 id="short-description-start-stop-vncserver">Short-Description: Start/stop vncserver</h1>
 
 <h3 id="end-init-info">END INIT INFO</h3>
-</blockquote>
 
 <h1 id="more-details-see">More details see:</h1>
 

@@ -105,7 +105,7 @@ static routers=192.168.1.1
 static domain_name_servers=192.168.1.1
 ```
 
-> ```/etc/dhcpcd.conf``` 文件中包含了大量的配置和示例配置，切勿随意修改或覆盖。
+> /etc/dhcpcd.conf 文件中包含了大量的配置和示例配置，切勿随意修改或覆盖。
 > 配置中的
 > interface 为指定的网卡口，eth0 为默认有线口，wlan0 为默认无线口
 > ip_address 为固定 IP 地址及其子网掩码
