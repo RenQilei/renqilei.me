@@ -194,6 +194,12 @@ sudo update-rc.d vncserver defaults
 
 树莓派重启后生效。
 
+### VNC 远程连接
+
+这里推荐使用 [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/) 来进行 VNC 远程连接，这是一个跨平台的开源软件，方便使用。
+
+连接时键入 `[raspberry_ip]:1` 并输入密码即可。
+
 # 参考文档
 
 * [树莓派折腾笔记 - 无显示器情况下连接使用树莓派](https://juejin.im/entry/5b634203e51d45191e0d2b06)
