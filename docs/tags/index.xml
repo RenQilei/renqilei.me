@@ -75,7 +75,7 @@
     </item>
     
     <item>
-      <title>Linux</title>
+      <title>linux</title>
       <link>http://renqilei.me/tags/linux/</link>
       <pubDate>Sat, 20 Apr 2019 14:50:45 +0800</pubDate>
       
@@ -129,20 +129,20 @@
     </item>
     
     <item>
-      <title>PHP</title>
-      <link>http://renqilei.me/tags/php/</link>
-      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
-      
-      <guid>http://renqilei.me/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>mac</title>
       <link>http://renqilei.me/tags/mac/</link>
       <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
       
       <guid>http://renqilei.me/tags/mac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>http://renqilei.me/tags/php/</link>
+      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
+      
+      <guid>http://renqilei.me/tags/php/</guid>
       <description></description>
     </item>
     
