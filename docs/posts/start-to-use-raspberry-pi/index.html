@@ -142,12 +142,12 @@ touch ssh
 <p>Windows 则直接打开盘符并新建文本文件，但务必不要带 <code>.txt</code> 后缀。</p>
 
 <ol>
-<li>如果准备直接连接无线网络，则添加 <code>wpa_supplicant.conf</code> 文件。</li>
-</ol>
+<li><p>如果准备直接连接无线网络，则添加 <code>wpa_supplicant.conf</code> 文件。</p>
 
 <pre><code>cd /Volumes/boot
 vi wpa_supplicant.conf
-</code></pre>
+</code></pre></li>
+</ol>
 
 <p>文件内容为：</p>
 
@@ -296,6 +296,12 @@ exit 0
 </code></pre>
 
 <p>树莓派重启后生效。</p>
+
+<h3 id="vnc-远程连接">VNC 远程连接</h3>
+
+<p>这里推荐使用 <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC Viewer</a> 来进行 VNC 远程连接，这是一个跨平台的开源软件，方便使用。</p>
+
+<p>连接时键入 <code>[raspberry_ip]:1</code> 并输入密码即可。</p>
 
 <h1 id="参考文档">参考文档</h1>
 

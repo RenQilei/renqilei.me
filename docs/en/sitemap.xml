@@ -21,7 +21,6 @@
   
   <url>
     <loc>http://renqilei.me/en/categories/</loc>
-    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -37,7 +36,6 @@
   
   <url>
     <loc>http://renqilei.me/en/</loc>
-    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -53,7 +51,6 @@
   
   <url>
     <loc>http://renqilei.me/en/tags/</loc>
-    <changefreq>weekly</changefreq>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
