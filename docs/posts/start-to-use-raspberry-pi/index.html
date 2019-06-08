@@ -230,87 +230,70 @@ domain_name_servers 为其 DNS 服务器</p>
 
 <p>vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 <code>sudo raspi-config</code> 中的配置进行启用。</p>
 
-<pre><code class="language-Interfacing">
-### 设置 VNC 密码
+<p><code>Interfacing Options --&gt; VNC --&gt; select</code>，选择后会进行一系列的应用包安装，根据提示进行确认操作完成安装即可。</p>
 
-重设 VNC 密码的命令为：```vncpasswd```。
+<h3 id="设置-vnc-密码">设置 VNC 密码</h3>
 
-### 服务化 VNC
+<p>重设 VNC 密码的命令为：<code>vncpasswd</code>。</p>
 
-可以通过 ```vncserver :1``` 来启用 VNC 服务，但这并不优雅，首先关闭服务需要通过 kill 来完成，同时无法进一步实现开机自启动服务。
+<h3 id="服务化-vnc">服务化 VNC</h3>
 
-这里，我们首先进行 VNC 服务化的配置：
+<p>可以通过 <code>vncserver :1</code> 来启用 VNC 服务，但这并不优雅，首先关闭服务需要通过 kill 来完成，同时无法进一步实现开机自启动服务。</p>
 
-创建文件 ```/etc/init.d/vncserver``` 并粘贴下面内容于其中，
+<p>这里，我们首先进行 VNC 服务化的配置：</p>
 
-</code></pre>
+<p>创建文件 <code>/etc/init.d/vncserver</code> 并粘贴下面内容于其中，</p>
 
-<p>#!/bin/sh</p>
-
-<h3 id="begin-init-info">BEGIN INIT INFO</h3>
-
-<h1 id="provides-vncserver">Provides:          vncserver</h1>
-
-<h1 id="required-start-local-fs">Required-Start:    $local_fs</h1>
-
-<h1 id="required-stop-local-fs">Required-Stop:     $local_fs</h1>
-
-<h1 id="default-start-2-3-4-5">Default-Start:     2 3 4 5</h1>
-
-<h1 id="default-stop-0-1-6">Default-Stop:      0 1 6</h1>
-
-<h1 id="short-description-start-stop-vncserver">Short-Description: Start/stop vncserver</h1>
-
-<h3 id="end-init-info">END INIT INFO</h3>
-
-<h1 id="more-details-see">More details see:</h1>
-
-<h1 id="http-www-penguintutor-com-linux-vnc"><a href="http://www.penguintutor.com/linux/vnc">http://www.penguintutor.com/linux/vnc</a></h1>
-
-<h3 id="customize-this-entry">Customize this entry</h3>
-
-<h1 id="set-the-user-variable-to-the-name-of-the-user-to-start-vncserver-under">Set the USER variable to the name of the user to start vncserver under</h1>
-
-<p>export USER=&lsquo;pi&rsquo;</p>
-
-<h3 id="end-customization-required">End customization required</h3>
-
-<p>eval cd ~$USER</p>
-
-<p>case &ldquo;$1&rdquo; in
+<pre><code>#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          vncserver
+# Required-Start:    $local_fs
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start/stop vncserver
+### END INIT INFO
+ 
+# More details see:
+# http://www.penguintutor.com/linux/vnc
+ 
+### Customize this entry
+# Set the USER variable to the name of the user to start vncserver under
+export USER='pi'
+### End customization required
+ 
+eval cd ~$USER
+ 
+case &quot;$1&quot; in
   start)
-    su $USER -c &lsquo;/usr/bin/vncserver -depth 16 -geometry 1024x768 :1&rsquo;
-    echo &ldquo;Starting VNC server for $USER &ldquo;
+    su $USER -c '/usr/bin/vncserver -depth 16 -geometry 1024x768 :1'
+    echo &quot;Starting VNC server for $USER &quot;
     ;;
   stop)
-    su $USER -c &lsquo;/usr/bin/vncserver -kill :1&rsquo;
-    echo &ldquo;vncserver stopped&rdquo;
+    su $USER -c '/usr/bin/vncserver -kill :1'
+    echo &quot;vncserver stopped&quot;
     ;;
   *)
-    echo &ldquo;Usage: /etc/init.d/vncserver {start|stop}&rdquo;
+    echo &quot;Usage: /etc/init.d/vncserver {start|stop}&quot;
     exit 1
     ;;
 esac
-exit 0</p>
-
-<pre><code>
-保存后为文件添加执行权限：
-
+exit 0
 </code></pre>
 
-<p>sudo chmod +x /etc/init.d/vncserver</p>
+<p>保存后为文件添加执行权限：</p>
 
-<pre><code>
-至此，已可以使用 ```service vncserver start|stop``` 进行 VNC 服务开启、关闭了。
-
-### 开机自启动 VNC
-
-添加开机启动项：
-
+<pre><code>sudo chmod +x /etc/init.d/vncserver
 </code></pre>
 
-<p>sudo update-rc.d vncserver defaults
-```</p>
+<p>至此，已可以使用 <code>service vncserver start|stop</code> 进行 VNC 服务开启、关闭了。</p>
+
+<h3 id="开机自启动-vnc">开机自启动 VNC</h3>
+
+<p>添加开机启动项：</p>
+
+<pre><code>sudo update-rc.d vncserver defaults
+</code></pre>
 
 <p>树莓派重启后生效。</p>
 

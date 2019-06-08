@@ -24,13 +24,13 @@ draft: false
 
 # 安装操作系统
 
-从树莓派[官网](https://www.raspberrypi.org/downloads/raspbian/)下载树莓派定制的 Debian 操作系统 Raspbian，初始玩家建议使用 [Raspbian Stretch with desktop and recommended software](https://downloads.raspberrypi.org/raspbian_full_latest) 版本的系统。下载完成后解压获得 ```.dmg``` 镜像文件。
+从树莓派[官网](https://www.raspberrypi.org/downloads/raspbian/)下载树莓派定制的 Debian 操作系统 Raspbian，初始玩家建议使用 [Raspbian Stretch with desktop and recommended software](https://downloads.raspberrypi.org/raspbian_full_latest) 版本的系统。下载完成后解压获得 `.dmg` 镜像文件。
 
 使用 [balenaEtcher](https://www.balena.io/etcher/) 工具向准备好的 Micro SD 卡烧录操作系统。烧录前，Micro SD 卡请格式化为 FAT 格式。balenaEtcher 是一款开源的烧录工具，且支持 Mac 和 Windows，使用过程仅需选择镜像、选择目标盘符、烧录即可！
 
 **为了能够直接开始远程连接，这里请完成两个步骤**
 
-1. 在烧录完成的 Micro SD 卡中新建一个 ```ssh``` 文件。
+1. 在烧录完成的 Micro SD 卡中新建一个 `ssh` 文件。
 
 Mac 上可以直接进入目录并创建
 
@@ -39,9 +39,9 @@ cd /Volumes/boot
 touch ssh
 ```
 
-Windows 则直接打开盘符并新建文本文件，但务必不要带 ```.txt``` 后缀。
+Windows 则直接打开盘符并新建文本文件，但务必不要带 `.txt` 后缀。
 
-2. 如果准备直接连接无线网络，则添加 ```wpa_supplicant.conf``` 文件。
+2. 如果准备直接连接无线网络，则添加 `wpa_supplicant.conf` 文件。
 
 ```
 cd /Volumes/boot
@@ -62,7 +62,7 @@ network={
 }
 ```
 
-3. 使用 ```arp -a``` 查看当前局域网内设备的连接情况。
+3. 使用 `arp -a` 查看当前局域网内设备的连接情况。
 
 这个步骤的目的是为了待会树莓派开机后可以查看增加了哪一个IP，当然，也可以通过其它局域网工具查看，树莓派的 hostname 非常容易辨认。
 
@@ -74,12 +74,12 @@ OKAY，现在可以把 Micro SD 卡插入树莓派并开机了！
 
 ## ssh 远程连接设备
 
-开机后，通过 ```arp -a``` 持续关注当前局域网内设备连接情况的变化，新增的 IP 即为树莓派的 IP。
+开机后，通过 `arp -a` 持续关注当前局域网内设备连接情况的变化，新增的 IP 即为树莓派的 IP。
 
 > 这种获取 IP 的方式显得很不精致，也不适用于 IP 流动量大的局域网环境中。所以，更加理性的方法是使用相关局域网工具，通过 hostname 显著的区分设备并获得相应 IP。
 > Mac 可以使用 LanScan；Windows 可以使用 Advanced Ip Scanner。
 
-如果刚才烧录完操作系统后在目录下创建了 ```ssh``` 文件的话，那么现在就可以使用 ssh 进行设备连接了。
+如果刚才烧录完操作系统后在目录下创建了 `ssh` 文件的话，那么现在就可以使用 ssh 进行设备连接了。
 
 ```
 ssh pi@[device_ip]
@@ -91,7 +91,7 @@ ssh pi@[device_ip]
 
 ssh 远程登录设备成功后，为了避免设备因网络重连导致 IP 变化，这里建议第一时间固化 IP。
 
-通过修改 ```/etc/dhcpcd.conf``` 文件实现静态化 IP 配置，**在该文件底部添加配置**：
+通过修改 `/etc/dhcpcd.conf` 文件实现静态化 IP 配置，**在该文件底部添加配置**：
 
 ```
 interface eth0
@@ -116,27 +116,27 @@ static domain_name_servers=192.168.1.1
 
 ## 设置时区、语言
 
-系统的相关设置可以通过修改相应的 Linux 系统配置完成，亦可通过 GUI 窗口化设置调整。Raspbian 提供了便捷的命令行配置工具 raspi-config，可通过 ```sudo raspi-config``` 开启并配置。相关设置可根据提示进行操作。
+系统的相关设置可以通过修改相应的 Linux 系统配置完成，亦可通过 GUI 窗口化设置调整。Raspbian 提供了便捷的命令行配置工具 raspi-config，可通过 `sudo raspi-config` 开启并配置。相关设置可根据提示进行操作。
 
 ## 启用 VNC
 
 ### 安装 VNC
 
-vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 ```sudo raspi-config``` 中的配置进行启用。
+vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 `sudo raspi-config` 中的配置进行启用。
 
-```Interfacing Options --> VNC --> select```，选择后会进行一系列的应用包安装，根据提示进行确认操作完成安装即可。
+`Interfacing Options --> VNC --> select`，选择后会进行一系列的应用包安装，根据提示进行确认操作完成安装即可。
 
 ### 设置 VNC 密码
 
-重设 VNC 密码的命令为：```vncpasswd```。
+重设 VNC 密码的命令为：`vncpasswd`。
 
 ### 服务化 VNC
 
-可以通过 ```vncserver :1``` 来启用 VNC 服务，但这并不优雅，首先关闭服务需要通过 kill 来完成，同时无法进一步实现开机自启动服务。
+可以通过 `vncserver :1` 来启用 VNC 服务，但这并不优雅，首先关闭服务需要通过 kill 来完成，同时无法进一步实现开机自启动服务。
 
 这里，我们首先进行 VNC 服务化的配置：
 
-创建文件 ```/etc/init.d/vncserver``` 并粘贴下面内容于其中，
+创建文件 `/etc/init.d/vncserver` 并粘贴下面内容于其中，
 
 ```
 #!/bin/sh
@@ -182,7 +182,7 @@ exit 0
 sudo chmod +x /etc/init.d/vncserver
 ```
 
-至此，已可以使用 ```service vncserver start|stop``` 进行 VNC 服务开启、关闭了。
+至此，已可以使用 `service vncserver start|stop` 进行 VNC 服务开启、关闭了。
 
 ### 开机自启动 VNC
 
