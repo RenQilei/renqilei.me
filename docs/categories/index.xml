@@ -6,37 +6,9 @@
     <description>Recent content in Categories on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 31 May 2019 00:34:57 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>http://renqilei.me/categories/kubernetes/</link>
-      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/categories/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>运维</title>
-      <link>http://renqilei.me/categories/%E8%BF%90%E7%BB%B4/</link>
-      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
-      
-      <guid>http://renqilei.me/categories/%E8%BF%90%E7%BB%B4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>开发</title>
-      <link>http://renqilei.me/categories/%E5%BC%80%E5%8F%91/</link>
-      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
-      
-      <guid>http://renqilei.me/categories/%E5%BC%80%E5%8F%91/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>CentOS</title>
@@ -44,6 +16,24 @@
       <pubDate>Sat, 26 Jan 2019 00:17:01 +0800</pubDate>
       
       <guid>http://renqilei.me/categories/centos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>http://renqilei.me/categories/hugo/</link>
+      <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>http://renqilei.me/categories/kubernetes/</link>
+      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -66,11 +56,11 @@
     </item>
     
     <item>
-      <title>工具</title>
-      <link>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</link>
-      <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
+      <title>产品</title>
+      <link>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</link>
+      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
       
-      <guid>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</guid>
+      <guid>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</guid>
       <description></description>
     </item>
     
@@ -84,24 +74,6 @@
     </item>
     
     <item>
-      <title>Hugo</title>
-      <link>http://renqilei.me/categories/hugo/</link>
-      <pubDate>Mon, 26 Nov 2018 11:33:34 +0800</pubDate>
-      
-      <guid>http://renqilei.me/categories/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>产品</title>
-      <link>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</link>
-      <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
-      
-      <guid>http://renqilei.me/categories/%E4%BA%A7%E5%93%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>医疗</title>
       <link>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</link>
       <pubDate>Fri, 23 Nov 2018 15:02:26 +0800</pubDate>
@@ -111,11 +83,47 @@
     </item>
     
     <item>
+      <title>工具</title>
+      <link>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Wed, 12 Dec 2018 13:43:19 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开发</title>
+      <link>http://renqilei.me/categories/%E5%BC%80%E5%8F%91/</link>
+      <pubDate>Thu, 07 Mar 2019 00:18:09 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E5%BC%80%E5%8F%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>树莓派</title>
+      <link>http://renqilei.me/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</link>
+      <pubDate>Sat, 08 Jun 2019 15:35:47 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>社交</title>
       <link>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</link>
       <pubDate>Sun, 18 Nov 2018 19:03:18 +0800</pubDate>
       
       <guid>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>运维</title>
+      <link>http://renqilei.me/categories/%E8%BF%90%E7%BB%B4/</link>
+      <pubDate>Fri, 31 May 2019 00:34:57 +0800</pubDate>
+      
+      <guid>http://renqilei.me/categories/%E8%BF%90%E7%BB%B4/</guid>
       <description></description>
     </item>
     

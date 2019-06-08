@@ -6,19 +6,10 @@
     <description>Recent content in php on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 28 Jan 2019 17:47:29 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jul 2017 14:25:31 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>PHP 项目使用 google/protobuf</title>
-      <link>http://renqilei.me/posts/use-google-protobuf-in-php-project/</link>
-      <pubDate>Mon, 28 Jan 2019 17:47:29 +0800</pubDate>
-      
-      <guid>http://renqilei.me/posts/use-google-protobuf-in-php-project/</guid>
-      <description>使用 brew 安装 protobuf brew 安装 protobuf： brew install protobuf 检查是否安装成功： protoc --version 源码安装 php-protobuf 下载 allegro/php-protobuf 项目并编译安装： git clone https://github.com/allegro/php-protobuf cd php-protobuf composer install ./configure make make install 检查 php.ini 的路径并编辑添加</description>
-    </item>
     
     <item>
       <title>CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）</title>

@@ -26,6 +26,10 @@
 </script>
 
     
+<link href="https://cdn.bootcss.com/highlight.js/9.13.1/styles/dracula.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -68,36 +72,281 @@
 
             <div class="col-lg-9" id="main-wrapper">
                 <div id="main">
-                    <section id="archive" class="archive">
-  <div class="archive-title tag">
-        <h2 class="archive-name">linux</h2>
+                    
+  <div id="single">
+    <article class="post">
+      
+      <header class="post-header">
+        <h1 class="post-title">开始使用 Raspberry PI</h1>
+  
+        <div class="post-meta">
+          <span class="post-time"> 2019年06月08日 </span>
+          <span class="post-category">
+              <a href="/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/"> 树莓派 </a>
+              </span>
+          
+          <span class="post-tags">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/">树莓派</a>
+            <a href="/tags/raspberry-pi/">Raspberry PI</a>
+            <a href="/tags/vnc/">VNC</a>
+            <a href="/tags/raspbian/">raspbian</a>
+            </span></div>
+      </header>
+  
+      
+      
+  
+      
+      
+  
+      
+      <div class="post-content">
+        
+
+<p>毋容置疑，Raspberry PI（树莓派）可谓当前最火的单片机之一。玩转树莓派之前，首先是要将树莓派的操作系统和各项功能准备妥当。本文的核心目标就是从零开始上手树莓派，并完成远程连接的各项功能。</p>
+
+<h1 id="准备工作">准备工作</h1>
+
+<p>开始玩树莓派前，需要准备：</p>
+
+<ul>
+<li>Raspberry PI 3 Model B+（目前最新款）</li>
+<li>Micro SD 卡，不小于 8G</li>
+<li>USB 电源线，5V 电压、不小于 2A 电流</li>
+<li>有线网络（建议拥有，当然树莓派已支持 WiFi）</li>
+</ul>
+
+<p>如果需要本机使用（即非远程连接使用），那么还需要 HDMI 线及显示器，以及鼠标键盘等外设。当然本文初始化过程中完成了远程连接 console 和 GUI 的全部设置，所以理论上来说无需本机使用了 :)</p>
+
+<p>同时，本文默认以 Mac 作为远端局域网设备进行调试，但所用软件和工具基本满足 Mac 和 Windows 的兼容，如有差异会在文中指出。</p>
+
+<h1 id="安装操作系统">安装操作系统</h1>
+
+<p>从树莓派<a href="https://www.raspberrypi.org/downloads/raspbian/">官网</a>下载树莓派定制的 Debian 操作系统 Raspbian，初始玩家建议使用 <a href="https://downloads.raspberrypi.org/raspbian_full_latest">Raspbian Stretch with desktop and recommended software</a> 版本的系统。下载完成后解压获得 <code>.dmg</code> 镜像文件。</p>
+
+<p>使用 <a href="https://www.balena.io/etcher/">balenaEtcher</a> 工具向准备好的 Micro SD 卡烧录操作系统。烧录前，Micro SD 卡请格式化为 FAT 格式。balenaEtcher 是一款开源的烧录工具，且支持 Mac 和 Windows，使用过程仅需选择镜像、选择目标盘符、烧录即可！</p>
+
+<p><strong>为了能够直接开始远程连接，这里请完成两个步骤</strong></p>
+
+<ol>
+<li>在烧录完成的 Micro SD 卡中新建一个 <code>ssh</code> 文件。</li>
+</ol>
+
+<p>Mac 上可以直接进入目录并创建</p>
+
+<pre><code>cd /Volumes/boot
+touch ssh
+</code></pre>
+
+<p>Windows 则直接打开盘符并新建文本文件，但务必不要带 <code>.txt</code> 后缀。</p>
+
+<ol>
+<li>如果准备直接连接无线网络，则添加 <code>wpa_supplicant.conf</code> 文件。</li>
+</ol>
+
+<pre><code>cd /Volumes/boot
+vi wpa_supplicant.conf
+</code></pre>
+
+<p>文件内容为：</p>
+
+<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=CN
+
+network={
+    ssid=&quot;xxxx&quot;      # wifi name
+    psk=&quot;xxxx&quot;       # wifi password
+    key_mgmt=WPA-PSK # encryption method
+}
+</code></pre>
+
+<ol>
+<li>使用 <code>arp -a</code> 查看当前局域网内设备的连接情况。</li>
+</ol>
+
+<p>这个步骤的目的是为了待会树莓派开机后可以查看增加了哪一个IP，当然，也可以通过其它局域网工具查看，树莓派的 hostname 非常容易辨认。</p>
+
+<blockquote>
+<p>Windows 中需要使用 Powershell 等相关命令行工具方可执行 arp 命令。</p>
+</blockquote>
+
+<h1 id="基本配置">基本配置</h1>
+
+<p>OKAY，现在可以把 Micro SD 卡插入树莓派并开机了！</p>
+
+<h2 id="ssh-远程连接设备">ssh 远程连接设备</h2>
+
+<p>开机后，通过 <code>arp -a</code> 持续关注当前局域网内设备连接情况的变化，新增的 IP 即为树莓派的 IP。</p>
+
+<blockquote>
+<p>这种获取 IP 的方式显得很不精致，也不适用于 IP 流动量大的局域网环境中。所以，更加理性的方法是使用相关局域网工具，通过 hostname 显著的区分设备并获得相应 IP。
+Mac 可以使用 LanScan；Windows 可以使用 Advanced Ip Scanner。</p>
+</blockquote>
+
+<p>如果刚才烧录完操作系统后在目录下创建了 <code>ssh</code> 文件的话，那么现在就可以使用 ssh 进行设备连接了。</p>
+
+<pre><code>ssh pi@[device_ip]
+
+# 密码为：raspberry
+</code></pre>
+
+<h2 id="设置静态-ip">设置静态 IP</h2>
+
+<p>ssh 远程登录设备成功后，为了避免设备因网络重连导致 IP 变化，这里建议第一时间固化 IP。</p>
+
+<p>通过修改 <code>/etc/dhcpcd.conf</code> 文件实现静态化 IP 配置，<strong>在该文件底部添加配置</strong>：</p>
+
+<pre><code>interface eth0
+static ip_address=192.168.1.114/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+
+interface wlan0
+static ip_address=192.168.1.113/24
+static routers=192.168.1.1
+static domain_name_servers=192.168.1.1
+</code></pre>
+
+<blockquote>
+<pre><code class="language-/etc/dhcpcd.conf```">&gt; 配置中的
+&gt; interface 为指定的网卡口，eth0 为默认有线口，wlan0 为默认无线口
+&gt; ip_address 为固定 IP 地址及其子网掩码
+&gt; routers 为其网关
+&gt; domain_name_servers 为其 DNS 服务器
+
+当然，只在树莓派上配置固定 IP 并不是完整的静态化操作，在条件允许的情况下，可以在路由器上直接将 IP 与树莓派的 MAC 地址对应绑定。
+
+## 设置时区、语言
+
+系统的相关设置可以通过修改相应的 Linux 系统配置完成，亦可通过 GUI 窗口化设置调整。Raspbian 提供了便捷的命令行配置工具 raspi-config，可通过 ```sudo raspi-config``` 开启并配置。相关设置可根据提示进行操作。
+
+## 启用 VNC
+
+### 安装 VNC
+
+vnc 是可以远程打开 GUI 界面的服务。目前， Raspbian 系统中已经自带了 vnc 服务，可以通过 ```sudo raspi-config``` 中的配置进行启用。
+
+```Interfacing Options --&gt; VNC --&gt; select```，选择后会进行一系列的应用包安装，根据提示进行确认操作完成安装即可。
+
+### 设置 VNC 密码
+
+重设 VNC 密码的命令为：```vncpasswd```。
+
+### 服务化 VNC
+
+可以通过 ```vncserver :1``` 来启用 VNC 服务，但这并不优雅，首先关闭服务需要通过 kill 来完成，同时无法进一步实现开机自启动服务。
+
+这里，我们首先进行 VNC 服务化的配置：
+
+创建文件 ```/etc/init.d/vncserver``` 并粘贴下面内容于其中，
+
+</code></pre>
+
+<p>#!/bin/sh</p>
+
+<h3 id="begin-init-info">BEGIN INIT INFO</h3>
+
+<h1 id="provides-vncserver">Provides:          vncserver</h1>
+
+<h1 id="required-start-local-fs">Required-Start:    $local_fs</h1>
+
+<h1 id="required-stop-local-fs">Required-Stop:     $local_fs</h1>
+
+<h1 id="default-start-2-3-4-5">Default-Start:     2 3 4 5</h1>
+
+<h1 id="default-stop-0-1-6">Default-Stop:      0 1 6</h1>
+
+<h1 id="short-description-start-stop-vncserver">Short-Description: Start/stop vncserver</h1>
+
+<h3 id="end-init-info">END INIT INFO</h3>
+</blockquote>
+
+<h1 id="more-details-see">More details see:</h1>
+
+<h1 id="http-www-penguintutor-com-linux-vnc"><a href="http://www.penguintutor.com/linux/vnc">http://www.penguintutor.com/linux/vnc</a></h1>
+
+<h3 id="customize-this-entry">Customize this entry</h3>
+
+<h1 id="set-the-user-variable-to-the-name-of-the-user-to-start-vncserver-under">Set the USER variable to the name of the user to start vncserver under</h1>
+
+<p>export USER=&lsquo;pi&rsquo;</p>
+
+<h3 id="end-customization-required">End customization required</h3>
+
+<p>eval cd ~$USER</p>
+
+<p>case &ldquo;$1&rdquo; in
+  start)
+    su $USER -c &lsquo;/usr/bin/vncserver -depth 16 -geometry 1024x768 :1&rsquo;
+    echo &ldquo;Starting VNC server for $USER &ldquo;
+    ;;
+  stop)
+    su $USER -c &lsquo;/usr/bin/vncserver -kill :1&rsquo;
+    echo &ldquo;vncserver stopped&rdquo;
+    ;;
+  *)
+    echo &ldquo;Usage: /etc/init.d/vncserver {start|stop}&rdquo;
+    exit 1
+    ;;
+esac
+exit 0</p>
+
+<pre><code>
+保存后为文件添加执行权限：
+
+</code></pre>
+
+<p>sudo chmod +x /etc/init.d/vncserver</p>
+
+<pre><code>
+至此，已可以使用 ```service vncserver start|stop``` 进行 VNC 服务开启、关闭了。
+
+### 开机自启动 VNC
+
+添加开机启动项：
+
+</code></pre>
+
+<p>sudo update-rc.d vncserver defaults
+```</p>
+
+<p>树莓派重启后生效。</p>
+
+<h1 id="参考文档">参考文档</h1>
+
+<ul>
+<li><a href="https://juejin.im/entry/5b634203e51d45191e0d2b06">树莓派折腾笔记 - 无显示器情况下连接使用树莓派</a></li>
+<li><a href="https://juejin.im/post/592259d72f301e006b18584e">树莓派无线网卡配置指北</a></li>
+<li><a href="https://www.jianshu.com/p/f9cb0f85a4e6">树莓派设置静态 IP 地址</a></li>
+<li><a href="https://www.cnblogs.com/crosys/p/6220471.html">树莓派3B远程VNC的设置（包括开机启动）</a></li>
+</ul>
+
       </div>
-
-  <div class="archive-post">
-      <span class="archive-post-time">
-        2019年04月20日
-      </span>
-      <span class="archive-post-title">
-        <a href="/posts/partition-disk-over-2t-on-linux/" class="archive-post-link">
-          Linux 上分区大于 2T 的磁盘
-        </a>
-      </span>
-    </div><div class="archive-post">
-      <span class="archive-post-time">
-        2017年07月26日
-      </span>
-      <span class="archive-post-title">
-        <a href="/posts/deploy-lnpp-on-centos-7/" class="archive-post-link">
-          CentOS 7 搭建 LNPP（Linux，Nginx，PHP，PostgreSQL）
-        </a>
-      </span>
-    </div>
-</section>
-
-<nav class="pagination">
   
+      
+      
   
-</nav>
+      
+      
+  
+      <footer class="post-footer">
+  
+        
+        <nav class="post-nav">
+          
+          <div class="next">
+              <a href="/posts/delete-kubernetes-service-account-elegantly/">
+                <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                <span class="next-text nav-mobile">下一篇</span>
+                <span class="next-text nav-default">优雅地删除 Kubernetes 服务账号</span>
+              </a>
+            </div>
+        </nav>
+      </footer>
+    </article>
+  </div>
                 </div>
             </div>
 

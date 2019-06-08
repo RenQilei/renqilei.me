@@ -118,30 +118,34 @@
 <h1 id="git-subtree-的使用">Git subtree 的使用</h1>
 
 <ol>
-<li><p>添加项目 S（下均使用 proj-s）的 remote 信息：</p>
+<li>添加项目 S（下均使用 proj-s）的 remote 信息：</li>
+</ol>
 
 <pre><code>git remote add proj-s http://github.com/[path-to-proj-s]
-</code></pre></li>
+</code></pre>
 
-<li><p>拉取 proj-s 并指明路径</p>
+<ol>
+<li>拉取 proj-s 并指明路径</li>
+</ol>
 
 <pre><code>git subtree add --prefix=component/proj-s proj-s master
-</code></pre></li>
-</ol>
+</code></pre>
 
 <p>其中，<code>--prefix</code> 后面的路径为基于 P1 或 P2 项目内的相对路径，<code>proj-s</code> 为上一步中添加的 remote 名称，<code>master</code> 为拉取分支，也可以来取其他分支。</p>
 
 <ol>
-<li><p>P1/P2 中拉取 proj-s 到本地</p>
+<li>P1/P2 中拉取 proj-s 到本地</li>
+</ol>
 
 <pre><code>git subtree pull --prefix=component/proj-s proj-s master
-</code></pre></li>
+</code></pre>
 
-<li><p>P1/P2 中提交 proj-s 到远端</p>
+<ol>
+<li>P1/P2 中提交 proj-s 到远端</li>
+</ol>
 
 <pre><code>git subtree push --prefix=component/proj-s proj-s hotfix/new-proj-s
-</code></pre></li>
-</ol>
+</code></pre>
 
 <p>如果这里提交到的是非 master 分支，那么在前往 proj-s 项目完成分支合并后，自己和其它人就可以通过拉取 master 使用最新的代码了。</p>
 

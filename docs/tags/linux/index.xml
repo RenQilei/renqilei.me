@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on Randy&#39;s Blog</title>
+    <title>linux on Randy&#39;s Blog</title>
     <link>http://renqilei.me/tags/linux/</link>
-    <description>Recent content in Linux on Randy&#39;s Blog</description>
+    <description>Recent content in linux on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 20 Apr 2019 14:50:45 +0800</lastBuildDate>
@@ -18,15 +18,6 @@
       
       <guid>http://renqilei.me/posts/partition-disk-over-2t-on-linux/</guid>
       <description>在 Linux 上，大于 2T 的磁盘需要通过 parted 来进行磁盘分区操作。 以将 6T磁盘 /dev/sdb 初始化为例。 parted /dev/sdb 接下来将会在命令交互中执行命令： mklabel gpt Yes print 打印信息 mkpart primary 0 6001GB 根据</description>
-    </item>
-    
-    <item>
-      <title>网络诊断工具 mtr</title>
-      <link>http://renqilei.me/posts/use-mtr/</link>
-      <pubDate>Mon, 03 Dec 2018 10:37:32 +0800</pubDate>
-      
-      <guid>http://renqilei.me/posts/use-mtr/</guid>
-      <description>mtr 结合了 traceroute 和 ping 的功能，完成对网络的诊断。 不同于 traceroute 默认使用 UDP 数据包进行探测的是，mtr 默认使用 ICMP 报文进行探测，在某些路由器上 ICMP 的优先级低于其他</description>
     </item>
     
     <item>
