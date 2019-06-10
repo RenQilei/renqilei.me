@@ -44,5 +44,6 @@ nvm reinstall-packages <version>
 ```
 
 参考：
+
 * [Best way to install and use nvm on Mac](https://medium.com/@isaacjoe/best-way-to-install-and-use-nvm-on-mac-e3a3f6bc494d)
 * [Mac OS 下 NVM 的安装与使用](https://www.jianshu.com/p/622ad36ee020)
