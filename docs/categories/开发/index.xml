@@ -6,10 +6,19 @@
     <description>Recent content in 开发 on Randy&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 07 Mar 2019 00:18:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Jun 2019 02:22:11 +0800</lastBuildDate>
     
 	<atom:link href="http://renqilei.me/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>使用 Node.js 版本管理工具 nvm</title>
+      <link>http://renqilei.me/posts/use-nvm/</link>
+      <pubDate>Tue, 11 Jun 2019 02:22:11 +0800</pubDate>
+      
+      <guid>http://renqilei.me/posts/use-nvm/</guid>
+      <description>安装 nvm brew install nvm 配置环境（.bash_profile 或 .zshrc 中） export NVM_DIR=&amp;quot;$HOME/.nvm&amp;quot; [ -s &amp;quot;$NVM_DIR/nvm.sh&amp;quot; ] &amp;amp;&amp;amp; \. &amp;quot;$NVM_DIR/nvm.sh&amp;quot; # This loads nvm [ -s &amp;quot;$NVM_DIR/bash_completion&amp;quot; ] &amp;amp;&amp;amp; \. &amp;quot;$NVM_DIR/bash_completion&amp;quot; # This loads nvm bash_completion 激活环境 source .bash_profile # or source .zshrc 常用命令 nvm install stable</description>
+    </item>
     
     <item>
       <title>关于 CSS 文字两端对齐的小结</title>
