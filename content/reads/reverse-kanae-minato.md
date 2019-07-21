@@ -1,6 +1,6 @@
 ---
 title: "反转"
-english-title: "reverse"
+english-title: "Reverse"
 isbn: "978-7-5596-1731-6"
 recommendation: "6/10"
 date: 2019-04-25T00:30:12+08:00
