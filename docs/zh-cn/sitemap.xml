@@ -4,7 +4,7 @@
   
   <url>
     <loc>http://renqilei.me/</loc>
-    <lastmod>2019-07-21T18:48:14+08:00</lastmod>
+    <lastmod>2019-12-15T19:39:53+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
@@ -20,8 +20,15 @@
   
   <url>
     <loc>http://renqilei.me/reads/</loc>
-    <lastmod>2019-07-21T18:48:14+08:00</lastmod>
+    <lastmod>2019-12-15T19:39:53+08:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://renqilei.me/reads/super-conversion-rate/</loc>
+    <lastmod>2019-12-15T19:39:53+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -126,25 +133,25 @@
   </url>
   
   <url>
-    <loc>http://renqilei.me/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
-    <lastmod>2019-06-08T15:35:47+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://renqilei.me/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
     <lastmod>2019-06-08T15:35:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/categories/kubernetes/</loc>
-    <lastmod>2019-05-31T00:34:57+08:00</lastmod>
+    <loc>http://renqilei.me/categories/%E6%A0%91%E8%8E%93%E6%B4%BE/</loc>
+    <lastmod>2019-06-08T15:35:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://renqilei.me/tags/kubernetes/</loc>
+    <lastmod>2019-05-31T00:34:57+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://renqilei.me/categories/kubernetes/</loc>
     <lastmod>2019-05-31T00:34:57+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -239,12 +246,6 @@
   </url>
   
   <url>
-    <loc>http://renqilei.me/tags/php/</loc>
-    <lastmod>2019-01-28T17:47:29+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://renqilei.me/posts/use-google-protobuf-in-php-project/</loc>
     <lastmod>2019-01-28T17:47:29+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,6 +254,12 @@
   
   <url>
     <loc>http://renqilei.me/tags/mac/</loc>
+    <lastmod>2019-01-28T17:47:29+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://renqilei.me/tags/php/</loc>
     <lastmod>2019-01-28T17:47:29+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -467,13 +474,13 @@
   </url>
   
   <url>
-    <loc>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</loc>
+    <loc>http://renqilei.me/tags/%E5%8C%BB%E7%96%97/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/tags/%E5%8C%BB%E7%96%97/</loc>
+    <loc>http://renqilei.me/categories/%E5%8C%BB%E7%96%97/</loc>
     <lastmod>2018-11-23T15:02:26+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -510,13 +517,13 @@
   </url>
   
   <url>
-    <loc>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</loc>
+    <loc>http://renqilei.me/tags/%E7%A4%BE%E4%BA%A4/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://renqilei.me/tags/%E7%A4%BE%E4%BA%A4/</loc>
+    <loc>http://renqilei.me/categories/%E7%A4%BE%E4%BA%A4/</loc>
     <lastmod>2018-11-18T19:03:18+08:00</lastmod>
     <priority>0</priority>
   </url>

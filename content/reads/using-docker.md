@@ -2,7 +2,7 @@
 title: "Docker 开发指南"
 english-title: "Using Docker"
 isbn: "978-7-115-44957-3"
-recommendation: "7/10"
+recommendation: "5/10"
 date: 2019-01-04T00:04:08+08:00
 draft: false
 ---
